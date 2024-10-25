@@ -36,7 +36,7 @@ country_event = {
 
 	option = {
 		name = SOV_events.2.a
-		
+		SOV = { set_variable = { opinion_of_kerensky = 0 } }
 		hidden_effect = {
 			country_event = {
 				id = SOV_events.3
@@ -46,7 +46,7 @@ country_event = {
 	}
 }
 
-### Discussion: Elections
+### Discussion #1: Elections
 country_event = {
 	id = SOV_events.3
 	title = SOV_events.3.t
@@ -59,19 +59,367 @@ country_event = {
 	option = { # Free and Fair Elections
 		name = SOV_events.3.a
 		
+		add_stability = 0.05
+		add_political_power = -50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		custom_effect_tooltip = RUS_gr_increase_opinion_of_kerensky
 		hidden_effect = {
-			
+			set_country_flag = elections_allowed
+			add_to_variable = { SOV.opinion_of_kerensky = 15 }
+			country_event = {
+				id = SOV_events.4
+				days = 1
+			}
 		}
 	}
 	option = { # Unfair Elections
 		name = SOV_events.3.b
 		
+		add_stability = -0.05
+		add_political_power = 25
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = RUS_sl_increase_opinion_of_kerensky
 		hidden_effect = {
-			
+			set_country_flag = elections_limited
+			add_to_variable = { SOV.opinion_of_kerensky = 5 }
+			country_event = {
+				id = SOV_events.4
+				days = 1
+			}
 		}
 	}
 	option = { # No Elections
 		name = SOV_events.3.c
+		
+		add_stability = -0.1
+		add_political_power = 100
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = RUS_gr_decrease_opinion_of_kerensky
+		custom_effect_tooltip = RUS_bad_consequences
+		hidden_effect = {
+			set_country_flag = elections_banned
+			add_to_variable = { SOV.opinion_of_kerensky = -15 }
+			country_event = {
+				id = SOV_events.4
+				days = 1
+			}
+		}
+	}
+}
+
+### Discussion #2: Territorial Administration
+country_event = {
+	id = SOV_events.4
+	title = SOV_events.4.t
+	desc = SOV_events.4.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # Federacy
+		name = SOV_events.4.a
+		
+		add_stability = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		custom_effect_tooltip = RUS_gr_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = federation_established
+			add_to_variable = { SOV.opinion_of_kerensky = 15 }
+			country_event = {
+				id = SOV_events.5
+				days = 1
+			}
+		}
+	}
+	option = { # Unitary
+		name = SOV_events.4.b
+		
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = RUS_sl_decrease_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = unitary_established
+			add_to_variable = { SOV.opinion_of_kerensky = -5 }
+			country_event = {
+				id = SOV_events.5
+				days = 1
+			}
+		}
+	}
+}
+
+### Discussion #3: Trade Unions
+country_event = {
+	id = SOV_events.5
+	title = SOV_events.5.t
+	desc = SOV_events.5.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # Allow
+		name = SOV_events.5.a
+		
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = RUS_gr_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = trade_unions_allowed
+			add_to_variable = { SOV.opinion_of_kerensky = 15 }
+			country_event = {
+				id = SOV_events.6
+				days = 1
+			}
+		}
+	}
+	option = { # Limit
+		name = SOV_events.5.b
+		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = RUS_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = trade_unions_limited
+			add_to_variable = { SOV.opinion_of_kerensky = 10 }
+			country_event = {
+				id = SOV_events.6
+				days = 1
+			}
+		}
+	}
+	option = { # Ban
+		name = SOV_events.5.c
+		
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		custom_effect_tooltip = RUS_gr_decrease_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = trade_unions_banned
+			add_to_variable = { SOV.opinion_of_kerensky = -15 }
+			country_event = {
+				id = SOV_events.6
+				days = 1
+			}
+		}
+	}
+}
+
+### Discussion #4: Ethnic Minorities
+country_event = {
+	id = SOV_events.6
+	title = SOV_events.6.t
+	desc = SOV_events.6.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # Continue Russification
+		name = SOV_events.6.a
+		
+		add_stability = -0.05
+		add_political_power = 100
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = RUS_gr_decrease_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = russification_continued
+			add_to_variable = { SOV.opinion_of_kerensky = -15 }
+			country_event = {
+				id = SOV_events.7
+				days = 1
+			}
+		}
+	}
+	option = { # Change the laws a bit
+		name = SOV_events.6.b
+		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		custom_effect_tooltip = RUS_sl_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = russification_changed
+			add_to_variable = { SOV.opinion_of_kerensky = 5 }
+			country_event = {
+				id = SOV_events.7
+				days = 1
+			}
+		}
+	}
+	option = { # Completely change the laws
+		name = SOV_events.6.c
+		
+		add_stability = 0.1
+		add_political_power = -100
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		custom_effect_tooltip = RUS_gr_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = russification_banned
+			add_to_variable = { SOV.opinion_of_kerensky = 15 }
+			country_event = {
+				id = SOV_events.7
+				days = 1
+			}
+		}
+	}
+}
+
+### Discussion #5: Freedom of Speech
+country_event = {
+	id = SOV_events.7
+	title = SOV_events.7.t
+	desc = SOV_events.7.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # No FoS
+		name = SOV_events.7.a
+		
+		add_political_power = 50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		custom_effect_tooltip = RUS_gr_decrease_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = no_freedom_of_speech
+			add_to_variable = { SOV.opinion_of_kerensky = -15 }
+		}
+	}
+	option = { # Limited FoS
+		name = SOV_events.7.b
+		
+		add_political_power = 25
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = RUS_decrease_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = no_freedom_of_speech
+			set_country_flag = first_amendment
+			add_to_variable = { SOV.opinion_of_kerensky = -10 }
+		}
+	}
+	option = { # Full FoS
+		name = SOV_events.7.c
+		
+		add_political_power = -100
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		custom_effect_tooltip = RUS_gr_increase_opinion_of_kerensky
+		hidden_effect = {
+			set_country_flag = first_amendment
+			add_to_variable = { SOV.opinion_of_kerensky = 15 }
+		}
+	}
+}
+
+### Discussions Conclusion
+country_event = {
+	id = SOV_events.8
+	title = SOV_events.8.t
+	desc = SOV_events.8.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.8.a
+		# set_cosmetic_tag 
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = federation_established
+				}
+				set_cosmetic_tag = SOV_FED
+			}
+			else_if = {
+				limit = {
+					has_country_flag = unitary_established
+				}
+				set_cosmetic_tag = SOV_UNI
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = elections_banned
+						check_variable = {
+							SOV.opinion_of_kerensky < -40
+						}
+					}
+				}
+				
+				country_event = {
+					id = SOV_events.9
+					days = 10
+					random_hours = 12
+				}
+			}
+			
+			
+		}
+	}
+}
+
+### Riots begin
+country_event = {
+	id = SOV_events.9
+	title = SOV_events.9.t
+	desc = SOV_events.9.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.9.a
 		
 		hidden_effect = {
 			
@@ -81,7 +429,7 @@ country_event = {
 
 add_namespace = RUS_collapse
 
-### Leningrad
+### Letter
 country_event = {
 	id = RUS_collapse.1
 	title = RUS_collapse.1.t
