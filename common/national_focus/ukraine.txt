@@ -56,7 +56,7 @@ focus = {
 	id = UKR_start_industrialization
 	icon = GFX_goal_unknown
 	cost = 0
-	x = 27
+	x = 28
 	y = 0
 }
 focus = {
@@ -84,7 +84,7 @@ focus = {
 		focus = UKR_raise_taxes
 		focus = UKR_raise_taxes
 	}
-	x = 29
+	x = 31
 	y = 1
 }
 focus = {
@@ -441,7 +441,7 @@ focus = {
 		id = UKR_army
 		icon = GFX_goal_unknown
 		cost = 0
-		x = 55
+		x = 65
 		y = 0
 
 	}
