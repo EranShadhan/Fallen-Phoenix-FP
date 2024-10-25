@@ -694,7 +694,7 @@ fire_only_once = yes
 
 		hidden_effect = {
 			random = { 
-			chance = 0.01 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
+			chance = 0.01 #Who is the black person that is removing this is stupid, this is just an easter egg with 1/1000 chances to work.
 			JAP = { #Denis_MD here, i removed it. But gonna leave the files for any future devs to say the stupidity of the mod when we started
 
 					diplomatic_relation = {

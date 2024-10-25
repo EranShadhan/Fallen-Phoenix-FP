@@ -13,6 +13,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_SE_russian_collapse"
-		texturefile = "gfx/interface/SE_austrian_collapse.png"
+		texturefile = "gfx/interface/SE_russian_collapse.png"
 	}
 }

@@ -7,6 +7,7 @@ scripted_gui = {
 			OR = {
 				has_country_flag = se_test
 				has_global_flag = se_austrian_collapse
+				has_global_flag = se_russian_collapse
 			}
 		}
 		triggers = {
@@ -16,11 +17,15 @@ scripted_gui = {
 			SE_austrian_collapse_visible = {
 				has_global_flag = se_austrian_collapse
 			}
+			SE_austrian_collapse_visible = {
+				has_global_flag = se_russian_collapse
+			}
 		}
 		effects = {
 			SE_Option_click = {
 				clr_country_flag = se_test
 				clr_global_flag = se_austrian_collapse
+				clr_global_flag = se_russian_collapse
 			}
 		}		
 	}		

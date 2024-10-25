@@ -1,4 +1,9 @@
 ﻿l_english:
+ 
+ SE_RUSSIAN_COLLAPSE_T:0 "The Russian Civil War"
+ SE_RUSSIAN_COLLAPSE_Q:0 "There is no justice among men.\n- Nicholas II"
+ SE_RUSSIAN_COLLAPSE_A:0 "God save the russians..." #They fall one by one...
+  
  RUS_events.1.t:0 "The Years Go By"
  RUS_events.1.d:0 "Our country is at a point where it needs to decide it's future otherwise the country will not succeed in this new world. The head of the Provisional Government Kerensky supports an idea of a conservative democratic Russian Republic while Ustryalov supports an authoritarian natonal bolshevik state ruled by an iron fist."
  RUS_events.1.a:0 "Ustryalov is right..."

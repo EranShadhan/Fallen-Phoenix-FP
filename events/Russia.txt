@@ -617,6 +617,13 @@ country_event = {
 				id = RUS_collapse.12
 				days = 10
 			}
+			delete_unit = {} 
+			set_global_flag = se_russian_collapse
+			end_puppet = SIK
+			end_puppet = MON
+			end_puppet = MAN
+			
+			
 		}
 	}
 }
@@ -1013,6 +1020,9 @@ country_event = {
 				add_state_core = 409
 				add_state_core = 655
 			}
+			JAP = {
+				puppet = FER
+			}
 		}
 	}
 }
@@ -1207,6 +1217,25 @@ country_event = {
 				add_state_core = 1069
 				add_state_core = 1070
 				add_state_core = 1071
+			}
+			SIK = {
+				declare_war_on = {
+					target = TKS
+					type = annex_everything
+				}
+			}
+			PRM = {
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+			}
+			
+			ZHE = {
+				declare_war_on = {
+					target = MON
+					type = annex_everything
+				}
 			}
 		}
 	}

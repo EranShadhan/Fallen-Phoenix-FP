@@ -1,9 +1,10 @@
+
 state={
 	id=1095
 	name="STATE_1095"
 
 	history={
-		owner = SAU
+		owner = PER
 		victory_points = {
 			12413 1 
 		}
@@ -11,15 +12,15 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = SAU
+		add_core_of = IRQ
 
 	}
 
 	provinces={
-		12413 
+		901 1600 1938 3795 10876 10882 12046 12372 12413 12839 
 	}
-	manpower=60000
-	state_category=pastoral
+	manpower=511289
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -799,7 +799,28 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			FRA = {
+				add_to_faction = ELS
+			}
+			ELS = {
+				add_ideas = french_phoenix_membership
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = HON
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NIC
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = COS
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -825,7 +846,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TODO
 		}
 	}
 	focus = {
@@ -851,7 +872,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TODO
 		}
 	}
 	focus = {

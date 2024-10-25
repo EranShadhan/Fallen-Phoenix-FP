@@ -11,7 +11,7 @@ state={
 		add_core_of = SAU
 		owner = SAU
 		victory_points = {
-			7960 2
+			7960 2 
 		}
 		buildings = {
 			infrastructure = 1
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		2048 7960 8108 13831 13833 13840 
+		2048 7960 8108 13824 13827 13831 13833 13840 
 	}
 	manpower=114034
 	buildings_max_level_factor=1.000
