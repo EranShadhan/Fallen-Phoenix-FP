@@ -2833,7 +2833,7 @@ focus = {
     id = UKR_time_to_act
     icon = GFX_goal_unknown
     cost = 5 
-    x = 14
+    x = 13
     y = 9
     completion_reward = {
        add_political_power = 100
@@ -2847,7 +2847,7 @@ focus = {
     prerequisite = {
         focus = UKR_time_to_act
     }
-    x = 8
+    x = 7
     y = 10
     completion_reward = {
        #event
@@ -2861,7 +2861,7 @@ focus = {
     prerequisite = {
         focus = UKR_ukraine_irredenta
     }
-    x = 3
+    x = 4
     y = 11
     completion_reward = {
        #event
@@ -2875,7 +2875,7 @@ focus = {
     prerequisite = {
         focus = UKR_west_lands
     }
-    x = 1
+    x = 2
     y = 12
     completion_reward = {
     add_state_claim = 1016
@@ -2892,7 +2892,7 @@ focus = {
     prerequisite = {
         focus = UKR_west_lands
     }
-    x = 3
+    x = 4
     y = 13
     completion_reward = {
 
@@ -2906,22 +2906,8 @@ focus = {
     prerequisite = {
         focus = UKR_west_lands
     }
-    x = 5
+    x = 6
     y = 12
-    completion_reward = {
-
-    }
-}
-
-focus = {
-    id = UKR_bukovina
-    icon = GFX_goal_unknown
-    cost = 5
-    prerequisite = {
-        focus = UKR_romanian_question
-    }
-    x = 5
-    y = 13
     completion_reward = {
 
     }
@@ -2934,7 +2920,7 @@ focus = {
     prerequisite = {
         focus = UKR_romanian_question
     }
-    x = 7
+    x = 6
     y = 13
     completion_reward = {
 
@@ -2948,7 +2934,7 @@ focus = {
     prerequisite = {
         focus = UKR_ukraine_irredenta
     }
-    x = 11
+    x = 10
     y = 11
     completion_reward = {
 
@@ -2962,7 +2948,7 @@ focus = {
     prerequisite = {
         focus = UKR_east_lands
     }
-    x = 11
+    x = 10
     y = 12
     completion_reward = {
 
@@ -2976,7 +2962,7 @@ focus = {
     prerequisite = {
         focus = UKR_russian_problem
     }
-    x = 9
+    x = 8
     y = 13
     completion_reward = {
 
@@ -2990,7 +2976,7 @@ focus = {
     prerequisite = {
         focus = UKR_russian_problem
     }
-    x = 11
+    x = 10
     y = 13
     completion_reward = {
 
@@ -3004,7 +2990,7 @@ focus = {
     prerequisite = {
         focus = UKR_russian_problem
     }
-    x = 13
+    x = 12
     y = 13
     completion_reward = {
 
@@ -3018,7 +3004,7 @@ focus = {
     prerequisite = {
         focus = UKR_united_again
     }
-    x = 8
+    x = 7
     y = 15
     completion_reward = {
 
@@ -3032,7 +3018,7 @@ focus = {
     prerequisite = {
         focus = UKR_kuban
     }
-    x = 14
+    x = 13
     y = 14
     completion_reward = {
 
@@ -3050,7 +3036,7 @@ focus = {
         focus = UKR_cooperation
         focus = UKR_cooperation
     }
-    x = 15
+    x = 14
     y = 10
     completion_reward = {
 
@@ -3068,7 +3054,7 @@ focus = {
         focus = UKR_on_our_own
         focus = UKR_on_our_own
     }
-    x = 17
+    x = 16
     y = 10
     completion_reward = {
 
@@ -3083,7 +3069,7 @@ focus = {
         focus = UKR_on_our_own
         focus = UKR_cooperation
     }
-    x = 16
+    x = 15
     y = 11
     completion_reward = {
 
@@ -3097,7 +3083,7 @@ focus = {
     prerequisite = {
         focus = UKR_time_to_act
     }
-    x = 21
+    x = 20
     y = 10
     completion_reward = {
 
@@ -3111,7 +3097,7 @@ focus = {
     prerequisite = {
         focus = UKR_under_berlin_vision
     }
-    x = 21
+    x = 20
     y = 11
     completion_reward = {
 
@@ -3128,7 +3114,7 @@ focus = {
     prerequisite = {
         focus = UKR_expand_politics
     }
-    x = 16
+    x = 15
     y = 12
     completion_reward = {
 
@@ -3146,7 +3132,7 @@ focus = {
         focus = UKR_support_turkey
         focus = UKR_support_turkey
     }
-    x = 15
+    x = 14
     y = 13
     completion_reward = {
 
@@ -3164,7 +3150,7 @@ focus = {
         focus = UKR_support_greece
         focus = UKR_support_greece
     }
-    x = 17
+    x = 16
     y = 13
     completion_reward = {
 
@@ -3178,7 +3164,7 @@ focus = {
     prerequisite = {
         focus = UKR_expand_politics
     }
-    x = 19
+    x = 18
     y = 12
     completion_reward = {
 
@@ -3192,7 +3178,7 @@ focus = {
     prerequisite = {
         focus = UKR_visit_zagreb
     }
-    x = 19
+    x = 18
     y = 13
     completion_reward = {
 
@@ -3206,7 +3192,7 @@ focus = {
     prerequisite = {
         focus = UKR_expand_politics
     }
-    x = 21
+    x = 20
     y = 12
     completion_reward = {
 
@@ -3220,7 +3206,7 @@ focus = {
     prerequisite = {
         focus = UKR_polish_question
     }
-    x = 1
+    x = 2
     y = 13
     completion_reward = {
        add_state_claim = 91
@@ -3254,10 +3240,7 @@ focus = {
     prerequisite = {
         focus = UKR_bessarabia
     }
-    prerequisite = {
-        focus = UKR_bukovina
-    }
-    x = 8
+    x = 7
     y = 14
     completion_reward = {
 
@@ -3271,7 +3254,7 @@ focus = {
     prerequisite = {
         focus = UKR_expand_politics
     }
-    x = 23
+    x = 22
     y = 12
     completion_reward = {
 
