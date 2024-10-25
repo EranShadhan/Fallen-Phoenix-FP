@@ -402,8 +402,39 @@ country_event = {
 					random_hours = 12
 				}
 			}
-			
-			
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							SOV.opinion_of_kerensky > -41
+						}
+						check_variable = {
+							SOV.opinion_of_kerensky < 41
+						}
+					}
+				}
+				
+				add_political_power = 10
+				#country_event = {
+				#	id = SOV_events.9
+				#	days = 10
+				#	random_hours = 12
+				#}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						SOV.opinion_of_kerensky > 40
+					}
+				}
+				
+				add_political_power = 10
+				#country_event = {
+				#	id = SOV_events.9
+				#	days = 10
+				#	random_hours = 12
+				#}
+			}
 		}
 	}
 }
@@ -420,6 +451,71 @@ country_event = {
 
 	option = { # 
 		name = SOV_events.9.a
+		
+		hidden_effect = {
+			country_event = {
+				id = SOV_events.10
+				days = 5
+				random_hours = 12
+			}
+		}
+	}
+}
+
+### Riots Escalate
+country_event = {
+	id = SOV_events.10
+	title = SOV_events.10.t
+	desc = SOV_events.10.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.10.a
+		
+		hidden_effect = {
+			country_event = {
+				RUS_collapse.1
+				days = 7
+				random_hours = 12
+			}
+		}
+	}
+}
+
+### Preparing for elections!
+country_event = {
+	id = SOV_events.11
+	title = SOV_events.11.t
+	desc = SOV_events.11.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.11.a
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+### Riots Escalate
+country_event = {
+	id = SOV_events.11
+	title = SOV_events.11.t
+	desc = SOV_events.11.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.11.a
 		
 		hidden_effect = {
 			
