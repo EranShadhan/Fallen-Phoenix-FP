@@ -43,10 +43,8 @@ bookmarks = {
 				RUS_revanchism
 			}
 			focuses = {
-				RUS_initial_reforms
-				RUS_authoritarian_path
-				RUS_kerensky
-				RUS_socialist_candidate
+				SOV_sunrise_over_moscow
+				SOV_1930_constitutient_assembly
 			}
 		}
 		"ITA"={

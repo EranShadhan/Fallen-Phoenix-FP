@@ -524,7 +524,7 @@ news_event = {
 	}
 
 	immediate = { 
-			set_global_flag = greece_wins_constantinople
+			set_global_flag = tur_and_rus_win_tgtw
 			PER = {
 				every_owned_state = {
 					transfer_state_to = PER
@@ -538,6 +538,10 @@ news_event = {
 				transfer_state = 676
 				transfer_state = 419
 				transfer_state = 420
+				transfer_state = 676
+				transfer_state = 291
+				transfer_state = 675
+				transfer_state = 856
 				white_peace = PER
 			}
 
@@ -601,6 +605,10 @@ news_event = {
 				transfer_state = 420
 				transfer_state = 229
 				transfer_state = 800
+				transfer_state = 676
+				transfer_state = 291
+				transfer_state = 675
+				transfer_state = 856
 			}
 
 			

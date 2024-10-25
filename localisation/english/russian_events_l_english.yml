@@ -32,11 +32,47 @@
  SOV_events.2.d:0 "Members of the Constitutient Assembly have been recently appointed by Kerensky. The Assembly consists of members of which 114 were directly elected, 38 were appointed by Kerensky and the rest were government ministers. The Assembly will begin its work in a week, after everyone arrives to Moscow, where all of the discussion will take place."
  SOV_events.2.a:0 "Let the Discussions Begin!"
  
+ RUS_sl_increase_opinion_of_kerensky: "Opinion of Kerensky will §7Slightly§! §GIncrease§!"
+ RUS_increase_opinion_of_kerensky: "Opinion of Kerensky will §GIncrease§!"
+ RUS_gr_increase_opinion_of_kerensky: "Opinion of Kerensky will §CGreatly§! §GIncrease§!"
+ RUS_sl_decrease_opinion_of_kerensky: "Opinion of Kerensky will §8Slightly§! §RDecrease§!"
+ RUS_decrease_opinion_of_kerensky: "Opinion of Kerensky will §RDecrease§!"
+ RUS_gr_decrease_opinion_of_kerensky: "Opinion of Kerensky will §9Greatly§! §RDecrease§!"
+ 
  SOV_events.3.t:0 "Discussion: Elections"
  SOV_events.3.d:0 "If elections are allowed in Russia, there is a high chance Kerensky will lose his power, so he might become... angry..."
  SOV_events.3.a:0 "Free and Fair Elections"
- SOV_events.3.b:0 "Unfair Elections"
- SOV_events.3.c:0 "No Elections"
+ SOV_events.3.b:0 "Promise Free Elections"
+ SOV_events.3.c:0 "Ban Elections"
+ 
+ RUS_bad_consequences: "This may §Rbackfire, eventually...§!"
+ 
+ SOV_events.4.t:0 "Discussion: Territorial Administration"
+ SOV_events.4.d:0 "We must decide on how our country should be administrated: we can either have a federacy or a unitary administration.\n\nFederacy would mean less power to the President, but less problems for the autonomous states.\n\nUnitary administration on other hand would mean more power to Kerensky and less organized government."
+ SOV_events.4.a:0 "Federacy"
+ SOV_events.4.b:0 "Unitary"
+ 
+ SOV_events.5.t:0 "Discussion: Trade Unions"
+ SOV_events.5.d:0 "As we industrialize our nation, it becomes apparent, that more workers will be needed to operate our industry. Workers will eventually demand more rights, including the creation of trade unions. Though we have to be careful, because communists may use this as an opportunity to do something stupid."
+ SOV_events.5.a:0 "Allow"
+ SOV_events.5.b:0 "Allow, but limit its activity"
+ SOV_events.5.c:0 "Ban"
+ 
+ SOV_events.6.t:0 "Discussion: Ethnic Minorities"
+ SOV_events.6.d:0 "Apparently, some of the minorities are not happy with the Russification program. Some liberal citizens suggested we should at least make the laws less harsh, or completely change them. They think that all ethnicities should have the same rights as russians.\n\nThough Kerensky may disagree with the abolishment of Russification laws, considering his world views..."
+ SOV_events.6.a:0 "Russia is for Russians. Continue the Russification."
+ SOV_events.6.b:0 "We can make an exception..."
+ SOV_events.6.c:0 "Russia is an interethnic country. We should abolish the laws"
+ 
+ SOV_events.7.t:0 "Final Discussion: Freedom of Speech"
+ SOV_events.7.d:0 "The question of Freedom of Speech has been a highly debated topic since the formation of Provisional Government. Some people think that this right would cause massive problems, cripple our country and disunite the people. Others, however, disagree and think that Freedom of Speech is essential to the stability of our country."
+ SOV_events.7.a:0 "People don't deserve this right"
+ SOV_events.7.b:0 "We can limit the press censorship"
+ SOV_events.7.c:0 "We should look up to USA and establish our own '1st Amendment'"
+ 
+ SOV_events.8.t:0 "Discussions Conclude"
+ SOV_events.8.d:0 "The Assembly has finally come to a conclusion. Is is only a matter of time before the 1930 Constitution is established. If everything was done right, the won't be any problems. But if Kerensky messed up..."
+ SOV_events.8.a:0 "Let's not think into the future, for now"
  
  RUS_collapse.1.t:0 "Letter To: Alexander Kerensky"
  RUS_collapse.1.d:0 "People have decided to take the matter into their own hands. They are rioting all across the country. It can't be stopped now. I hope you understand the damage you have done. It's very likely that new governments will appear - all because of you...\n\nIt is highly recommended that you retire and watch the Russian Collapse from far away."
