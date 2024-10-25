@@ -727,6 +727,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			FRA = {
+				add_to_faction = DOM
+			}
+			DOM = {
+				add_ideas = french_phoenix_membership
+				declare_war_on = {
+					target = HAI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CUB
+					type = annex_everything
+				}
+				load_oob = "DOM_french_focus_completed"
+			}
 			
 		}
 	}
@@ -753,7 +768,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			DOM = {
+				add_state_core = 315
+			}
+			DOM = {
+				add_state_core = 318 
+			}
 		}
 	}
 	focus = {
@@ -928,7 +948,7 @@
 	focus = {
 		id = FRA_invite_ethiopia
 		icon = GFX_
-		x = 1
+		x = 0
 		y = 1
 		
 		prerequisite = { focus = FRA_claim_african_colonies}
@@ -948,40 +968,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_spark_cerntral_african_revolt
-		icon = GFX_
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = FRA_claim_african_colonies}
-		relative_position_id = FRA_claim_african_colonies
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
+			country_event = FP_france.8
 		}
 	}
 	focus = {
 		id = FRA_defence_east_asia
 		icon = GFX_
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		
 		prerequisite = { focus = FRA_liberia_subjegation}
 		prerequisite = { focus = FRA_sao_paolo_treaty}
@@ -1005,40 +999,14 @@
 		}
 	}
 	focus = {
-		id = FRA_siamese_war
+		id = FRA_colonial_independence
 		icon = GFX_
-		x = -3
+		x = -1
 		y = 1
 		
 		prerequisite = { focus = FRA_defence_east_asia}
 		relative_position_id = FRA_defence_east_asia
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_colonial_independence
-		icon = GFX_
-		x = -1
-		y = 2
-		
-		prerequisite = { focus = FRA_defence_east_asia}
-		relative_position_id = FRA_defence_east_asia
-		mutually_exclusive = { focus = FRA_colonial_independence }
+		mutually_exclusive = { focus = FRA_martial_law }
 
 		allow_branch = { 
 			
@@ -1054,14 +1022,47 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			286 = {
+				transfer_state_to = VIN
+			}
+			671 = {
+				transfer_state_to = VIN
+			}
+			741 = {
+				transfer_state_to = VIN
+			}
+			1026 = {
+				transfer_state_to = VIN
+			}
+			670 = {
+				transfer_state_to = VIN
+			}
+			1027 = {
+				transfer_state_to = VIN
+			}
+			1025 = {
+				transfer_state_to = VIN
+			}
+			VIN = {
+				add_state_core = 286
+				add_state_core = 671
+				add_state_core = 741
+				add_state_core = 1026
+				add_state_core = 670
+				add_state_core = 1027
+				add_state_core = 1025
+				set_cosmetic_tag = FRA_indochina
+			}
+			FRA = {
+				puppet = VIN
+			}
 		}
 	}
 	focus = {
 		id = FRA_martial_law
 		icon = GFX_
 		x = 1
-		y = 2
+		y = 1
 		
 		prerequisite = { focus = FRA_defence_east_asia}
 		relative_position_id = FRA_defence_east_asia
@@ -1081,7 +1082,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_state_core = 671
 		}
 	}
 	focus = {
@@ -1173,10 +1174,10 @@
 			add_state_core = 972
 			add_state_core = 735
 			add_state_core = 1
-			add_state_core = 34
-			add_state_core = 1078
-			add_state_core = 8
-			add_state_core = 845
+			add_state_claim = 34
+			add_state_claim = 1078
+			add_state_claim = 8
+			add_state_claim = 845
 			add_state_claim = 6
 			add_state_claim = 35
 			add_state_claim = 51
@@ -1536,7 +1537,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			845 = {
+				transfer_state_to = FRA
+			}
+			846 = {
+				transfer_state_to = ITA
+			}
+			GER = {
+				add_to_faction = SWI
+			}
 		}
 	}
 	focus = {

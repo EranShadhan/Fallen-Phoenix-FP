@@ -1,3 +1,305 @@
-FRA_EDG_category = {
-    
+FRA_integrate_territories = {
+    FRA_integrate_cataluna = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			165 = {
+				is_controlled_by = FRA
+				compliance > 35
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 165
+				remove_state_claim = 165
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_basque = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			172 = {
+				is_controlled_by = FRA
+				compliance > 35
+			}
+			792 = {
+				is_controlled_by = FRA
+				compliance > 35
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 172
+				remove_state_claim = 172
+				add_state_core = 792
+				remove_state_claim = 792
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_baleares = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			177 = {
+				is_controlled_by = FRA
+				compliance > 35
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 177
+				remove_state_claim = 177
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_romandie = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			845 = {
+				is_controlled_by = FRA
+				compliance > 35
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 845
+				remove_state_claim = 845
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_turin = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			158 = {
+				is_controlled_by = FRA
+				compliance > 50
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 158
+				remove_state_claim = 158
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_sardinia = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			114 = {
+				is_controlled_by = FRA
+				compliance > 50
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 114
+				remove_state_claim = 114
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_wallonie = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			34 = {
+				is_controlled_by = FRA
+				compliance > 40
+			}
+			1078 = {
+				is_controlled_by = FRA
+				compliance > 40
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 34
+				remove_state_claim = 34
+				add_state_core = 1078
+				remove_state_claim = 1078
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_flanders = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			6 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+			35 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 35
+				remove_state_claim = 35
+				add_state_core = 6
+				remove_state_claim = 6
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
+	FRA_integrate_germania = {
+
+		icon = generic_research
+
+		allowed = {
+			tag = fra
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = FRA_greater_french_claims
+			51 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+			42 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+			971 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+			8 = {
+				is_controlled_by = FRA
+				compliance > 65
+			}
+		}
+
+		complete_effect = {
+			FRA = {
+				add_state_core = 51
+				remove_state_claim = 51
+				add_state_core = 42
+				remove_state_claim = 42
+				add_state_core = 971
+				remove_state_claim = 971
+				add_state_core = 8
+				remove_state_claim = 8
+			}
+		}
+		ai_will_do = {
+			factor = 9999999
+		}
+	}
 }

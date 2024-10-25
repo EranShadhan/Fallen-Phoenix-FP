@@ -14,30 +14,37 @@ units = {
 	##### Ejército de República Dominicana #####
 	division= {	
 		name = "Ejército Dominicana"
-		location = 7660 # Santo Domingo
+		location = 4600 # Santo Domingo
 		division_template = "División de Infanteria"		
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
 		name = "Ejército Dominicana"
-		location = 7660 # Santo Domingo
+		location = 10498 # Santo Domingo
 		division_template = "División de Infanteria"		
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
 		name = "Ejército Dominicana"
-		location = 7660 # Santo Domingo
+		location = 7546 # Santo Domingo
 		division_template = "División de Infanteria"		
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
 		name = "Ejército Dominicana"
-		location = 7660 # Santo Domingo
+		location = 12347 # Santo Domingo
 		division_template = "División de Infanteria"		
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Ejército Dominicana"
+		location = 7590 # Santo Domingo
+		division_template = "División de Infanteria"		
+		start_equipment_factor = 1
 
 	}
 
@@ -47,13 +54,4 @@ units = {
 ##### No notable air force #####
 
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "DOM"
-		}
-		requested_factories = 1
-		progress = 0.47
-		efficiency = 100
-	}
 }

@@ -394,3 +394,119 @@ country_event = { # portugal_kill_death
 		}
 	}
 }
+
+country_event = { # ethiopian_alliance
+	id = FP_france.8
+	title = FP_france.8.t
+	desc = FP_france.8.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	trigger = {
+		
+	}
+	
+	option = {
+		name = FP_france.8.a #give out djbuti
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
+			FRA = {
+				add_to_faction = ETH
+			}
+			ETH = {
+				add_state_core = 268
+				add_ideas = french_phoenix_membership
+			}
+			268 = {
+				transfer_state_to = ETH
+			}
+		
+
+	}
+	option = {
+		name = FP_france.8.c #support for italy
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9999
+				is_historical_focus_on = yes
+			}
+		}
+		ETH = {
+			declare_war_on = {
+				target = ITA
+				type = take_state_focus
+				generator = { 559 550 }
+			}
+			add_state_core = 559
+			add_state_core = 550
+			add_state_core = 844
+			add_ideas = french_phoenix_membership
+			set_global_flag = italo_ethiopian_war
+		}
+	}
+	
+}
+
+country_event = { # ethiopia wins
+	id = FP_france.9
+	title = FP_france.9.t
+	desc = FP_france.9.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			ETH = {
+				add_named_threat = { threat = 5 name = FP_france.8.t }
+			}
+		}
+	}
+	trigger = {
+		has_global_flag = italo_ethiopian_war
+		559 = {
+			controller = ETH
+		}
+		550 = {
+			controller = ETH
+		}
+		844 = {
+			controller = ETH
+		}
+		tag = ETH
+	}
+	
+	option = {
+		name = FP_france.9.a #peaceterms
+		ai_chance = {
+			factor = 10
+		}
+			ETH = {
+				add_state_core = 559
+				add_state_core = 550
+				add_state_core = 844
+				add_ideas = french_phoenix_membership
+			}
+			559 = {
+				transfer_state_to = ETH
+			}
+			550 = {
+				transfer_state_to = ETH
+			}
+			844 = {
+				transfer_state_to = ETH
+			}
+			white_peace = ITA
+			FRA = {
+				add_to_faction = ETH
+			}
+	}
+	
+}

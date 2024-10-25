@@ -14,6 +14,10 @@ Exiled_portugal = {
     color = rgb { 111 173 144 }
     color_ui = rgb { 111 173 144 }
 }
+FRA_indochina = {
+    color = rgb { 168 223 227 }
+    color_ui = rgb { 168 223 227 }
+}
 IRE_UK = {
     color = rgb { 242 71 71 }
     color_ui = rgb { 242 71 71 }

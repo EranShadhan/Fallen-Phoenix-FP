@@ -11,3 +11,13 @@ FRA_EDG_category = {
 		}
 	}
 }
+FRA_integrate_territories = {
+	priority = 151
+	icon = GFX_category_icon
+
+	allowed = {
+		OR = {
+			original_tag = FRA
+		}
+	}
+}
