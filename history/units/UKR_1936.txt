@@ -80,7 +80,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Kavaleriya Dyviziya"
+	name = "Kavaleriys'ka Dyviziya"
 	division_names_group = UKR_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -90,6 +90,38 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
+}
+
+division_template = {
+	name = "Sichovi Stril'tsi"
+	division_names_group = UKR_SCH_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		mountaineers= { x = 0 y = 3 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		mountaineers= { x = 1 y = 3 }
+		
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		mountaineers= { x = 2 y = 3 }
+		
+		artillery = { x = 3 y = 0 }
+		artillery = { x = 3 y = 1 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+	is_locked = yes
+	priority = 2
 }
 
 units = {
@@ -194,20 +226,28 @@ units = {
 	}
 	division = {
 		location = 9568
-		division_template = "Kavaleriya Dyviziya"
+		division_template = "Kavaleriys'ka Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 6232
-		division_template = "Kavaleriya Dyviziya"
+		division_template = "Kavaleriys'ka Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 		division = {
 		location = 3494
-		division_template = "Kavaleriya Dyviziya"
+		division_template = "Kavaleriys'ka Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
+	division = {
+		location = 525
+		division_template = "Sichovi Stril'tsi"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1.0
+	}
+}
+		
 }

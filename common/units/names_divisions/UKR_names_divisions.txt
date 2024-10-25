@@ -1,0 +1,68 @@
+UKR_INF_01 = {
+	name = "Infantry division"
+
+	for_countries = { UKR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d-a Pikhotna diviziya"
+
+	ordered ={
+		1 = { "Persha pikhotna divisiya" }
+	}
+}
+
+UKR_CAV_01 = {
+	name = "Cavalry division"
+
+	for_countries = { UKR }
+
+	can_use = { always = yes }
+
+	division_types = { "Cavalry" }
+
+
+	fallback_name = "%d-a Kavaleriys'ka Dyviziya"
+
+	ordered ={
+		1 = { "Persha Kavaleriys'ka Dyviziya" }
+	}
+}
+
+UKR_MOT_01 = {
+	name = "Motorized division"
+
+	for_countries = { UKR }
+
+	can_use = { always = yes }
+
+	division_types = { "Motorized" }
+
+
+	fallback_name = "%d-a Motostrilets'ka Dyviziya"
+
+	ordered ={
+		1 = { "Persha Motostrilets'ka Dyviziya" }
+	}
+}
+
+UKR_SCH_01 = {
+	name = "Sichovi Stril'tsi"
+
+	for_countries = { UKR }
+
+	can_use = { always = yes }
+
+	division_types = { "Infantry" }
+
+
+	fallback_name = "Sichovi Stril'tsi"
+
+	ordered ={
+		1 = { "Sichovi Stril'tsi" }
+	}
+}
+
