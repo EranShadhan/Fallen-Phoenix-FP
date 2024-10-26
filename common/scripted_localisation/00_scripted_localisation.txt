@@ -67,7 +67,7 @@ defined_text = { # for PRC tree
 			MAN = {
 				OR = {
 					is_subject_of = JAP
-					has_cosmetic_tag = MAN_kwantung_army 
+					log = MAN_kwantung_army 
 				}
 			}
 		}
@@ -349,14 +349,14 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
+			NOT = { log = ENG_a_change_in_course }
 		}
 		localization_key = ENG_LIMITED_REARMAMENT_HISTORICAL
 	}
 	text = {
 		trigger = {
 			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
+			log = ENG_a_change_in_course
 		}
 		localization_key = ENG_LIMITED_REARMAMENT_AHISTORICAL
 	}
@@ -477,14 +477,14 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
+			NOT = { log = ENG_a_change_in_course }
 		}
 		localization_key = ENG_GENERAL_REARMAMENT_DESC_HISTORICAL
 	}
 	text = {
 		trigger = {
 			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
+			log = ENG_a_change_in_course
 		}
 		localization_key = ENG_GENERAL_REARMAMENT_DESC_AHISTORICAL
 	}
@@ -635,7 +635,7 @@ defined_text = { # Country
 	name = GetCandidatesFascism2
 	text = {
 		trigger = {
-			has_completed_focus = USA_send_lindbergh_to_germany
+			log = USA_send_lindbergh_to_germany
 		}
 		localization_key = USA_lindbergh_candidate
 	}
@@ -921,15 +921,15 @@ defined_text = { # Country
 	name = GetFrenchCoronationCity
 	text = {
 		trigger = {
-			has_completed_focus = FRA_the_legitimate_heir
+			log = FRA_the_legitimate_heir
 		}
 		localization_key = LaR_France_Reims
 	}
 	text = {
 		trigger = {
 			OR = {
-				has_completed_focus = FRA_proclaim_the_third_empire
-				has_completed_focus = FRA_orleanist_restoration
+				log = FRA_proclaim_the_third_empire
+				log = FRA_orleanist_restoration
 			}
 		}
 		localization_key = LaR_France_Paris
@@ -940,19 +940,19 @@ defined_text = { # Country
 	name = GetFrenchRoyalTitle
 	text = {
 		trigger = {
-			has_completed_focus = FRA_the_legitimate_heir
+			log = FRA_the_legitimate_heir
 		}
 		localization_key = LaR_France_King
 	}
 	text = {
 		trigger = {	
-			has_completed_focus = FRA_orleanist_restoration
+			log = FRA_orleanist_restoration
 		}
 		localization_key = LaR_France_King_of_The_French
 	}
 	text = {
 		trigger = {	
-			has_completed_focus = FRA_proclaim_the_third_empire
+			log = FRA_proclaim_the_third_empire
 		}
 		localization_key = LaR_France_Emperor
 	}
@@ -989,9 +989,9 @@ defined_text = {
 	text = { #ENG builder
 		trigger = {
 			OR = {
-				has_country_flag = POR_purchase_british_submarines_flag
-				has_country_flag = POR_purchase_british_destroyers_flag
-				has_country_flag = POR_purchase_british_light_cruiser_flag
+				log = POR_purchase_british_submarines_flag
+				log = POR_purchase_british_destroyers_flag
+				log = POR_purchase_british_light_cruiser_flag
 			}
 		}
 		localization_key = POR_ENG_Ship_Builder
@@ -1005,13 +1005,13 @@ defined_text = {
 	name = GetWargoalBasedOnGovernment
 	text = { #United Kingdom of Portugal and Brazil 
 		trigger = {
-			has_cosmetic_tag = KPB_kingdom_portugal_and_brazil
+			log = KPB_kingdom_portugal_and_brazil
 		}
 		localization_key = POR_puppet_wargoal
 	}
 	text = { #Salazarist Portugal
 		trigger = {
-			NOT = { has_cosmetic_tag = KPB_kingdom_portugal_and_brazil }
+			NOT = { log = KPB_kingdom_portugal_and_brazil }
 			has_government = neutrality
 		}
 		localization_key = POR_topple_government_wargoal
@@ -1087,7 +1087,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			NOT = {
-				has_completed_focus = SOV_dismantle_the_zemsky_sobor
+				log = SOV_dismantle_the_zemsky_sobor
 			}
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_NAME_TSARIST
@@ -1095,7 +1095,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
-			has_completed_focus = SOV_dismantle_the_zemsky_sobor
+			log = SOV_dismantle_the_zemsky_sobor
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_NAME_FASCIST
 	}
@@ -1107,7 +1107,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			NOT = {
-				has_completed_focus = SOV_dismantle_the_zemsky_sobor
+				log = SOV_dismantle_the_zemsky_sobor
 			}
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_DESC_TSARIST
@@ -1115,7 +1115,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
-			has_completed_focus = SOV_dismantle_the_zemsky_sobor
+			log = SOV_dismantle_the_zemsky_sobor
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_DESC_FASCIST
 	}
@@ -1127,7 +1127,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			OR = {
-				NOT = { has_completed_focus = SOV_request_imperial_protection }
+				NOT = { log = SOV_request_imperial_protection }
 				NOT = { is_subject_of = JAP }
 			}
 		}
@@ -1136,7 +1136,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
-			has_completed_focus = SOV_request_imperial_protection
+			log = SOV_request_imperial_protection
 			is_subject_of = JAP
 		}
 		localization_key = SOV_THE_LONELY_ISLAND_NAME_INDEPENDENCE
@@ -1149,7 +1149,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			OR = {
-				NOT = { has_completed_focus = SOV_request_imperial_protection }
+				NOT = { log = SOV_request_imperial_protection }
 				NOT = { is_subject_of = JAP }
 			}
 		}
@@ -1158,7 +1158,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
-			has_completed_focus = SOV_request_imperial_protection
+			log = SOV_request_imperial_protection
 			is_subject_of = JAP
 		}
 		localization_key = SOV_THE_LONELY_ISLAND_DESC_INDEPENDENCE
