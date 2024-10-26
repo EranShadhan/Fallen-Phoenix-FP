@@ -11,6 +11,7 @@ set_power_balance = {
 	}
 
 recruit_character = SOV_aleksandr_kerensky
+recruit_character = SOV_aleksandr_kerensky_integral
 recruit_character = SOV_prov_court
 
 starting_train_buffer = 3.0

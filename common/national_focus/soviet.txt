@@ -482,6 +482,7 @@
 				id = SOV_events.1
 				days = 4
 			}
+			add_ideas = { RUS_1930_assembly }
 		}
 		ai_will_do = {
 			factor = 10

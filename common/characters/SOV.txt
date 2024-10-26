@@ -34,5 +34,14 @@ characters = {
 			}
 		}
 	}
+	
+	SOV_aleksandr_kerensky_integral = {
+		name = SOV_alexander_kelensky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_alexander_kelensky
+			}
+		}
+	}
 
 }

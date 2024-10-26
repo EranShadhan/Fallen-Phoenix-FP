@@ -79,6 +79,22 @@
  SOV_events.8.d:0 "The Assembly has finally come to a conclusion. Is is only a matter of time before the 1930 Constitution is established. If everything was done right, the won't be any problems. But if Kerensky messed up..."
  SOV_events.8.a:0 "Let's not think into the future, for now"
  
+ SOV_events.11.t:0 "Preparations for the 1st Presidential Elections"
+ SOV_events.11.d:0 "Finally, Russia will have its first proper elections! The main candidates will be:\n\n1.Kerensky (independent)\n2. Guchkev (Partiya of Consitutional Democrats)\n3.Trotsky (Party of Socialist-Revolutionaries)\n4. Shulgin (Vserossiskaya Integralistskaya Partiya)" #Shulgin (Vserossiskaya Integralistskaya Partiya)
+ SOV_events.11.a:0 "It is going to be alright..."
+ 
+ SOV_events.12.t:0 "Election Night!"
+ SOV_events.12.d:0 "This is it. Fate of Russia is determined today. It's up to us to decide whether a dictator comes into power or a democratic leader takes place to save Russia in 4 years, before next elections of course. And people decide to elect..."
+ SOV_events.12.a:0 "Kerensky!"
+ SOV_events.12.b:0 "Kerensky?"
+ SOV_events.12.c:0 "Kerensky..."
+ 
+ SOV_effect_are_same_btw: "The effects are all §Gthe same§!, btw."
+ 
+ SOV_events.13.t:0 "Government Transition"
+ SOV_events.13.d:0 ""
+ SOV_events.13.a:0 "I love Democracy."
+ 
  RUS_collapse.1.t:0 "Letter To: Alexander Kerensky"
  RUS_collapse.1.d:0 "People have decided to take the matter into their own hands. They are rioting all across the country. It can't be stopped now. I hope you understand the damage you have done. It's very likely that new governments will appear - all because of you...\n\nIt is highly recommended that you retire and watch the Russian Collapse from far away."
  RUS_collapse.1.a:0 "So be it."

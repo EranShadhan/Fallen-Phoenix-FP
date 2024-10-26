@@ -89,6 +89,7 @@ country_event = {
 			popularity = 0.05
 		}
 		custom_effect_tooltip = RUS_sl_increase_opinion_of_kerensky
+		custom_effect_tooltip = RUS_bad_consequences
 		hidden_effect = {
 			set_country_flag = elections_limited
 			add_to_variable = { SOV.opinion_of_kerensky = 5 }
@@ -373,18 +374,18 @@ country_event = {
 		name = SOV_events.8.a
 		# set_cosmetic_tag 
 		hidden_effect = {
-			if = {
-				limit = {
-					has_country_flag = federation_established
-				}
-				set_cosmetic_tag = SOV_FED
-			}
-			else_if = {
-				limit = {
-					has_country_flag = unitary_established
-				}
-				set_cosmetic_tag = SOV_UNI
-			}
+			#if = {
+			#	limit = {
+			#		has_country_flag = federation_established
+			#	}
+			#	#set_cosmetic_tag = SOV_FED
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_country_flag = unitary_established
+			#	}
+			#	#set_cosmetic_tag = SOV_UNI
+			#}
 			
 			if = {
 				limit = {
@@ -445,7 +446,7 @@ country_event = {
 	title = SOV_events.9.t
 	desc = SOV_events.9.d
 	
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_report_event_gathering_protest
 	
 	is_triggered_only = yes
 
@@ -468,7 +469,7 @@ country_event = {
 	title = SOV_events.10.t
 	desc = SOV_events.10.d
 	
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_report_event_generic_riot
 	
 	is_triggered_only = yes
 
@@ -477,7 +478,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = {
-				RUS_collapse.1
+				id = RUS_collapse.1
 				days = 7
 				random_hours = 12
 			}
@@ -485,13 +486,13 @@ country_event = {
 	}
 }
 
-### Preparing for elections!
+### Elections Preparation ( -40 < var < 40 )
 country_event = {
 	id = SOV_events.11
 	title = SOV_events.11.t
 	desc = SOV_events.11.d
 	
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_report_event_generic_rally2
 	
 	is_triggered_only = yes
 
@@ -499,26 +500,99 @@ country_event = {
 		name = SOV_events.11.a
 		
 		hidden_effect = {
-			
+			if = {
+				limit = {
+					has_country_flag = elections_limited
+				}
+				country_event = {
+					id = SOV_events.12
+					days = 5
+					random_hours = 8
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = elections_allowed
+				}
+			}
 		}
 	}
 }
 
-### Riots Escalate
+### Limited Elections Night
 country_event = {
-	id = SOV_events.11
-	title = SOV_events.11.t
-	desc = SOV_events.11.d
+	id = SOV_events.12
+	title = SOV_events.12.t
+	desc = SOV_events.12.d
 	
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
 	option = { # 
-		name = SOV_events.11.a
+		name = SOV_events.12.a
 		
-		hidden_effect = {
-			
+		custom_effect_tooltip = SOV_effect_are_same_btw
+		add_political_power = -100
+		add_stability = -0.2
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+	}
+	option = { # 
+		name = SOV_events.12.b
+		
+		custom_effect_tooltip = SOV_effect_are_same_btw
+		add_political_power = -100
+		add_stability = -0.2
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+	}
+	option = { # 
+		name = SOV_events.12.c
+		
+		custom_effect_tooltip = SOV_effect_are_same_btw
+		add_political_power = -100
+		add_stability = -0.2
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+	}
+}
+
+### Change of Government
+country_event = {
+	id = SOV_events.13
+	title = SOV_events.13.t
+	desc = SOV_events.13.d
+	
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.13.a
+		
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = yes
+			last_election = "1930.12.17"
+			election_frequency = 48
+			long_name = SOV_kerensky_integralist_party_long
+			name = SOV_kerensky_integralist_party
+		}
+		add_country_leader_role = {
+			character = SOV_aleksandr_kerensky_integral
+			promote_leader = yes
+			country_leader = {
+				ideology = rexism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
 		}
 	}
 }
@@ -531,7 +605,7 @@ country_event = {
 	title = RUS_collapse.1.t
 	desc = RUS_collapse.1.d
 	
-	#picture = 
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 	fire_only_once = yes
