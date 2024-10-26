@@ -55,7 +55,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "SE_title"
-			position = { x = 139 y = 25 }
+			position = { x = 139 y = 15 }
 			font = "hoi_24header"
 			text = "[GetSupereventTitle]"
 			maxWidth = 370

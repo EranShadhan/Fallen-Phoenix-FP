@@ -17,7 +17,7 @@ scripted_gui = {
 			SE_austrian_collapse_visible = {
 				has_global_flag = se_austrian_collapse
 			}
-			SE_austrian_collapse_visible = {
+			SE_russian_collapse_visible = {
 				has_global_flag = se_russian_collapse
 			}
 		}
