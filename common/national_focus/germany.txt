@@ -2560,7 +2560,7 @@ focus = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_armament }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_naval_armament
 		cost = 5
 		ai_will_do = {
@@ -2602,7 +2602,7 @@ focus = {
 		id = GER_naval_improvement
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_dockyard_effort }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GER_dockyard_effort
 		cost = 5
@@ -2641,12 +2641,34 @@ focus = {
 	}
 
 	focus = {
+		id = GER_strenght_in_ships
+		icon = GFX_focus_SMB_blue_water_fleet
+		prerequisite = { focus = GER_dockyard_effort }
+		x = -1
+		y = 1
+		relative_position_id = GER_dockyard_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = GER_our_place_under_the_sun
 		icon = GFX_focus_SWE_privately_managed_vacation
-		prerequisite = { focus = GER_naval_improvement }
+		prerequisite = { focus = GER_naval_armament }
 		x = 2
 		y = 1
-		relative_position_id = GER_naval_improvement
+		relative_position_id = GER_naval_armament
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2662,9 +2684,52 @@ focus = {
 			
 		}
 	}
-
 	focus = {
-		id = GER_fight_in_the_beac
+		id = GER_ignite_a_race
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		prerequisite = { focus = GER_our_place_under_the_sun }
+		x = 3
+		y = 1
+		relative_position_id = GER_our_place_under_the_sun
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_mainteen_supplies_in_colonies
+		icon = GFX_focus_generic_merchant_fleet
+		prerequisite = { focus = GER_ignite_a_race }
+		x = 0
+		y = 1
+		relative_position_id = GER_ignite_a_race
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_fight_in_the_beach
 		icon = GFX_focus_SWE_coastal_support
 		prerequisite = { focus = GER_our_place_under_the_sun }
 		x = 1
@@ -2686,12 +2751,57 @@ focus = {
 		}
 	}
 	focus = {
+		id = GER_bombard_the_coast
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+		prerequisite = { focus = GER_fight_in_the_beach }
+		x = 0
+		y = 1
+		relative_position_id = GER_fight_in_the_beach
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = GER_coastal_war
+		}
+	}	
+	focus = {
+		id = GER_carrier_effort
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = GER_bombard_the_coast }
+		prerequisite = { focus = GER_mainteen_supplies_in_colonies }		
+		x = 1
+		y = 1
+		relative_position_id = GER_bombard_the_coast
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = GER_coastal_war
+		}
+	}	
+	focus = {
 		id = GER_plan_WXYZ
 		icon = GFX_focus_generic_refit_civilian_ships
-		prerequisite = { focus = GER_naval_improvement }
+		prerequisite = { focus = GER_naval_armament }
 		x = -2
 		y = 1
-		relative_position_id = GER_naval_improvement
+		relative_position_id = GER_naval_armament
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2786,6 +2896,29 @@ navy_experience = 50
 	}	
 
 	focus = {
+		id = GER_subs_stronk
+		icon = GFX_focus_generic_cruiser_submarines
+		prerequisite = { focus = GER_u_boat_construction }
+		x = 0
+		y = 2
+		relative_position_id = GER_u_boat_construction
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+		
+			
+		}
+	}	
+	focus = {
 		id = GER_improve_the_high_seas_feet
 		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = GER_plan_WXYZ }
@@ -2836,8 +2969,8 @@ navy_experience = 50
 		id = GER_the_antlatic_fleet
 		icon = GFX_focus_SWE_Vasa_II
 		prerequisite = { focus = GER_plan_WXYZ }
-		x = 2
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = GER_plan_WXYZ
 		cost = 5
 		ai_will_do = {
@@ -2865,10 +2998,11 @@ navy_experience = 50
 	focus = {
 		id = GER_complete_the_converation
 		icon = GFX_focus_generic_offshore_oil_rig
-		prerequisite = { focus = GER_the_antlatic_fleet focus = GER_improve_the_high_seas_feet focus = GER_u_boat_construction}
-		x = -2
+		prerequisite = { focus = GER_naval_improvement}
+		prerequisite = { focus = GER_strenght_in_ships }
+		x = -1
 		y = 1
-		relative_position_id = GER_the_antlatic_fleet
+		relative_position_id = GER_naval_improvement
 		cost = 5
 		ai_will_do = {
 			factor = 1
