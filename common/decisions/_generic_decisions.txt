@@ -13,13 +13,13 @@ political_actions = {
 			#Target is FROM
 			has_tech = atomic_research
 			NOT = { has_global_flag = first_nuke_dropped }
-			NOT = { has_idea = race_for_the_bomb }
+			NOT = { log = race_for_the_bomb }
 		}
 
 		target_root_trigger = {
             has_tech = atomic_research
             NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
+            NOT = { log = race_for_the_bomb }
 		}
 
 		#If this trigger matches a country.
@@ -38,7 +38,7 @@ political_actions = {
             #Target is FROM
             has_tech = atomic_research
             NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
+            NOT = { log = race_for_the_bomb }
             FROM = {
         		NOT = { is_in_faction_with = ROOT }
 				has_tech = nuclear_reactor
@@ -73,7 +73,7 @@ political_actions = {
 					tag = SPR
 				}
 				NOT = {
-					has_idea = SPR_political_violence
+					log = SPR_political_violence
 				}
 			}
 		}
@@ -122,7 +122,7 @@ political_actions = {
 				add = 1000
 				has_stability < 0.76
 				original_tag = SWE
-				has_idea = SWE_hungershield
+				log = SWE_hungershield
 			}
 		}
 	}
@@ -191,7 +191,7 @@ economy_decisions = {
 				has_stability > 0.74
 				NOT = {
 					original_tag = SWE
-					has_idea = SWE_hungershield
+					log = SWE_hungershield
 				}
 			}
 		}
@@ -221,7 +221,7 @@ propaganda_efforts = {
 					has_dlc = "La Resistance"
 				}
 				NOT = {
-					has_idea = SPR_political_violence
+					log = SPR_political_violence
 				}
 			}
 			if = {
@@ -336,9 +336,9 @@ propaganda_efforts = {
 				has_manpower < 100000
 				has_political_power < 250
 				OR = {
-					has_idea = volunteer_only
-					has_idea = limited_conscription
-					has_idea = extensive_conscription
+					log = volunteer_only
+					log = limited_conscription
+					log = extensive_conscription
 				}
 			}
 		}
@@ -391,9 +391,9 @@ propaganda_efforts = {
 				has_manpower < 100000
 				has_political_power < 250
 				OR = {
-					has_idea = volunteer_only
-					has_idea = limited_conscription
-					has_idea = extensive_conscription
+					log = volunteer_only
+					log = limited_conscription
+					log = extensive_conscription
 				}
 			}
 		}
@@ -461,9 +461,9 @@ propaganda_efforts = {
 				has_manpower < 100000
 				has_political_power < 250
 				OR = {
-					has_idea = volunteer_only
-					has_idea = limited_conscription
-					has_idea = extensive_conscription
+					log = volunteer_only
+					log = limited_conscription
+					log = extensive_conscription
 				}
 			}
 		}
@@ -495,7 +495,7 @@ propaganda_efforts = {
 					has_dlc = "La Resistance"
 				}
 				NOT = {
-					has_idea = SPR_political_violence
+					log = SPR_political_violence
 				}
 			}
 			if = {
@@ -554,7 +554,7 @@ propaganda_efforts = {
 					has_dlc = "La Resistance"
 				}
 				NOT = {
-					has_idea = SPR_political_violence
+					log = SPR_political_violence
 				}
 			}
 			if = {
@@ -695,7 +695,7 @@ war_measures = {
 
         available = {
             has_war = yes
-            has_idea = tot_economic_mobilisation
+            log = tot_economic_mobilisation
             OR = {
                 AND = {
                     has_government = democratic
@@ -727,7 +727,7 @@ war_measures = {
         remove_trigger = {
         	OR = {
             	has_war = no
-            	not = { has_idea = tot_economic_mobilisation }
+            	not = { log = tot_economic_mobilisation }
             }
         }
         modifier = {

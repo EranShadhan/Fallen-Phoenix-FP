@@ -114,7 +114,15 @@ guiTypes = {
 				maxHeight = 32
 				vertical_alignment = center
 			}
-			
+			instantTextboxType = {
+				name = "ideology"
+				position = { x = 9000 y = 9000 }
+				font = "hoi_16mbs"
+				text = "ideology_name"
+				maxWidth = 155
+				maxHeight = 32
+				vertical_alignment = center
+			}
 			instantTextboxType = {
 				name = "faction_name"
 				position = { x = 105 y = -45 }

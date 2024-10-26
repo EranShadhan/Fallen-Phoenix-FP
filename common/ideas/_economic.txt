@@ -130,10 +130,10 @@ ideas = {
 						limit = {
 							has_dlc = "Arms Against Tyranny"
 						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
+						NOT = { log = KYS_aat }
 					}
 					else = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
+						NOT = { log = KYS }
 					}
 				}
 				if = {
@@ -218,13 +218,13 @@ ideas = {
 						}
 						OR = {
 							has_completed_focus = HUN_secret_rearmament
-							NOT = { has_idea = HUN_treaty_of_triannon_aat }
+							NOT = { log = KYS_aat }
 						}
 					}
 					else = {
 						OR = {
 							has_completed_focus = HUN_secret_rearmament
-							NOT = { has_idea = HUN_treaty_of_triannon }
+							NOT = { log = KYS }
 						}
 					}
 				}
@@ -325,10 +325,10 @@ ideas = {
 						limit = {
 							has_dlc = "Arms Against Tyranny"
 						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
+						NOT = { log = KYS_aat }
 					}
 					else = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
+						NOT = { log = KYS }
 					}
 				}
 				if = {
@@ -431,10 +431,10 @@ ideas = {
 						limit = {
 							has_dlc = "Arms Against Tyranny"
 						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
+						NOT = { log = KYS_aat }
 					}
 					else = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
+						NOT = { log = KYS }
 					}
 				}
 				if = {
