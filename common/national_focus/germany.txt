@@ -3138,7 +3138,350 @@ navy_experience = 50
 		completion_reward = {
 		}
 	}	
+	focus = {
+		id = GER_pleease_the_aristocracy
+		icon = GFX_ger_please_aristocracy
+		x = 7
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
 		
+		bypass = {
+
+		}
+        relative_position_id = GER_constitutional_monarchy 
+		prerequisite = { focus = GER_constitutional_monarchy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_side_with_cooperations
+		icon = GFX_focus_generic_industrialists
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		 mutually_exclusive = { focus = GER_side_with_people }
+		bypass = {
+
+		}
+        relative_position_id = GER_pleease_the_aristocracy 
+		prerequisite = { focus = GER_pleease_the_aristocracy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_side_with_people
+		icon = GFX_focus_generic_workers
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+        mutually_exclusive = { focus = GER_side_with_cooperations }
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_pleease_the_aristocracy 
+		prerequisite = { focus = GER_pleease_the_aristocracy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_stay_calm
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		mutually_exclusive = { focus = GER_spreading_the_revolution }
+		bypass = {
+
+		}
+        relative_position_id = GER_side_with_cooperations 
+		prerequisite = { focus = GER_side_with_people focus = GER_side_with_cooperations}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_spreading_the_revolution
+		icon = GFX_focus_generic_communist_industry
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		mutually_exclusive = { focus = GER_stay_calm }
+		bypass = {
+
+		}
+        relative_position_id = GER_side_with_people 
+		prerequisite = { focus = GER_side_with_people focus = GER_side_with_cooperations}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_socialst_education
+		icon = GFX_focus_generic_socialist_science
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_spreading_the_revolution 
+		prerequisite = { focus = GER_spreading_the_revolution focus = GER_stay_calm}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = GER_influence_poland
+		icon = GFX_focus_generic_polish_deal
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_spreading_the_revolution 
+		prerequisite = { focus = GER_spreading_the_revolution}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_no_need_for_kaiser
+		icon = GFX_GER_death_of_kaiser
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_influence_poland 
+		prerequisite = { focus = GER_influence_poland}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_crush_political_opposition
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_no_need_for_kaiser 
+		prerequisite = { focus = GER_no_need_for_kaiser}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_improve_social_services
+		icon = GFX_focus_generic_self_management
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_stay_calm 
+		prerequisite = { focus = GER_stay_calm}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_autonomy_to_mittel_africa
+		icon = GFX_focus_generic_africa_defense
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_improve_social_services 
+		prerequisite = { focus = GER_improve_social_services}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_democratic_reformists
+		icon = GFX_focus_generic_improve_the_administration
+		x = -2
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_improve_social_services 
+		prerequisite = { focus = GER_improve_social_services focus = GER_influence_poland}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_nationalize_stuff
+		icon = GFX_focus_generic_annex_country
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_autonomy_to_mittel_africa 
+		prerequisite = { focus = GER_autonomy_to_mittel_africa}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = GER_against_corruption
+		icon = GFX_focus_ARG_anti_corruption_policies
+		x = -2
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_nationalize_stuff 
+		prerequisite = { focus = GER_nationalize_stuff focus = GER_crush_political_opposition}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}		
 	focus = {
 		id = GER_up_with_marriance
 		icon = GFX_focus_focus_fra_down_marianne
@@ -3635,7 +3978,7 @@ focus = {
 		focus = {
 		id = GER_total_power_to_the_kaiser
 		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 6
+		x = 11
 		y = 2
 
 		cost = 3
