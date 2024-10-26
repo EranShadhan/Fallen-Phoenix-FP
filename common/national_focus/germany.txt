@@ -17,7 +17,7 @@
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 88
+		x = 92
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -92,7 +92,25 @@
 		}
 	}
 		
-	
+	focus = {
+		id = GER_invite_BRAZILLLL
+		icon = GFX_focus_BRA_third_republic
+		prerequisite = { focus = GER_curacao_deal }
+		x = 0
+		y = 1
+		relative_position_id = GER_curacao_deal
+		cost = 5
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			BRA = { country_event = { id = FP_germany.1 days 5 } }
+		}
+	}
+		
+		
 	focus = {
 		id = GER_invite_the_norwegians
 		icon = GFX_focus_NOR_weathering_the_storm_to_come
@@ -110,11 +128,80 @@
 		NOR = { country_event = { id = FP_germany.1 days 5 } }
 		}
 	}	
+		
+	focus = {
+		id = GER_to_persia
+		icon = GFX_goal_PER_carpet
+		prerequisite = { focus = GER_invite_the_norwegians }
+		x = 0
+		y = 1
+		relative_position_id = GER_invite_the_norwegians
+		cost = 5
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		PER = { country_event = { id = FP_germany.1 days 5 } }
+		}
+	}	
+	focus = {
+		id = GER_to_mexico
+		icon = GFX_focus_mex_caudillo_private_armies
+		prerequisite = { focus = GER_invite_the_norwegians }
+		x = -2
+		y = 1
+		relative_position_id = GER_invite_the_norwegians
+		cost = 5
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		MEX = { country_event = { id = FP_germany.1 days 5 } }
+		}
+	}
+	focus = {
+		id = GER_swiss_membership
+		icon = GFX_focus_SWI_new_eidgenossenschaft
+		prerequisite = { focus = GER_to_mexico focus = GER_to_persia}
+		x = 1
+		y = 1
+		relative_position_id = GER_to_mexico
+		cost = 5
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		SWI = { country_event = { id = FP_germany.1 days 5 } }
+		}
+	}	
+focus = {
+		id = GER_deal_with_usa
+		icon = GFX_focus_generic_american_investments
+		prerequisite = { focus = GER_swiss_membership focus = GER_invite_BRAZILLLL}
+		x = 1
+		y = 1
+		relative_position_id = GER_swiss_membership
+		cost = 5
+		
+		ai_will_do = {
+			factor = 9
+		}
+		available = { threat > 0.3 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
 	focus = {
 		id = GER_autarky
 		icon = GFX_focus_generic_public_works
 		prerequisite = { focus = GER_four_year_plan }
-		x = 8
+		x = 7
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -134,6 +221,40 @@
 				technology = excavation4
 				technology = excavation5
 			}
+		
+		}
+	}
+		focus = {
+		id = GER_feed_from_our_soil
+		icon =  GFX_focus_generic_farmland
+		prerequisite = { focus = GER_autarky } 
+		x = 4
+		y = 1
+		relative_position_id = GER_autarky
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_aid_the_farmers
+		icon =  GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = GER_feed_from_our_soil } 
+		x = 0
+		y = 1
+		relative_position_id = GER_feed_from_our_soil
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
 		
 		}
 	}
@@ -991,7 +1112,203 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			}
-		}		
+		}	
+	focus = {
+		id = GER_expland_the_gold_mines
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = GER_four_year_plan }
+		x = -12
+		y = 1
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_rebrand_berlin
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = GER_expland_the_gold_mines }
+		x = -1
+		y = 1
+		relative_position_id = GER_expland_the_gold_mines
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_close_danzig_deal
+		icon = GFX_focus_POL_clamp_down_on_danzig
+		prerequisite = { focus = GER_expland_the_gold_mines }
+		x = 1
+		y = 1
+		relative_position_id = GER_expland_the_gold_mines
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_expand_ship_buildig
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = GER_close_danzig_deal }
+		x = 1
+		y = 1
+		relative_position_id = GER_close_danzig_deal
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_abolish_price_control
+		icon = GFX_focus_ARG_anti_corruption_policies
+		prerequisite = { focus = GER_close_danzig_deal }
+		prerequisite = { focus = GER_rebrand_berlin }		
+		x = -1
+		y = 1
+		relative_position_id = GER_close_danzig_deal
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_anti_earthquake_meassures
+		icon = GFX_focus_CHL_avenge_the_pacification_of_araucania
+		prerequisite = { focus = GER_rebrand_berlin }		
+		x = -3
+		y = 1
+		relative_position_id = GER_close_danzig_deal
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_rebuild_aachen
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = GER_anti_earthquake_meassures }		
+		x = -1
+		y = 1
+		relative_position_id = GER_anti_earthquake_meassures
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+focus = {
+		id = GER_biggest_coal_producer
+		icon = GFX_focus_SWE_landsverk
+		prerequisite = { focus = GER_anti_earthquake_meassures focus = GER_abolish_price_control}		
+		x = 1
+		y = 1
+		relative_position_id = GER_anti_earthquake_meassures
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_more_bearings
+		icon = GFX_focus_SWE_SKF_ball_bearings
+		prerequisite = { focus = GER_expand_ship_buildig focus = GER_abolish_price_control}		
+		x = -1
+		y = 1
+		relative_position_id = GER_expand_ship_buildig
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_buy_instert_german_car_company
+		icon = GFX_focus_SWE_SKF_ball_bearings
+		prerequisite = { focus = GER_more_bearings}	
+		prerequisite = { focus = GER_biggest_coal_producer}			
+		x = -1
+		y = 1
+		relative_position_id = GER_more_bearings
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_forts_on_wheels
+		icon = GFX_focus_generic_tankette
+		prerequisite = { focus = GER_buy_instert_german_car_company}	
+		x = -1
+		y = 1
+		relative_position_id = GER_buy_instert_german_car_company
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+			mutually_exclusive = { focus = GER_focus_on_plane} 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+focus = {
+		id = GER_focus_on_plane
+		icon = GFX_focus_generic_copy_plane_designs
+		prerequisite = { focus = GER_buy_instert_german_car_company}	
+		x = 1
+		y = 1
+		mutually_exclusive = { focus = GER_forts_on_wheels} 
+		relative_position_id = GER_buy_instert_german_car_company
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}	
 	focus = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_generic_supply_line
@@ -3114,7 +3431,7 @@ navy_experience = 50
 	focus = {
 		id = GER_constitutional_monarchy
 		icon = GFX_GER_joint_leadership
-		x = 1
+		x = -4
 		y = 2
 
 		cost = 3
@@ -3130,7 +3447,7 @@ navy_experience = 50
 		}
         relative_position_id = GER_the_red_black_yellow_banner 
 		prerequisite = { focus = GER_the_red_black_yellow_banner}
-		prerequisite = { focus = GER_the_king}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3141,7 +3458,7 @@ navy_experience = 50
 	focus = {
 		id = GER_pleease_the_aristocracy
 		icon = GFX_ger_please_aristocracy
-		x = 7
+		x = -7
 		y = 1
 
 		cost = 3
@@ -3434,6 +3751,7 @@ navy_experience = 50
 		completion_reward = {
 		}
 	}	
+	
 focus = {
 		id = GER_nationalize_stuff
 		icon = GFX_focus_generic_annex_country
@@ -3950,35 +4268,9 @@ focus = {
 		}
 	}	
 		focus = {
-		id = GER_the_republic_of_germany
-		icon = GFX_goal_support_democracy
-		x = -3
-		y = 2
-
-		cost = 3
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-		
-		bypass = {
-
-		}
-        relative_position_id = GER_the_red_black_yellow_banner 
-		prerequisite = { focus = GER_the_red_black_yellow_banner}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		}
-	}	
-		focus = {
 		id = GER_total_power_to_the_kaiser
 		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 11
+		x = 4
 		y = 2
 
 		cost = 3
