@@ -9,6 +9,12 @@ ideas = {
 				always = yes
 			}
 
+			allowed_to_remove = {
+				hidden_trigger = {
+					is_ai=no
+				}
+			}
+
 			available = {
 				hidden_trigger = {
 					NOT = {
@@ -21,7 +27,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 			
 			modifier = {
 				political_power_factor = 0.1
@@ -36,17 +42,22 @@ ideas = {
 					has_idea = german_customs_union_leader
 				}
 			}
+
+			allowed_to_remove = {
+				hidden_trigger = {
+					always = no
+				}
+			}
 			
 			allowed = {
 				tag = GER
-				
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 
 			cancel_if_invalid = no
 			
@@ -65,6 +76,12 @@ ideas = {
 					has_idea = german_customs_union_member
 				}
 			}
+
+			allowed_to_remove = {
+				hidden_trigger = {
+					is_ai=no
+				}
+			}
 			
 			allowed = {
 				NOT = {
@@ -76,7 +93,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 
 			cancel_if_invalid = no
 			
@@ -101,16 +118,22 @@ ideas = {
 					has_idea = french_phoenix_membership
 				}
 			}
+
+			allowed_to_remove = {
+				hidden_trigger = {
+					is_ai=no
+				}
+			}
 			
 			allowed = {
-				
+				always = yes
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 
 			cancel_if_invalid = no
 			
@@ -130,20 +153,22 @@ ideas = {
 					has_idea = east_asia_trade_leader
 				}
 			}
-			
-			allowed = {
-				has_idea = east_asia_trade_leader
+
+			allowed_to_remove = {
+				hidden_trigger = {
+					is_ai=no
+				}
 			}
 			
 			allowed = {
-				
+				always = yes
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 
 			cancel_if_invalid = no
 			
@@ -171,7 +196,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = 9999
+			removal_cost = -1
 
 			cancel_if_invalid = no
 			
