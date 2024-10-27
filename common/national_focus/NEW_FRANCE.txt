@@ -88,7 +88,7 @@
 	}
 	focus = {
 		id = FRA_secure_fascist_state
-		icon = GFX_
+		icon = GFX_focus_FRA_execution
 		x = 0
 		y = 1
 		
@@ -3266,7 +3266,7 @@
 	}
 	focus = {
 		id = FRA_the_dreams_of_the_french
-		icon = GFX_
+		icon = GFX_focus_FRA_frenchdream
 		x = -1
 		y = 1
 		
@@ -3293,7 +3293,7 @@
 	}
 	focus = {
 		id = FRA_racist_army
-		icon = GFX_
+		icon = GFX_focus_FRA_racistarmy
 		x = 0
 		y = 1
 		
@@ -3347,7 +3347,7 @@
 	}
 	focus = {
 		id = FRA_strong_men
-		icon = GFX_
+		icon = GFX_focus_FRA_styro
 		x = 2
 		y = 1
 		
@@ -3456,7 +3456,7 @@
 	}
 	focus = {
 		id = FRA_crate_the_ep
-		icon = GFX_
+		icon = GFX_focus_FRA_cratetheep
 		x = 2
 		y = 1
 		
@@ -3483,7 +3483,7 @@
 	}
 	focus = {
 		id = FRA_recruit_the_ep
-		icon = GFX_
+		icon = GFX_focus_FRA_recruitep
 		x = 1
 		y = 1
 		
@@ -3562,7 +3562,7 @@
 	}
 	focus = {
 		id = FRA_french_culture_enforced
-		icon = GFX_
+		icon = GFX_focus_FRA_feenchculture
 		x = -1
 		y = 1
 		
