@@ -1,0 +1,71 @@
+ideas = {
+
+	country = {
+
+		USA_prohibition = {
+
+			picture = USA_prohibition
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                political_power_gain = -0.2
+				stability_factor = -0.1
+                consumer_goods_factor = 0.05
+			}
+		}
+        
+        USA_outdatedarmy = {
+        
+            picture =
+        
+            allowed = {
+            always = no
+            }
+        
+            allowed_civil_war = {
+            }
+        
+            removal_cost = -1
+        
+            modifier = {
+                land_doctrine_cost_factor = 0.25
+                naval_doctrine_cost_factor = 0.20
+                air_doctrine_cost_factor = 0.25
+                army_attack_factor = -0.05
+                army_defence_factor = -0.05
+                army_org_factor = -0.1
+            }
+        
+        }
+        
+            USA_hoover = {
+        
+            picture = 
+        
+            allowed = {
+            always = no
+            }
+        
+            allowed_civil_war = {
+            }
+            
+            removal_cost = -1
+        
+            modifier = {
+                stability_factor = -0.08
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+			}
+        
+        }
+}
