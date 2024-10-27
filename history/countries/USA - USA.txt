@@ -310,11 +310,7 @@ IF = {
 	}
 }
 
-
-
-
 set_convoys = 700
-
 
 set_politics = {
 	ruling_party = democratic
@@ -333,22 +329,15 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	USA_prohibition
+	USA_outdatedarmy
 }
 
 
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
-	autonomous_state =  autonomy_puppet
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	autonomous_state =  autonomy_dominion
 }
 
 recruit_character = USA_charles_curtis
