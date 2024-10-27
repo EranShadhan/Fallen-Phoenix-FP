@@ -405,36 +405,38 @@ country_event = { #this was made later, but i put it here because it is supposed
 	option = {
 		name = austria.9.a
 		ITA = {
-				set_rule = {
-					can_join_factions = no
-					}
-				set_autonomy = {
-					target = YUG
-					autonomy_state = autonomy_personal_union
-				}	
+			set_rule = {
+				can_join_factions = no
 			}
-			YUG = {
-				remove_ideas = YUG_payment_to_hungary
-				remove_ideas = YUG_underground_italian_connections
-				set_cosmetic_tag = YUG_ITA
-				retire_country_leader = yes
-				promote_character = YUG_King_Amedeo
-				every_country = { 
-			limit = { has_war_with = YUG
-			NOT = { Original_tag = AUS }
+			set_autonomy = {
+				target = YUG
+				autonomy_state = autonomy_personal_union
+			}
+		}
+		YUG = {
+			remove_ideas = YUG_payment_to_hungary
+			remove_ideas = YUG_underground_italian_connections
+			set_cosmetic_tag = YUG_ITA
+			retire_country_leader = yes
+			promote_character = YUG_King_Amedeo
+		}
+		every_country = { 
+			limit = {
+				has_war_with = YUG
+				NOT = { original_tag = AUS }
 			}
 			white_peace = YUG
+			declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
 			}
-				declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
-				}
+		}
+		ITA = {
+			declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
 			}
-			ITA = { declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
-				}}
-			
+		}			
 	}
 }
 country_event = { #this was made later, but i put it here because it is supposed to be the fifth event about the collapse
@@ -446,11 +448,9 @@ country_event = { #this was made later, but i put it here because it is supposed
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = austria.10.a
-		
-			GRE = { country_event = { id = austria.11 days = 10 }
+			name = austria.10.a
+			GRE = { country_event = { id = austria.11 days = 10 } }
 	}
-}
 }
 country_event = { #this was made later, but i put it here because it is supposed to be the fifth ad a half event about the collapse
 	id = austria.11

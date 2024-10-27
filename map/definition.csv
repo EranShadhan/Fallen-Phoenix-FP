@@ -13729,10 +13729,10 @@
 13728;137;53;130;land;false;desert;5
 13729;143;9;128;land;false;desert;5
 13730;96;108;137;land;false;desert;5
-13731;82;87;127;land;false;urabn;1
-13732;168;79;101;land;false;urabn;1
-13733;168;102;155;land;false;urabn;1
-13734;122;99;52;land;false;urabn;1
+13731;82;87;127;land;false;urban;1
+13732;168;79;101;land;false;urban;1
+13733;168;102;155;land;false;urban;1
+13734;122;99;52;land;false;urban;1
 13735;116;68;5;land;false;hills;1
 13736;127;128;139;land;false;forest;1
 13737;151;28;158;land;false;marsh;1
