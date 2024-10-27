@@ -161,7 +161,7 @@ ideas = {
 			}
 			
 			allowed = {
-				always = yes
+				tag = JAP
 			}
 
 			allowed_civil_war = {
@@ -189,7 +189,9 @@ ideas = {
 			}
 			
 			allowed = {
-				
+				NOT = {
+					tag = JAP
+				}
 			}
 
 			allowed_civil_war = {

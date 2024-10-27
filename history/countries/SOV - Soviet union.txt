@@ -6,9 +6,9 @@ puppet = MON
 puppet = MAN
 
 set_power_balance = {
-		id = SOV_power_balance
-		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
-	}
+	id = SOV_power_balance
+	set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+}
 
 recruit_character = SOV_aleksandr_kerensky
 recruit_character = SOV_aleksandr_kerensky_integral
@@ -159,9 +159,8 @@ add_ideas = {
 	RUS_stagnant_russification
 	RUS_rampant_corruption
 	RUS_revanchism
+	victory_in_the_sgtwrus
 }
-
-
 
 set_convoys = 50
 
