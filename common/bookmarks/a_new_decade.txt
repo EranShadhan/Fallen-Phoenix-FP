@@ -102,17 +102,17 @@ bookmarks = {
 			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
-		"AUS"={ #0.4
-			minor = yes
-			history = "AUS_NEW_DECADE_DESC"
-			ideology = democratic
-			ideas = {
-				german_customs_union_member
-				GER_aid_to_austria
-			}
-			focuses = {
-			}
-		}
+		#"AUS"={ #0.5
+		#	minor = yes
+		#	history = "AUS_NEW_DECADE_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#		german_customs_union_member
+		#		GER_aid_to_austria
+		#	}
+		#	focuses = {
+		#	}
+		#}
 		#"GRE"={ #0.2
 		#	minor = yes
 		#	history = "GRE_NEW_DECADE_DESC"

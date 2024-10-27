@@ -68,7 +68,9 @@
 		}
 	
 		available = {
-	
+			hidden_trigger = {
+				is_ai=no
+			}
 		}
 	
 		bypass = {
@@ -101,8 +103,8 @@
 			factor = 0
 		}
 	
-		available = {
-	
+		hidden_trigger = {
+			is_ai=no
 		}
 	
 		bypass = {
