@@ -53,6 +53,8 @@
  PER_conquer_rus_desc:0 "Out of all Iran's enemies, Russia is undoubtedly the mightiest. With all this new territory, we just might have the necessary might to fell the Russian Bear once and for all."
  PER_ally_with_ger:0 "Alliance with the Kaiser"
  PER_ally_with_ger_desc:0 "Despite our issues with them, Berlin is our best choice for an ally. No matter what propaganda we spread, we are not prepared to take on Russia by ourselves."
+ PER_ally_with_eng:0 "Iranian-British Alliance"
+ PER_ally_with_eng_desc:0 "Despite our issues with them, London is our best choice for an ally. No matter what propaganda we spread, we are not prepared to take on Russia by ourselves."
  PER_persian_carpets:0 "Persian Rugs"
  PER_persian_carpets_desc:0 "The silk road was a key part of ancient Iran, but now the primary producer is out of commission. It’s time for Iran to take its place and become the world leader of magnificent silk rugs."
  PER_azeri_oil:0 "Expand the Baku Oil Fields"

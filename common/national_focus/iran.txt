@@ -721,7 +721,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_ally_with_eng
-		icon = GFX_GRE_missing_to_ger
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = PER_purge_the_army }
 		prerequisite = { focus = PER_monarchist_propaganda focus = PER_secularization }
 		mutually_exclusive = { focus = PER_ally_with_ger }
@@ -736,7 +736,7 @@ focus_tree = {
 		}
 
 		available = {
-			GER = {
+			ENG = {
 				is_faction_leader = yes
 			}
 			NOT = {
@@ -753,7 +753,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			GER = {
+			ENG = {
 				country_event = generic.2
 			}
 		}
