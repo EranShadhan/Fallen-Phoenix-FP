@@ -1,0 +1,316 @@
+focus_tree = {
+    id = romanian_focus
+
+    country = {
+        factor = 0
+        modifier ={
+            add = 10
+            tag = MOL
+        }
+    }
+
+    default = no
+
+    continuous_focus_position = { x = 2000 y = 2000 }
+
+    
+
+
+focus = {
+
+    id = MOL_revolution_of_people
+    icon = GFX_MOL_revolution_of_people
+    x = 10
+    y = 1
+	relative_position_id = 
+	prerequisite = { }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_request_aid_comunist
+    icon = GFX_MOL_request_aid_comunist
+    x = 0
+    y = 1
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_revolution_of_people }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_no_step_back
+    icon = GFX_MOL_no_step_back
+    x = -1
+    y = 2
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_request_aid_comunist }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_undermine_bourgeoisies
+    icon = GFX_MOL_undermine_bourgeoisies
+    x = -1
+    y = 3
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_no_step_back }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_unite_unions
+    icon = GFX_MOL_unite_unions
+    x = 1
+    y = 2
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_request_aid_comunist }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_first_stage_collectivization
+    icon = GFX_MOL_first_stage_collectivization
+    x = 1
+    y = 3
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_unite_unions }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_clean_the_ashes_of_royalist
+    icon = GFX_MOL_clean_ashes_of_royalist
+    x = 0
+    y = 4
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_undermine_bourgeoisies focus = MOL_first_stage_collectivization }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_purge_enemys
+    icon = GFX_MOL_purge_enemys
+    x = 0
+    y = 5
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_clean_the_ashes_of_royalist }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_safer_inner_circle
+    icon = GFX_MOL_safe_inner_circler
+    x = 0
+    y = 6
+	relative_position_id = MOL_revolution_of_people
+	prerequisite = { focus = MOL_purge_enemys }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+	
+}
