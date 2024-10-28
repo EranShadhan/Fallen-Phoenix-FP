@@ -83,7 +83,7 @@ ideas = {
 			}
 		}
 		victory_in_the_sgtwrus = {
-            name = victory_in_the_sgtw
+            name =RUS_victory_in_the_sgtw
 		    picture = RUS_1925
 
 

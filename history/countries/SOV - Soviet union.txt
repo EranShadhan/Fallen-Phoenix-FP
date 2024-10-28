@@ -159,6 +159,8 @@ add_ideas = {
 	RUS_stagnant_russification
 	RUS_rampant_corruption
 	RUS_revanchism
+	RUS_surrounded_by_enemies
+	RUS_okhrana
 	victory_in_the_sgtwrus
 }
 
