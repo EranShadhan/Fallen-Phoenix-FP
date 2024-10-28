@@ -1,5 +1,5 @@
 focus_tree = {
-    id = romanian_focus
+    id = moldavian_focus
 
     country = {
         factor = 0
@@ -312,5 +312,239 @@ focus = {
 			
 		}
 }
+
+focus = {
+
+    id = MOL_legacy_stefan_foris
+    icon = GFX_MOL_legacy_stefan_foris
+    x = 20
+    y = 1
+	relative_position_id = 
+	prerequisite = { focus = }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_infiltrate_hungarians_in_government
+    icon = GFX_MOL_infiltrate_hungarians_in_government
+    x = -2
+    y = 1
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_legacy_stefan_foris }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_ideas_of_minority_representation
+    icon = GFX_MOL_ideas_of_minority_representation
+    x = -3
+    y = 2
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_infiltrate_hungarians_in_government }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_minority_rights
+    icon = GFX_MOL_minority_rights
+    x = -1
+    y = 2
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_infiltrate_hungarians_in_government }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_equality_between_us
+    icon = GFX_MOL_equality_between_us
+    x = -2
+    y = 3
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_ideas_of_minority_representation }
+	prerequisite = { focus = MOL_minority_rights
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_minority_rights
+    icon = GFX_MOL_minority_rights
+    x = -1
+    y = 2
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_infiltrate_hungarians_in_government }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_write_foris_constitution
+    icon = GFX_MOL_write_foris_constitution
+    x = 3
+    y = 1
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_legacy_stefan_foris }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+
 	
 }
