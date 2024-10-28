@@ -2,6 +2,19 @@
  RUS_transistion:0 "Transition to a Civilian Government"
  RUS_democracy:0 "Russian Democracy"
  RUS_stagnant_russification:0 "Russification"
+ RUS_surrounded_by_enemies:0 "Surrounded By Enemies"
+ RUS_okhrana:0 "Okhrana"
+ RUS_victory_in_the_sgtw:0 "Victory in the Second Great Turkish War"
+
+
+ RUS_transistion_desc:0 "After the coup d'etat of 1915, the Transitional Government with Alexander Kerensky as its head have seized power, promising to soon establish free elections and an elected civilian government. Every year, some crisis, some event, or simply someone in the Government forgetting has postponed this alleged transition. For 15 years, the Transitional Government has done nothing to stop being 'Transitional'. But hope for free and fair elections lingers on. They will eventually happen... right?"
+ RUS_stagnant_russification_desc:0 "Our graceful leader does not believe in any ethnicity other than Russian. Kalmyks, Chechens, Bashkirs, Yakuts, Chukchis, Nentsi, Karelians, Finns, Buryats, Adygeans, Volga Germans are all Russian in his eyes. The nation must rally behind his goal. Every one living in Russia must be Russian, for the integrity of the nation and for the better good of the People. Russia has already been defeated once, we cannot let ethnical tensions tear Russia apart ever again to avoid a war as bloody as the Great War was."
+ RUS_revanchism_desc:0 "Russia has lost lots in the Great War. Not only Western Ukraine, Poland, the Baltics, Finland and Bessarabia, but also its grace and pride. Russia was outright humiliated, so much it had to withdraw from the war with only half of its industrial heartland. Our lost lands don't belong to some Habsburg Princes, some German Generals. Slav Lands are only for Slavs. And Russian lands are only for Russians. Th bear will roar again."
+ RUS_surrounded_by_enemies_desc:0 "We are surrounded by enemies. In the west, we have the petty German Puppets, seeking to undermine the already undermined Russian Nation. In the East, the Japanese Regime, taking inspiration from our biggest enemies - the Bolshviks, has grown less and less friendly tot he Transitional Government. In the South, the Persians who already stole Baku will be eager to steal more and the Afghans and the British would happily carve up Central Asia. To survive and contest these powers we have to be strong. Da Zdravstvuyet Rossiya!"
+ RUS_okhrana_desc:0 "Started in 1881 as a Security and Investigation Department in the cities of Petrograd, Moscow and Warsaw, the Okhrana since grew into one of the biggest secret police and counterintelligence networks in the world. After the Romanovs were deposed in 1915, Okhrana was reorganized and its goal was shifted from protecting Imperial ambitions to eliminating political opponents and destroying separatist cells. In the recent times, especially under the leadership fo the newest Head of Okhrana, Boris Savinkov, they have drifted away from the Russian Military, starting a political clash between the two groups. Despite that, the Okhrana continues to be the most effective security body in the Russian Nation, heavily outdoing the Police Forces."
+ RUS_victory_in_the_sgtw_desc:0 "Though the Russian Victory in the Second Great Turkish War of 1925 was a huge success for the morale and the propaganda, the Military have gone increasingly overconfident in themselves. After defeating an already near-dead empire they are hallucinating of being the greatest Military in the world. Perhaps, for our military to properly function we need to remind them that there are stronger foes to prepare against"
+
+
  RUS_derussification:0 "Derussification"
  RUS_russification:0 "Russification"
  RUS_rampant_corruption:0 "Rampant Corruption"

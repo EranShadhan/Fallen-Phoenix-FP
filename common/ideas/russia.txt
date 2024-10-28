@@ -143,7 +143,7 @@ ideas = {
 			}
 		}
 		RUS_state_sponsored_russification = {
-			picture = generic_deal_with_the_devil2
+			picture = RUS_russification
 			
 			allowed = {
 				always = no
@@ -186,7 +186,7 @@ ideas = {
 
 		RUS_transistion = {
 
-			picture = generic_deal_with_the_devil2
+			picture = RUS_transition
 			
 			allowed = {
 				always = no
@@ -289,7 +289,7 @@ ideas = {
 
 		RUS_rampant_corruption = {
 
-			picture = ARG_political_corruption_modifier
+			picture = RUS_corruption
 			
 			allowed = {
 				always = no
@@ -346,10 +346,48 @@ ideas = {
 				industrial_capacity_factory = 0.3
 			}
 		}
+		RUS_okhrana = {
+
+			picture = RUS_okhrana
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				surrender_limit = 0.05
+			}
+		}
+		RUS_surrounded_by_enemies = {
+
+			picture = RUS_surrounded_by_enemies
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.35
+				max_planning_factor = 0.3
+			}
+		}
 
 		RUS_revanchism = {
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = RUS_revanchism
 			
 			allowed = {
 				always = no
@@ -363,8 +401,9 @@ ideas = {
 			
 			modifier = {
 				justify_war_goal_time = -0.5
+				generate_wargoal_tension = -0.15
 				guarantee_cost = -0.25
-				guarantee_tension = 0.5
+				guarantee_tension = 0.1
 				opinion_gain_monthly_factor = -0.25
 			}
 		}

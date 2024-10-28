@@ -2,7 +2,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_RUS_russification"
-		texturefile = "gfx/interface/ideas/SOV/RUS_russification.dds"
+		texturefile = "gfx/interface/ideas/SOV/RUS_russification.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_corruption"
+		texturefile = "gfx/interface/ideas/SOV/RUS_corruption.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_transition"
+		texturefile = "gfx/interface/ideas/SOV/RUS_transition.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_okhrana"
+		texturefile = "gfx/interface/ideas/SOV/RUS_okhrana.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_surrounded_by_enemies"
+		texturefile = "gfx/interface/ideas/SOV/RUS_surrounded_by_enemies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_revanchism"
+		texturefile = "gfx/interface/ideas/SOV/RUS_revanchism.png"
 	}
 
 }
