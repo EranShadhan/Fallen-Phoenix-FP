@@ -62,7 +62,11 @@
 			modifier = FRA_communists
 		}
 	}
-	
+	1113 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
 starting_train_buffer = 2
 
 if = {
