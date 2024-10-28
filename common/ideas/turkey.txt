@@ -1,8 +1,6 @@
 ideas = {
 
 	country = {
-	
-	
 
         TUR_reconstruction = {
             picture = recontruction
@@ -1311,7 +1309,9 @@ ideas = {
 			}
 		}
 		TUR_natsoc_societies = {
-		picture = mewhennopicture
+
+			picture = mewhennopicture
+
 			allowed = {
 				always = no
 			}
@@ -1328,7 +1328,9 @@ ideas = {
 		}
 
 		TUR_commitment_idea = {
-		picture = mewhennopicture
+
+			picture = ARG_civilian_economy_boost
+
 			allowed = {
 				always = no
 			}

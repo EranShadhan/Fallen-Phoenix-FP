@@ -2,13 +2,13 @@
 # Turkish Kaisertum Events
 ###########################
 
-add_namespace = KT_turkey_events
+add_namespace = FP_turkey_events
 
 # Enguru Parliament Reconvened
 country_event = {
-	id = KT_turkey_events.1
-	title = KT_turkey_events.1.t
-	desc = KT_turkey_events.1.d
+	id = FP_turkey_events.1
+	title = FP_turkey_events.1.t
+	desc = FP_turkey_events.1.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -20,14 +20,14 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.1.a
+		name = FP_turkey_events.1.a
 	}
 }
 
 country_event = {
-	id = KT_turkey_events.2
-	title = KT_turkey_events.2.t
-	desc = KT_turkey_events.2.d
+	id = FP_turkey_events.2
+	title = FP_turkey_events.2.t
+	desc = FP_turkey_events.2.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -39,15 +39,15 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.2.a
+		name = FP_turkey_events.2.a
 		complete_national_focus = TUR_ataturk_dies
 		set_country_flag = TUR_ataturk_is_dead
 	}
 }
 country_event = {
-	id = KT_turkey_events.3
-	title = KT_turkey_events.3.t
-	desc = KT_turkey_events.3.d
+	id = FP_turkey_events.3
+	title = FP_turkey_events.3.t
+	desc = FP_turkey_events.3.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -59,20 +59,20 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.3.a
+		name = FP_turkey_events.3.a
 		complete_national_focus = TUR_commies_elected
 		set_country_flag = TUR_kadrist_government
 	}
 	option = {
-		name = KT_turkey_events.3.b
+		name = FP_turkey_events.3.b
 		complete_national_focus = TUR_federalists_elected
 		set_country_flag = TUR_federalist_government
 	}
 }
 country_event = {
-	id = KT_turkey_events.4
-	title = KT_turkey_events.4.t
-	desc = KT_turkey_events.4.d
+	id = FP_turkey_events.4
+	title = FP_turkey_events.4.t
+	desc = FP_turkey_events.4.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -84,7 +84,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.4.a
+		name = FP_turkey_events.4.a
 		ai_chance ={
 			base = 9
 		}
@@ -93,7 +93,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = KT_turkey_events.4.b
+		name = FP_turkey_events.4.b
 		ai_chance ={
 			base = 1
 		}
@@ -106,9 +106,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.5
-	title = KT_turkey_events.5.t
-	desc = KT_turkey_events.5.d
+	id = FP_turkey_events.5
+	title = FP_turkey_events.5.t
+	desc = FP_turkey_events.5.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -120,7 +120,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.5.a
+		name = FP_turkey_events.5.a
 		ai_chance ={
 			base = 3
 		}
@@ -130,7 +130,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = KT_turkey_events.5.b
+		name = FP_turkey_events.5.b
 		ai_chance ={
 			base = 7
 		}
@@ -143,9 +143,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.6
-	title = KT_turkey_events.6.t
-	desc = KT_turkey_events.6.d
+	id = FP_turkey_events.6
+	title = FP_turkey_events.6.t
+	desc = FP_turkey_events.6.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -157,7 +157,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.6.a
+		name = FP_turkey_events.6.a
 		ai_chance ={
 			base = 7
 		}
@@ -170,16 +170,16 @@ country_event = {
 		}
 	}
 	option = {
-		name = KT_turkey_events.6.b
+		name = FP_turkey_events.6.b
 		ai_chance ={
 			base = 3
 		}
 	}
 }
 country_event = {
-	id = KT_turkey_events.7
-	title = KT_turkey_events.7.t
-	desc = KT_turkey_events.7.d
+	id = FP_turkey_events.7
+	title = FP_turkey_events.7.t
+	desc = FP_turkey_events.7.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -191,7 +191,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.7.a
+		name = FP_turkey_events.7.a
 		GER = {
 			diplomatic_relation = {
 				country = TUR
@@ -202,9 +202,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.8
-	title = KT_turkey_events.8.t
-	desc = KT_turkey_events.8.d
+	id = FP_turkey_events.8
+	title = FP_turkey_events.8.t
+	desc = FP_turkey_events.8.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -216,7 +216,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.7.a
+		name = FP_turkey_events.7.a
 		SOV = {
 			diplomatic_relation = {
 				country = TUR
@@ -227,9 +227,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.9
-	title = KT_turkey_events.9.t
-	desc = KT_turkey_events.9.d
+	id = FP_turkey_events.9
+	title = FP_turkey_events.9.t
+	desc = FP_turkey_events.9.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -241,7 +241,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.7.a
+		name = FP_turkey_events.7.a
 		FRA = {
 			diplomatic_relation = {
 				country = TUR
@@ -252,9 +252,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.10
-	title = KT_turkey_events.10.t
-	desc = KT_turkey_events.10.d
+	id = FP_turkey_events.10
+	title = FP_turkey_events.10.t
+	desc = FP_turkey_events.10.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -266,7 +266,7 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.7.a
+		name = FP_turkey_events.7.a
 		ITA = {
 			diplomatic_relation = {
 				country = TUR
@@ -278,9 +278,9 @@ country_event = {
 }
 
 country_event = {
-	id = KT_turkey_events.11
-	title = KT_turkey_events.11.t
-	desc = KT_turkey_events.11.d
+	id = FP_turkey_events.11
+	title = FP_turkey_events.11.t
+	desc = FP_turkey_events.11.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -292,14 +292,14 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.11.a
+		name = FP_turkey_events.11.a
 		ai_chance ={
 			base = 8
 		}
 
 	}
 	option = {
-		name = KT_turkey_events.11.b
+		name = FP_turkey_events.11.b
 		ai_chance ={
 			base = 2
 		}
@@ -313,9 +313,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.12
-	title = KT_turkey_events.12.t
-	desc = KT_turkey_events.12.d
+	id = FP_turkey_events.12
+	title = FP_turkey_events.12.t
+	desc = FP_turkey_events.12.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -327,20 +327,20 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.12.a
+		name = FP_turkey_events.12.a
 		ai_chance ={
 			base = 0
 		}
 
 	}
 	option = {
-		name = KT_turkey_events.12.b
+		name = FP_turkey_events.12.b
 		ai_chance ={
 			base = 10
 		}
 		TUR = {
 			country_event = {
-				id = KT_turkey_events.13
+				id = FP_turkey_events.13
 				hours = 12
 				random_hours = 6
 			}
@@ -348,9 +348,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = KT_turkey_events.13
-	title = KT_turkey_events.13.t
-	desc = KT_turkey_events.13.d
+	id = FP_turkey_events.13
+	title = FP_turkey_events.13.t
+	desc = FP_turkey_events.13.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -362,21 +362,21 @@ country_event = {
 	
 	
 	option = {
-		name = KT_turkey_events.13.a
+		name = FP_turkey_events.13.a
 		complete_national_focus = TUR_rostov_agreement
 		set_country_flag = TUR_rostov_agreement_passes
 	}
 	option = {
-		name = KT_turkey_events.13.b
+		name = FP_turkey_events.13.b
 		complete_national_focus = TUR_the_lone_wolf
 		set_country_flag = TUR_rostov_agreement_fails
 	}
 }
 
 country_event = { # THE CHOICE
-	id = KT_turkey_events.14
-	title = KT_turkey_events.14.t
-	desc = KT_turkey_events.14.d
+	id = FP_turkey_events.14
+	title = FP_turkey_events.14.t
+	desc = FP_turkey_events.14.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -388,20 +388,20 @@ country_event = { # THE CHOICE
 	
 	
 	option = {
-		name = KT_turkey_events.13.a
+		name = FP_turkey_events.14.a
 		complete_national_focus = TUR_moderatism
 		set_country_flag = TUR_moderatism_flag
 	}
 	option = {
-		name = KT_turkey_events.13.b
+		name = FP_turkey_events.14.b
 		complete_national_focus = TUR_the_syrian_way
 		set_country_flag = TUR_syrian_way
 	}
 }
 country_event = { # albania boogaloo
-	id = KT_turkey_events.15
-	title = KT_turkey_events.15.t
-	desc = KT_turkey_events.15.d
+	id = FP_turkey_events.15
+	title = FP_turkey_events.15.t
+	desc = FP_turkey_events.15.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -413,7 +413,7 @@ country_event = { # albania boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.15.a
+		name = FP_turkey_events.15.a
 		TUR = {
 		create_wargoal = {
     		type = puppet_wargoal_focus
@@ -427,7 +427,7 @@ country_event = { # albania boogaloo
 	
 	}
 	option = {
-		name = KT_turkey_events.15.b
+		name = FP_turkey_events.15.b
 		TUR = {
 			transfer_state = 797
 			transfer_state = 341
@@ -440,9 +440,9 @@ country_event = { # albania boogaloo
 	}
 }
 country_event = { # albania boogaloo
-	id = KT_turkey_events.16
-	title = KT_turkey_events.16.t
-	desc = KT_turkey_events.16.d
+	id = FP_turkey_events.16
+	title = FP_turkey_events.16.t
+	desc = FP_turkey_events.16.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -454,7 +454,7 @@ country_event = { # albania boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.16.a
+		name = FP_turkey_events.16.a
 		leave_faction = yes
 		declare_war_on = {
 			target = GRE
@@ -466,16 +466,16 @@ country_event = { # albania boogaloo
 	
 	}
 	option = {
-		name = KT_turkey_events.16.b
+		name = FP_turkey_events.16.b
 		ai_chance = {
 			base = 0
 		}
 	}
 }
 country_event = { # suez_boogaloo
-	id = KT_turkey_events.17
-	title = KT_turkey_events.17.t
-	desc = KT_turkey_events.17.d
+	id = FP_turkey_events.17
+	title = FP_turkey_events.17.t
+	desc = FP_turkey_events.17.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -487,11 +487,11 @@ country_event = { # suez_boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.17.a
+		name = FP_turkey_events.17.a
 		transfer_state_to = TUR
 		TUR = {
 		country_event = {
-			id = KT_turkey_events.18
+			id = FP_turkey_events.18
 			hours = 12
 		}
 		}
@@ -502,10 +502,10 @@ country_event = { # suez_boogaloo
 	
 	}
 	option = {
-		name = KT_turkey_events.17.b
+		name = FP_turkey_events.17.b
 		TUR = {
 		country_event = {
-			id = KT_turkey_events.19
+			id = FP_turkey_events.19
 			hours = 12
 		}
 		}
@@ -515,9 +515,9 @@ country_event = { # suez_boogaloo
 	}
 }
 country_event = { # suez_boogaloo
-	id = KT_turkey_events.18
-	title = KT_turkey_events.18.t
-	desc = KT_turkey_events.18.d
+	id = FP_turkey_events.18
+	title = FP_turkey_events.18.t
+	desc = FP_turkey_events.18.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -529,15 +529,15 @@ country_event = { # suez_boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.18.a
+		name = FP_turkey_events.18.a
 
 	
 	}
 }
 country_event = { # suez_boogaloo
-	id = KT_turkey_events.19
-	title = KT_turkey_events.19.t
-	desc = KT_turkey_events.19.d
+	id = FP_turkey_events.19
+	title = FP_turkey_events.19.t
+	desc = FP_turkey_events.19.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -549,7 +549,7 @@ country_event = { # suez_boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.19.a
+		name = FP_turkey_events.19.a
 		TUR = {
 			start_border_war = {
 				change_state_after_war = no
@@ -579,7 +579,7 @@ country_event = { # suez_boogaloo
 	
 	}
 	option = {
-		name = KT_turkey_events.19.b
+		name = FP_turkey_events.19.b
 		create_wargoal = {
 			target = ENG
 			type = annex_everything
@@ -657,9 +657,9 @@ country_event = {
 }
 
 country_event = { # albania boogaloo
-	id = KT_turkey_events.20
-	title = KT_turkey_events.20.t
-	desc = KT_turkey_events.20.d
+	id = FP_turkey_events.20
+	title = FP_turkey_events.20.t
+	desc = FP_turkey_events.20.d
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
@@ -671,7 +671,7 @@ country_event = { # albania boogaloo
 	
 	
 	option = {
-		name = KT_turkey_events.20.a
+		name = FP_turkey_events.20.a
 		TUR = {
 		create_wargoal = {
     		type = puppet_wargoal_focus
@@ -685,7 +685,7 @@ country_event = { # albania boogaloo
 	
 	}
 	option = {
-		name = KT_turkey_events.20.b
+		name = FP_turkey_events.20.b
 		TUR = {
 			transfer_state = 453
 			transfer_state = 454

@@ -2158,7 +2158,7 @@ focus = {
 		relative_position_id = TUR_constitution_of_1930
 		completion_reward = {
 			country_event = {
-				id = KT_turkey_events.1
+				id = FP_turkey_events.1
 				hours = 12
 				random_hours = 6
 			}
@@ -2419,7 +2419,7 @@ focus = {
 			add_ideas = TUR_shining_light_of_democracy
 			hidden_effect = {
 				country_event = {
-					id = KT_turkey_events.2
+					id = FP_turkey_events.2
 					days = 30
 					random_days = 20
 				}
@@ -2459,7 +2459,7 @@ focus = {
 		relative_position_id = TUR_ataturk_dies
 		completion_reward = {
 			country_event = {
-				id = KT_turkey_events.3
+				id = FP_turkey_events.3
 				hours = 12
 				random_hours = 6
 			}
@@ -2960,14 +2960,14 @@ focus = {
 			create_faction = TUR_konya_accords
 			PER = {
 				country_event = {
-					id = KT_turkey_events.4
+					id = FP_turkey_events.4
 					hours = 12
 					random_hours = 6
 				}
 			}
 			SAU = {
 				country_event = {
-					id = KT_turkey_events.4
+					id = FP_turkey_events.4
 					hours = 12
 					random_hours = 6
 				}
@@ -2997,7 +2997,7 @@ focus = {
 					modifier = medium_increase
 				}
 				country_event = {
-					id = KT_turkey_events.4
+					id = FP_turkey_events.4
 					hours = 12
 					random_hours = 6
 				}
@@ -3250,7 +3250,7 @@ focus = {
 		completion_reward = {
 			GRE = {
 				country_event = {
-					id = KT_turkey_events.5
+					id = FP_turkey_events.5
 					hours = 12
 					random_hours = 6
 				}
@@ -3478,7 +3478,7 @@ focus = {
 		completion_reward = {
 			ITA = {
 				country_event = {
-					id = KT_turkey_events.6
+					id = FP_turkey_events.6
 					hours = 12
 					random_hours = 6
 				}
@@ -3543,16 +3543,16 @@ focus = {
 		relative_position_id = TUR_take_advantage_of_arabian_minorities
 		completion_reward = {
 			677 = {
-				add_core_of = SYR
+				remove_core_of = SAU
 			}
 			975 = {
-				add_core_of = SYR
+				remove_core_of = SAU
 			}
 			554 = {
-				add_core_of = SYR
+				remove_core_of = SAU
 			}
 			680 = {
-				add_core_of = SYR
+				remove_core_of = SAU
 			}
 		}
 	}
@@ -3619,7 +3619,7 @@ focus = {
 		relative_position_id = TUR_kickstart_the_syrian_revolution
 		completion_reward = {
 			country_event = {
-				id = KT_turkey_events.14
+				id = FP_turkey_events.14
 				hours = 14
 				random_hours = 6
 			}
@@ -3925,7 +3925,7 @@ focus = {
 			}
 			GRE = {
 				country_event = {
-					id = KT_turkey_events.11
+					id = FP_turkey_events.11
 					hours = 12
 					random_hours = 6
 				}
@@ -4262,7 +4262,7 @@ focus = {
 		completion_reward = {
 			SOV = {
 				country_event = {
-					id = KT_turkey_events.12
+					id = FP_turkey_events.12
 					hours = 12
 					random_hours = 6
 				}
@@ -4900,12 +4900,12 @@ focus = {
 				news_event = { id = kaisertum_news.21 hours = 3 }
 			}
 			add_country_leader_role = {
-				character = TUR_antouh_saadeh
+				character = TUR_antoun_saadeh
 				promote_leader = yes
 				country_leader = {
 					ideology = national_socialism
 					expire = "1965.1.1.1"
-					traits = { dictator }
+					traits = { emigree }
 				}
 			}
 		}
@@ -4937,6 +4937,10 @@ focus = {
 				capital = 978
 				states = { 978 347 340 973 345 344 975 }
 			}
+			add_trait = {
+				character = TUR_antoun_saadeh
+				trait = dictator
+			}
 		}
 	}
 	focus = {
@@ -4944,7 +4948,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_generic_construct_civilian
 
 		prerequisite = {
 			focus = TUR_oppressors_must_fall
@@ -5142,9 +5146,9 @@ focus = {
 		relative_position_id = TUR_all_hail_overlord_saadeh
 		completion_reward = {
 			add_trait = {
-					character = TUR_antoun_saadeh
-					trait = TUR_the_man_of_the_nation
-				}
+				character = TUR_antoun_saadeh
+				trait = TUR_the_man_of_the_nation
+			}
 		}
 	}
 	focus = {
@@ -5162,9 +5166,9 @@ focus = {
 		relative_position_id = TUR_all_hail_overlord_saadeh
 		completion_reward = {
 			add_trait = {
-					character = TUR_antoun_saadeh
-					trait = TUR_architect_of_natsoc
-				}
+				character = TUR_antoun_saadeh
+				trait = TUR_architect_of_natsoc
+			}
 		}
 	}
 	focus = {
@@ -5825,7 +5829,7 @@ focus = {
 		completion_reward = {
 			EGY = {
 				country_event = {
-					id = KT_turkey_events.20
+					id = FP_turkey_events.20
 					hours = 12
 				}
 			}
@@ -5932,7 +5936,7 @@ focus = {
 			}
 			ENG = {
 				country_event = {
-					id = KT_turkey_events.17
+					id = FP_turkey_events.17
 					hours = 12
 				}
 			}
@@ -5957,7 +5961,7 @@ focus = {
 		completion_reward = {
 			GRE = {
 				country_event = {
-					id = KT_turkey_events.15
+					id = FP_turkey_events.15
 					hours = 12
 				}
 			}
@@ -5969,7 +5973,7 @@ focus = {
 		cost = 1
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_TUR_lands_which_were_stolen
 
 		prerequisite  = {
 			focus = TUR_demand_the_return_of_our_lands
@@ -5998,7 +6002,7 @@ focus = {
 		completion_reward = {
 			ALB = {
 				country_event = {
-					id = KT_Turkey_events.16
+					id = FP_turkey_events.16
 					hours = 12
 				}
 			}
