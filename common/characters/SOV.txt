@@ -22,6 +22,8 @@ characters = {
 		country_leader = {
 			ideology = oligarchism
 			expire = "1953.3.1.1"
+			desc = SOV_alex_kerensky_desc
+			traits = { RUS_advocate_of_national_unity RUS_freemason }
 			id = -1
 		}
 	}

@@ -1,0 +1,19 @@
+leader_traits = {
+	
+	RUS_advocate_of_national_unity = {
+		random = no
+		
+		stability_factor = 0.1
+		political_power_gain = 0.05
+		army_org_factor = -0.1
+	}
+	
+	RUS_freemason = {
+		random = no
+		
+		stability_factor = -0.05
+		fascism_acceptance = 20
+		civilian_intel_to_others = -0.3
+	}
+	
+}
