@@ -21,6 +21,8 @@
  TUR_moderatism_flag:0 "The Moderate Way"
  syria_wins:0 "Syrian Revolution Succedes"
  syria_loses:0 "Syrian Revolution Fails"
+ TUR_rostov_agreement_passes:0 "Rostov Agreement Succedes"
+ TUR_rostov_agreement_fails:0 "Rostov Agreement Fails"
 
  TUR_natsoc_societies:0 "National Socialist Societies"
  TUR_commitment_idea:0 "Commiting to the State"

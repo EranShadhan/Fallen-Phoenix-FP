@@ -59,9 +59,7 @@
  GER_hre:0 "Heiliges Römisches Reich"
  GER_hre_desc:0 ""
 
- #GER_wilhelm_2_new:0 "His Highness, German Emperor, King Of Prussia, Friedrich Wilhelm Viktor Albert"
- 
- #From here starts everything Denis changed
+ GER_wilhelm_ii_desc:0 "Born in 1859, the future Kaiser faced challenges before he even knew what the word meant. His birth was far from conventional and nearly ended in the young prince's death multiple times. When the dust had settled and the prince survived, he came out with a shriveled arm which he bears to this day. Between this and his familial ties, he was determined to be his own man in the world, and take his rightful place in the sun.\n\nUpon taking the throne of Germany in 1888, he immediately got to work. His primary dream was to utilize Germany's full potential of a militaristic, naval, and colonial superpower. In 1890, he made it clear that he was his own man and sought to do away with his fathers old policies starting with the dismissal of the famed statesman Otto Von Bismark.\n\nOver the next 2 decades, he would show Germany's teeth in both public and subtle ways. He would send troops to China during the boxer rebellion, support the Boers during their rebellion in South Africa, contest French control over Morocco, build up the navy to combat British dominance, and much more.\n\nWhen the July crisis came, the buildup proved to be worthwhile as the Russians had mobilized faster than expected. Nonetheless, much like his grandfather, Wilhelm the Great, he had a Moltke to help him with the conflicts to come. After 2 long years of hell, the conflict came to an end with the kaiser on top once again. His domain greater than ever, his enemies weakened, and a true empire at his beck and call, Wilhelm could seemingly do no wrong and have it all. As time takes its toll on the Kaiser, he reflects on his actions and knows his work is not yet done. Once, where passion and pride guided him, now patience and time will be his tools."
  
  kaiser_of_germans:0 "Kaiser of all Germans"
  GER_victory_tgw:0 "Victory in the Great War"
