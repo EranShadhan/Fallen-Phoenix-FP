@@ -181,6 +181,14 @@ ideologies = {
 				color = { 24 8 8 }
 				can_be_randomly_selected = no
 			}
+			national_minimalism = {
+				color = { 255 255 255 }
+				can_be_randomly_selected = no
+			}
+			masonry = {
+				color = { 65 0 65 }
+				can_be_randomly_selected = no
+			}
 			junta_fas = {
 			}
 			legionarism = {
