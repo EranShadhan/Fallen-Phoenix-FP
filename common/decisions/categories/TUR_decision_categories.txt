@@ -4,13 +4,13 @@ TUR_sponsor_syrian_revolution_socialist_category = {
 
 	icon = GFX_category_icon
 	highlight_states = {
-        highlight_states_trigger = {
+		highlight_states_trigger = {
 			check_variable = { var = TUR_is_syrian_state_secured value = 1 compare = equals}
-        }
-    }
+		}
+	}
 	
 	allowed = {
-		always = yes
+		original_tag = TUR
 	}
 }
 
@@ -20,13 +20,13 @@ TUR_sponsor_syrian_revolution_nonaligned_category = {
 
 	icon = GFX_category_icon
 	highlight_states = {
-        highlight_states_trigger = {
+		highlight_states_trigger = {
 			check_variable = { var = TUR_is_syrian_state_secured value = 1 compare = equals}
-        }
-    }
+		}
+	}
 	
 	allowed = {
-		always = yes
+		original_tag = TUR
 	}
 }
 
@@ -48,9 +48,9 @@ TUR_northern_cyprus_category = {
 
 	}
 	highlight_states = {
-    highlight_state_targets = {
-        state = 986
-    }
+   		highlight_state_targets = {
+			state = 986
+		}
 	}
 }
 
@@ -65,8 +65,8 @@ TUR_industrialization_decision_category = {
 	}
 
 	visible = {
-        has_completed_focus = TUR_industrialization_at_last
-    }
+		has_completed_focus = TUR_industrialization_at_last
+	}
 
 	visible_when_empty = yes
 }
@@ -82,8 +82,8 @@ TUR_agriculture_decision_category = {
 	}
 
 	visible = {
-        has_completed_focus = TUR_great_leap_forwards
-    }
+		has_completed_focus = TUR_great_leap_forwards
+	}
 
 	visible_when_empty = yes
 }
@@ -114,6 +114,7 @@ TUR_NATSOC_category = {
 	visible_when_empty = yes
 
 	allowed = {
-		original_tag = TUR
+		#original_tag = TUR
+		always = no
 	}
 }
