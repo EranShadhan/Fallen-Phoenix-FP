@@ -471,7 +471,7 @@
 
  TUR_purge_germans_in_gov_desc:0 "Those Germans talk a big game about "the greater good of our people" and "let the past stay in the past," NEVER. It is easy to think yourself invincible and all knowing in your great high castle. They do not know what is best for the Turks. Only a Turk can lead a Turk."
 
- TUR_descredit_the_opposition_desc:0 "It seems like people are not getting the message. Our agents will do all they can to "convince" the people to throw off their German brainwashing by any means necessary. 'Any heretics who do not see my vision will know nothing but pain.' "
+ TUR_discredit_the_opposition_desc:0 "It seems like people are not getting the message. Our agents will do all they can to "convince" the people to throw off their German brainwashing by any means necessary. 'Any heretics who do not see my vision will know nothing but pain.' "
 
  TUR_sultan_and_islamists_desc:0 "Though war exhaustion is common in our state, our faith has not faltered for a second. The sultan has numerous options to choose from, he needs only to find out which ones are the best of the best."
 
@@ -532,7 +532,7 @@
 
  TUR_exploit_the_bidding_war_desc:0 "Even if we were to do nothing, the great powers are dumping huge amounts into building us up in order to spite the other. Perhaps by planting some half-true intelligence we can exploit them into giving us more than they planned." 
 
- TUR_promote_a_europeanized_parliament_desc:0 "We must make a parliament similar to Europes to show the great powers that their investments are in fact bearing fruit. So long as the cash keeps flowing, we’ll continue to “show them” great results."
+ TUR_promote_a_europeanized_government_desc:0 "We must make a parliament similar to Europes to show the great powers that their investments are in fact bearing fruit. So long as the cash keeps flowing, we’ll continue to “show them” great results."
 
  TUR_appeal_to_italy_desc:0 "Though our enemies at one point, we have much we can learn from the Italians. They have been doing the policy of economically focussed isolationism for longer than we have and likely have some notes we can take. Perhaps some trade rights in the black sea can convince them to talk."
 
