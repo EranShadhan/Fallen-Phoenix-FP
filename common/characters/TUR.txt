@@ -104,39 +104,14 @@ characters={
 				original_tag = TUR
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister 
-							has_idea = TUR_sukru_saracoglu_prime_minister 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_recep_peker 
-							has_idea = TUR_adnan_menderes 
-							has_idea = TUR_nuri_demirag_prime_minister 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_said_i_nursi 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
 				has_completed_focus = TUR_commies_elected
 			}
 			visible = {
 				has_government = communism
 			}
 			traits = {
-				prime_minister_husnu 
+				reluctant_stalinist 
 			}
-		}
-
-		country_leader={
-			ideology=stalinism
-			traits={ reluctant_stalinist }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -161,105 +136,30 @@ characters={
 	}
 
 	TUR_ismet_inonu = {
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_ismet_inonu
-			portraits={
-				army={
-					small="GFX_idea_tur_ismet_inonu"
-				}
-				civilian={
-					large=GFX_portrait_TUR_ismet_inonu
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = TUR_ismet_inonu
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					custom_trigger_tooltip = {
-						tooltip = TUR_can_only_have_one_prime_minister_tt
-						NOT = {
-							OR = {
-								has_idea = TUR_fevzi_cakmak_prime_minister 
-								has_idea = TUR_sukru_saracoglu_prime_minister 
-								has_idea = TUR_celal_bayar 
-								has_idea = TUR_fethi_okyar 
-								has_idea = TUR_sevket_sureyya_aydemir 
-								has_idea = TUR_recep_peker 
-								has_idea = TUR_adnan_menderes 
-								has_idea = TUR_nuri_demirag_prime_minister 
-								has_idea = TUR_sefik_husnu 
-								has_idea = TUR_said_i_nursi 
-								has_idea = TUR_nihal_atsiz 
-							}
-						}
-					}
-					has_completed_focus = TUR_continue_the_policy_of_etatism 
-				}
-				visible = {
-					NOT = {
-						OR = {
-							has_completed_focus = TUR_fully_integrate_the_is_bank 
-							has_country_leader = {
-								character = TUR_ismet_inonu
-								ruling_only = yes 
-							}
-						}
-					}
-				}
-				traits = {
-					prime_minister_inonu 
-				}
-			}
-			
-			country_leader={
-				ideology=despotism
-				traits={ milli_sef }
-				expire="1965.1.1.1"
-				id=-1
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			name=TUR_ismet_inonu
-			portraits={
-				civilian={
-					large=GFX_portrait_TUR_ismet_inonu
-				}
-			}
-			country_leader={
-				ideology=despotism
-				traits={ }
-				expire="1965.1.1.1"
-				id=-1
-			}
-		}
-	}
-
-	TUR_durrushehvar_i = {
-		name=TUR_durrushehvar_i
+		name=TUR_ismet_inonu
 		portraits={
-			civilian={
-				large="GFX_portrait_tur_durrusehvar_sultan" #Can become country leader later (Non-Aligned -> Despotism)
+			army={
+				large=GFX_portrait_TUR_ismet_inonu
+				small="GFX_idea_tur_ismet_inonu"
 			}
 		}
-		gender = female
-	}
-
-	TUR_abdulmejid_ii = {
-		name=TUR_abdulmejid_ii
-		portraits={
-			civilian={
-				large="GFX_portrait_tur_abdulmejid_ii" #Can become country leader later (Non-Aligned -> Despotism)
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_ismet_inonu
+			allowed = {
+				original_tag = TUR
 			}
+			traits = {
+				milli_sef 
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer fortress_buster }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 
@@ -297,22 +197,11 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
-			available = {
-				NOT = {
-					has_country_leader = {
-						character = TUR_mustafa_kemal_ataturk
-						ruling_only = yes
-					}
-				}
-			}
-			
 			traits = {
 				grand_battle_plan_expert
 			}
 		}
-
 		corps_commander={
 			traits={ trait_cautious politically_connected desert_fox }
 			skill=2
@@ -344,73 +233,36 @@ characters={
 	}
 
 	TUR_mehmet_salih_omurtak={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_mehmet_salih_omurtak
-			portraits={
-				army={
-					small="GFX_idea_tur_salih_omurtak"
-					large="GFX_portrait_tur_salih_omurtak"
-				}
-			}
-			advisor={
-				slot = army_chief
-				idea_token = TUR_mehmet_salih_omurtak
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					NOT = {
-						has_country_flag = TUR_ottoman_officers_invited_back
-					}
-				}
-				visible = {
-					NOT = {
-						has_country_flag = TUR_ottoman_officers_invited_back
-					}
-				}
-				traits = {
-					army_chief_drill_2
-				}
-			cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-			
-			corps_commander={
-				traits={ harsh_leader infantry_officer politically_connected }
-				skill=2
-				attack_skill=2
-				defense_skill=1
-				planning_skill=2
-				logistics_skill=2
-				legacy_id=906
+		name=TUR_mehmet_salih_omurtak
+		portraits={
+			army={
+				small="GFX_idea_tur_salih_omurtak"
+				large="GFX_portrait_tur_salih_omurtak"
 			}
 		}
-
-		instance = {
+		advisor={
+			slot = army_chief
+			idea_token = TUR_mehmet_salih_omurtak
 			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
+				original_tag = TUR
 			}
-			name = TUR_mehmet_salih_omurtak
-			portraits={
-				army={
-					large=GFX_portrait_TUR_mehmet_salih_omurtak
-					small=GFX_portrait_TUR_mehmet_salih_omurtak_small
-				}
+			traits = {
+				army_chief_drill_2
 			}
-			corps_commander={
-				traits = {  hill_fighter }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
+		}
+		
+		corps_commander={
+			traits={ hill_fighter harsh_leader infantry_officer politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=906
 		}
 	}
 
@@ -491,7 +343,7 @@ characters={
 				original_tag = TUR
 			}
 			traits = {
-				army_regrouping_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -574,9 +426,6 @@ characters={
 			army={
 				small="GFX_idea_tur_fevzi_cakmak"
 				large="GFX_portrait_tur_fevzi_cakmak"
-			}
-			civilian = {
-				large="GFX_portrait_tur_fevzi_cakmak" #Can become country leader later
 			}
 		}
 		advisor={	
@@ -732,7 +581,7 @@ characters={
 		name=TUR_hazi_aslanov
 		portraits={
 			army={
-				large="GFX_portrait_sov_hazi_aslanov" #Can become unit leader later
+				large="GFX_portrait_sov_hazi_aslanov"
 				small = GFX_portrait_TUR_hazi_aslanov_small
 			}
 		}
@@ -748,7 +597,7 @@ characters={
 		}
 		corps_commander = {
 			traits = { war_hero trait_cautious trait_mountaineer }
-			skill = 3 #10
+			skill = 3
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 3
@@ -763,13 +612,10 @@ characters={
 				large="GFX_portrait_tur_refe_pasha"
 				small = GFX_portrait_TUR_refet_pasha_small
 			}
-			civilian = {
-				large="GFX_portrait_tur_refe_pasha"
-			}
 		}
 		corps_commander = {
 			traits = { harsh_leader war_hero brilliant_strategist trickster }
-			skill = 3 #10
+			skill = 3
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
@@ -784,13 +630,10 @@ characters={
 				large="GFX_portrait_tur_mehmed_esad_pasha"
 				small=GFX_portrait_TUR_mehmet_esat_pasha_small
 			}
-			civilian = {
-				large="GFX_portrait_tur_mehmed_esad_pasha"
-			}
 		}
 		corps_commander = {
 			traits = { war_hero inflexible_strategist media_personality trickster hill_fighter }
-			skill = 4 #13
+			skill = 4
 			attack_skill = 2
 			defense_skill = 5
 			planning_skill = 3
@@ -858,83 +701,49 @@ characters={
 	}
 
 	TUR_rauf_orbay={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_rauf_orbay
-			portraits={
-				army={
-					small="GFX_idea_tur_rauf_orbay"
-				}
-			}
-			advisor={
-				cost = 150	
-				slot = theorist
-				idea_token = TUR_rauf_orbay
-				ledger = navy
-				name = TUR_rauf_orbay
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					NOT = {
-						has_country_leader = {
-							character = TUR_mustafa_kemal_ataturk
-							ruling_only = yes
-						}
-					}
-				}
-				traits = {
-					grand_fleet_proponent
-				}
+		name=TUR_rauf_orbay
+		portraits={
+			army={
+				large="GFX_portrait_TUR_rauf_orbay"
+				small="GFX_idea_tur_rauf_orbay"
 			}
 		}
-		instance = {
+		navy_leader={
+			traits = { bold }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+		advisor={
+			cost = 150	
+			slot = theorist
+			idea_token = TUR_rauf_orbay
+			ledger = navy
 			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
+				original_tag = TUR
 			}
-			name=TUR_rauf_orbay
-			portraits={
-				army={
-					large =GFX_portrait_TUR_rauf_orbay
-					small="GFX_idea_generic_navy_europe_3"
-				}
-			}
-			advisor={
-				slot = navy_chief
-				idea_token = TUR_rauf_orbay
-				allowed = {
-					original_tag = TUR
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				traits = {
-					navy_chief_old_guard
-				}
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-			navy_leader={
-				traits = { bold }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 1
-				maneuvering_skill = 1
-				coordination_skill = 2
+			traits = {
+				grand_fleet_proponent
 			}
 		}
 	}
 
-	TUR_izzettin_calislar={
+	TUR_izzettin_calislar={ #TODO PORTRAIT
 		name=TUR_izzettin_calislar
 		portraits={
 			army={
 				small="GFX_idea_tur_izzettin_calislar"
 			}
+		}
+		corps_commander = {
+			traits = { harsh_leader infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		advisor={
 			slot = high_command
@@ -942,17 +751,6 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				NOT = {
-					has_country_flag = TUR_ottoman_officers_invited_back
-				}
-			}
-			visible = {
-				NOT = {
-					has_country_flag = TUR_ottoman_officers_invited_back
-				}
 			}
 			traits = {
 				army_regrouping_2
@@ -978,7 +776,6 @@ characters={
 			ledger = air
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
 			
 			traits = {
@@ -1001,9 +798,6 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = TUR
-				NOT = {
-					has_dlc = "Battle for the Bosporus"
-				}
 			}
 			traits = {
 				army_armored_2
@@ -1083,7 +877,6 @@ characters={
 			idea_token = TUR_muzaffer_goksenin
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
 			traits = {
 				air_chief_reform_2
@@ -1109,7 +902,6 @@ characters={
 			ledger = navy
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
 			traits = {
 				navy_screen_2
@@ -1144,17 +936,6 @@ characters={
 			idea_token = TUR_fahrettin_altay
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				NOT = {
-					has_country_flag = TUR_ottoman_officers_invited_back
-				}
-			}
-			visible = {
-				NOT = {
-					has_country_flag = TUR_ottoman_officers_invited_back
-				}
 			}
 			traits = {
 				army_chief_maneuver_3
@@ -1176,31 +957,20 @@ characters={
 		}
 	}
 
-	TUR_halil_kut={
+	TUR_halil_kut={ #TODO PORTRAIT
 		name=TUR_halil_kut
 		portraits={
 			army={
 				small="GFX_idea_tur_halil_kut"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = TUR_halil_kut
-			ledger = army
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			visible = {
-				has_country_flag = TUR_ottoman_officers_invited_back
-			}
-			traits = {
-				army_logistics_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
+		corps_commander = {
+			traits = { trickster trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
 		}
 	}
 
@@ -1234,18 +1004,6 @@ characters={
 			idea_token = TUR_riza_nur
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				OR = {
-					has_government = fascism 
-					has_government = communism 
-					has_completed_focus = TUR_pivot_to_the_past 
-					has_country_leader = {
-						character = TUR_adnan_menderes
-						ruling_only = yes 
-					}
-				}
 			}
 			traits = {
 				irredentist_academic 
@@ -1267,63 +1025,12 @@ characters={
 				original_tag = TUR
 			}
 			available = {
-				has_government = fascism
+				has_completed_focus = TUR_commit_to_pan_turkism
 			}
 			traits = {
 				avid_turanist 
 			}
 		}		
-	}
-
-	TUR_sukru_saracoglu_prime_minister={
-		name=TUR_sukru_saracoglu
-		portraits={
-			army={
-				small="GFX_idea_tur_sukru_saracoglu"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = TUR_sukru_saracoglu_prime_minister
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister
-							has_idea = TUR_celal_bayar 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_recep_peker 
-							has_idea = TUR_adnan_menderes 
-							has_idea = TUR_nuri_demirag_prime_minister 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_said_i_nursi 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
-				has_completed_focus = TUR_continue_the_policy_of_etatism 
-			}
-			visible = {
-				has_government = neutrality 
-				NOT = {
-					OR = {
-						has_completed_focus = TUR_pivot_to_the_past 
-						has_completed_focus = TUR_rehabilitate_the_kadro_movement 
-						has_completed_focus = TUR_fully_integrate_the_is_bank 
-					}
-				}
-			}
-			traits = {
-				prime_minister_saracoglu 
-			}
-		}
 	}
 
 	TUR_adnan_menderes={
@@ -1342,99 +1049,11 @@ characters={
 			idea_token = TUR_adnan_menderes
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister 
-							has_idea = TUR_sukru_saracoglu_prime_minister 
-							has_idea = TUR_celal_bayar 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_recep_peker 
-							has_idea = TUR_nuri_demirag_prime_minister 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_said_i_nursi 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
-			}
-			visible = {
-				and = {
-					has_completed_focus = TUR_democratic_capstone_focus 
-					NOT = {
-						has_country_leader = {
-							character = TUR_adnan_menderes
-							ruling_only = yes 
-						}
-					}
-				}
 			}
 			traits = {
-				prime_minister_menderes 
+				man_of_the_nation 
 			}
 		}	
-	}
-
-	TUR_nuri_demirag_prime_minister={
-		name=TUR_nuri_demirag
-		portraits={
-			army={
-				small="GFX_idea_tur_nuri_demirag"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = TUR_nuri_demirag_prime_minister
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister 
-							has_idea = TUR_sukru_saracoglu_prime_minister 
-							has_idea = TUR_celal_bayar 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_recep_peker 
-							has_idea = TUR_adnan_menderes 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_said_i_nursi 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
-			}
-			visible = {
-				OR = {
-					has_country_leader = {
-						character = TUR_adnan_menderes
-						ruling_only = yes 
-					}
-					has_country_leader = {
-						character = TUR_celal_bayar
-						ruling_only = yes 
-					}
-					has_country_leader = {
-						character = TUR_fevzi_cakmak
-						ruling_only = yes 
-					}
-				}
-			}
-			traits = {
-				prime_minister_demirag 
-			}
-		}
 	}
 	
 	TUR_hasan_saka={
@@ -1452,6 +1071,9 @@ characters={
 			}
 			available = {
 				has_government = neutrality 
+			}
+			visible = {
+				has_government = neutrality
 			}
 			traits = {
 				ideological_crusader 
@@ -1543,7 +1165,7 @@ characters={
 		}		
 	}
 
-	TUR_sukru_saracoglu={ #TODO_Manu: This guy is duplicated (TUR_sukru_saracoglu_prime_minister). Need to figure out if we want to treat him as a single char and make him show only once in the advisor list.
+	TUR_sukru_saracoglu={
 		name=TUR_sukru_saracoglu
 		portraits={
 			army={
@@ -1555,12 +1177,6 @@ characters={
 			idea_token = TUR_sukru_saracoglu
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			visible = {
-				NOT = {
-					has_idea = TUR_sukru_saracoglu_prime_minister 
-				}
 			}
 			traits = {
 				financial_expert 
@@ -1591,61 +1207,30 @@ characters={
 	}
 
 	TUR_kazim_ozalp={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_kazim_ozalp
-			portraits={
-				army={
-					small="GFX_idea_tur_kazim_ozalp"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = TUR_kazim_ozalp
-				name = TUR_kazim_ozalp 
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					NOT = {
-						OR = {
-							has_completed_focus = TUR_revive_turkish_revolutionism 
-							has_completed_focus = TUR_pivot_to_the_past 
-						}
-					}
-				}
-				traits = {
-					fortification_engineer 
-				}
+		name=TUR_kazim_ozalp
+		portraits={
+			army={
+				small="GFX_idea_tur_kazim_ozalp"
 			}
 		}
-		instance = {
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_kazim_ozalp
 			allowed = {
+				original_tag = TUR
+			}
+			available = {
 				NOT = {
-					has_dlc = "Battle for the Bosporus"
+					has_government = neutrality
 				}
 			}
-			name=TUR_kazim_ozalp
-			portraits={
-				army={
-					small="GFX_idea_generic_political_advisor_europe_3"
+			visible = {
+				NOT = {
+					has_government = neutrality
 				}
 			}
-			advisor={
-				slot = political_advisor
-				idea_token = TUR_kazim_ozalp
-				allowed = {
-					original_tag = TUR
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				traits = {
-					war_industrialist 
-				}
+			traits = {
+				ideological_crusader 
 			}
 		}
 	}
@@ -1657,60 +1242,21 @@ characters={
 				small="GFX_idea_tur_sevket_sureyya_aydemir"
 				large="GFX_portrait_tur_sevket_sureyya_aydemir"
 			}
-			army={
-				small="GFX_idea_tur_sevket_sureyya_aydemir"
-				large="GFX_portrait_tur_sevket_sureyya_aydemir"
-			}
 		}
 		advisor={
 			slot = political_advisor
 			idea_token = TUR_sevket_sureyya_aydemir
 			allowed = {
-				OR = {
-					original_tag = TUR
-					original_tag = SWE
-				}
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				OR = {
-					AND = {
-						has_completed_focus = TUR_kemalist_socialist_theory 
-						custom_trigger_tooltip = {
-							tooltip = TUR_can_only_have_one_prime_minister_tt
-							NOT = {
-								OR = {
-									has_idea = TUR_ismet_inonu 
-									has_idea = TUR_fevzi_cakmak_prime_minister 
-									has_idea = TUR_sukru_saracoglu_prime_minister 
-									has_idea = TUR_celal_bayar 
-									has_idea = TUR_fethi_okyar 
-									has_idea = TUR_recep_peker 
-									has_idea = TUR_adnan_menderes 
-									has_idea = TUR_nuri_demirag_prime_minister 
-									has_idea = TUR_sefik_husnu 
-									has_idea = TUR_said_i_nursi 
-									has_idea = TUR_nihal_atsiz 
-								}
-							}
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-					CHL_hub_of_the_revolution_trigger = yes
-				}
+				original_tag = TUR
 			}
 			visible = {
-				has_completed_focus = TUR_revive_turkish_revolutionism 
-				NOT = {
-					has_completed_focus = TUR_kemalism_and_the_modern_movement 
-					has_country_leader = {
-						character = TUR_sevket_sureyya_aydemir
-						ruling_only = yes 
-					}
-				}
+				has_government = communism
+			}
+			available = {
+				has_completed_focus = TUR_commies_elected
 			}
 			traits = {
-				prime_minister_aydemir 
+				the_academic 
 			}
 		}
 	}
@@ -1768,15 +1314,6 @@ characters={
 			idea_token = TUR_nuri_killigil
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				OR = {
-					is_in_faction_with = GER
-					has_government = fascism 
-					has_completed_focus = TUR_pivot_to_the_past 
-					has_country_flag = TUR_sponsored_killigil_armaments_flag 
-				}
 			}
 			traits = {
 				war_industrialist 
@@ -1796,33 +1333,9 @@ characters={
 			idea_token = TUR_said_i_nursi
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister 
-							has_idea = TUR_sukru_saracoglu_prime_minister 
-							has_idea = TUR_celal_bayar 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_recep_peker 
-							has_idea = TUR_adnan_menderes 
-							has_idea = TUR_nuri_demirag_prime_minister 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
-			}
-			visible = {
-				has_completed_focus = TUR_pivot_to_the_past 
 			}
 			traits = {
-				grand_vizier_nursi 
+				modern_islamist 
 			}
 		}
 	}
@@ -1832,8 +1345,6 @@ characters={
 		portraits={
 			army={
 				small=GFX_portrait_TUR_mehmet_recep_peker_small
-			}
-			civilian={
 				large="GFX_portrait_tur_recep_peker"
 			}
 		}
@@ -1842,100 +1353,29 @@ characters={
 			idea_token = TUR_recep_peker
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				has_completed_focus = TUR_integrate_the_fascist_council 
-				custom_trigger_tooltip = {
-					tooltip = TUR_can_only_have_one_prime_minister_tt
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu 
-							has_idea = TUR_fevzi_cakmak_prime_minister 
-							has_idea = TUR_sukru_saracoglu_prime_minister 
-							has_idea = TUR_celal_bayar 
-							has_idea = TUR_fethi_okyar 
-							has_idea = TUR_sevket_sureyya_aydemir 
-							has_idea = TUR_adnan_menderes 
-							has_idea = TUR_nuri_demirag_prime_minister 
-							has_idea = TUR_sefik_husnu 
-							has_idea = TUR_said_i_nursi 
-							has_idea = TUR_nihal_atsiz 
-						}
-					}
-				}
-			}
-			visible = {
-				has_completed_focus = TUR_revive_turkish_revolutionism 
-				NOT = {
-					has_country_leader = {
-						character = TUR_mehmet_recep_peker
-						ruling_only = yes 
-					}
-				}
 			}
 			traits = {
-				prime_minister_peker 
+				the_statist 
 			}
-		}
-
-		country_leader={
-			ideology=fascism_ideology
-			traits={ the_statist }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
 	TUR_mumtaz_okmen={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_mumtaz_okmen
-			portraits={
-				army={
-					small="GFX_idea_tur_mumtaz_okmen"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = TUR_mumtaz_okmen
-				name = TUR_mumtaz_okmen 
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				traits = {
-					captain_of_industry 
-				}
+		name=TUR_mumtaz_okmen
+		portraits={
+			army={
+				small="GFX_idea_tur_mumtaz_okmen"
 			}
 		}
-		instance = {
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_mumtaz_okmen
 			allowed = {
-				NOT = {
-					has_dlc = "Battle for the Bosporus"
-				}
+				original_tag = TUR
 			}
-			name=TUR_mumtaz_okmen
-			portraits={
-				army={
-					small="GFX_idea_generic_political_advisor_europe_5"
-				}
+			traits = {
+				captain_of_industry 
 			}
-			advisor={
-				slot = political_advisor
-				idea_token = TUR_mumtaz_okmen
-				allowed = {
-					original_tag = TUR
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				traits = {
-					captain_of_industry 
-				}
-			}			
 		}
 	}
 
@@ -1951,7 +1391,6 @@ characters={
 			idea_token = TUR_nihal_atsiz
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -1994,13 +1433,9 @@ characters={
 			idea_token = TUR_zeki_velidi_togan
 			allowed = {
 				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-				OR = {
-					has_completed_focus = TUR_establish_the_committee_of_pan_turkism 
-					has_completed_focus = TUR_misak_i_milli 
-				}
+				has_completed_focus = TUR_commit_to_pan_turkism
 			}
 			traits = {
 				pan_turkic_doyen 

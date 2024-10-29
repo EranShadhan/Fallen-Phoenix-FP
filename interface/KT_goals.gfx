@@ -106,6 +106,26 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_GEN_anti_france"
+		texturefile = "gfx/interface/goals/GEN_anti_france.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_anti_germany"
+		texturefile = "gfx/interface/goals/GEN_anti_germany.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_anti_italy"
+		texturefile = "gfx/interface/goals/GEN_anti_italy.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_anti_russia"
+		texturefile = "gfx/interface/goals/GEN_anti_russia.png"
+	}
+
+	SpriteType = {
 		name = "GFX_goal_zzz_WIP"
 		texturefile = "gfx/interface/goals/zzz_WIP.png"
 	}

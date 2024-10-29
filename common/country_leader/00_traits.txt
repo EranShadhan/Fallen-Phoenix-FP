@@ -1487,6 +1487,7 @@ leader_traits = {
 	}
 
 	milli_sef = { #Inonu
+		sprite = 18
 		random = no
 		stability_factor = 0.1
 		enemy_justify_war_goal_time = 2.00
@@ -1495,6 +1496,7 @@ leader_traits = {
 	}
 
 	man_of_the_nation = { #Menderes
+		sprite = 13
 		random = no
 		stability_factor = 0.1
 		political_power_gain = 0.05
@@ -1502,6 +1504,7 @@ leader_traits = {
 	}
 
 	liberal_democratic_paragon = { #Bayar
+		sprite = 13
 		random = no
 		political_power_gain = 0.05
 		drift_defence_factor = 0.33
@@ -1511,6 +1514,7 @@ leader_traits = {
 
 
 	the_statist = { #Peker
+		sprite = 13
 		random = no
 		consumer_goods_factor = -0.10
 		political_power_factor = 0.1
@@ -1519,6 +1523,7 @@ leader_traits = {
 	}
 
 	the_academic = { #Aydemir
+		sprite = 13
 		random = no
 		consumer_goods_factor = -0.10
 		political_power_factor = 0.1
@@ -1533,6 +1538,7 @@ leader_traits = {
 	}
 
 	reluctant_stalinist = { #Husnu
+		sprite = 13
 		random = no
 		war_support_factor = 0.1
 		industrial_capacity_factory = 0.1

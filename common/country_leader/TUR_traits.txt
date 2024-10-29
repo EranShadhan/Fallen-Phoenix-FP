@@ -36,4 +36,11 @@ leader_traits = {
 		production_speed_buildings_factor = 0.15
 		research_speed_factor = 0.05
 	}
+	modern_islamist = {
+		random = no
+		sprite = 13
+		production_speed_industrial_complex_factor = 0.05
+		stability_factor = 0.05
+		research_speed_factor = 0.02
+	}
 }

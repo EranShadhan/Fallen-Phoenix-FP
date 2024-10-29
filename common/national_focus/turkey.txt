@@ -4936,10 +4936,6 @@ focus = {
 				capital = 978
 				states = { 978 347 340 973 345 344 975 }
 			}
-			add_trait = {
-				character = TUR_antoun_saadeh
-				trait = dictator
-			}
 		}
 	}
 	focus = {
@@ -5087,7 +5083,10 @@ focus = {
 		}
 		relative_position_id = TUR_the_hurricane_rises
 		completion_reward = {
-			add_political_power = 50
+			add_trait = {
+				character = TUR_antoun_saadeh
+				trait = dictator
+			}
 		}
 	}
 	focus = {
@@ -5292,7 +5291,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_anti_germany
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5313,7 +5312,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_anti_russia
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5334,7 +5333,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 2
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_anti_france
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5355,7 +5354,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 2
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_anti_italy
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5446,7 +5445,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_perfect_industry
 
 		prerequisite  = {
 			focus = TUR_the_perfect_society
@@ -5903,7 +5902,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_RUS_eagle
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria

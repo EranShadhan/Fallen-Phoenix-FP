@@ -561,4 +561,8 @@ spriteTypes = {
 		name = "GFX_goal_TUR_perfect_army"
 		texturefile = "gfx/interface/goals/TUR/TUR_perfect_army.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_TUR_perfect_industry"
+		texturefile = "gfx/interface/goals/TUR/TUR_perfect_industry.png"
+	}
 }
