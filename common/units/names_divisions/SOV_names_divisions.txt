@@ -1,0 +1,84 @@
+SOV_INF_01 = {
+	name = "Infantry division"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "Infantry" }
+
+
+	fallback_name = "%d-aya Pekhotnaya dyviziya"
+
+	ordered ={
+		1 = { "Pervaya pekhotnaya dyviziya" }
+	}
+}
+
+SOV_MTT_01 = {
+	name = "Mountain division"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "Mountaneers" }
+
+
+	fallback_name = "%d-aya Gorskaya dyviziya"
+
+	ordered ={
+		1 = { "Pervaya gorskaya dyviziya" }
+	}
+}
+
+SOV_MOT_01 = {
+	name = "Motorized division"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "Motorized" }
+
+
+	fallback_name = "%d-aya Motorizovanaya Dyviziya"
+
+	ordered ={
+		1 = { "Pervaya motorizovanaya Dyviziya" }
+	}
+}
+
+SOV_CAV_01 = {
+	name = "Cavalry division"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "Cavalry" }
+
+
+	fallback_name = "%d-aya Kavaleriyskaya Dyviziya"
+
+	ordered ={
+		1 = { "Pervaya kavaleriyskaya Dyviziya" }
+	}
+}
+
+SOV_PAR_01 = {
+	name = "Paratrooper division"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "Paratrooper" }
+
+
+	fallback_name = "%d-aya Desantnaya Dyviziya"
+
+	ordered ={
+		1 = { "Pervaya desantnaya Dyviziya" }
+	}
+}
