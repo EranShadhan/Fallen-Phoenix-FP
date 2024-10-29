@@ -424,8 +424,28 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					check_variable = {
-						SOV.opinion_of_kerensky > 40
+					AND = {
+						check_variable = {
+							SOV.opinion_of_kerensky > 40
+						}
+						has_country_flag = elections_allowed
+					}
+				}
+				
+				add_political_power = 10
+				#country_event = {
+				#	id = SOV_events.9
+				#	days = 10
+				#	random_hours = 12
+				#}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							SOV.opinion_of_kerensky > 40
+						}
+						has_country_flag = elections_limited
 					}
 				}
 				
@@ -514,6 +534,11 @@ country_event = {
 				limit = {
 					has_country_flag = elections_allowed
 				}
+				country_event = {
+					id = SOV_events.13
+					days = 5
+					random_hours = 8
+				}
 			}
 		}
 	}
@@ -564,7 +589,7 @@ country_event = {
 	}
 }
 
-### Change of Government
+### Normal Elections
 country_event = {
 	id = SOV_events.13
 	title = SOV_events.13.t
@@ -574,26 +599,58 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = { # 
+	option = { # Fascists Elected
 		name = SOV_events.13.a
 		
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = yes
-			last_election = "1930.12.17"
-			election_frequency = 48
-			long_name = SOV_kerensky_integralist_party_long
-			name = SOV_kerensky_integralist_party
+		#set_politics = {
+		#	ruling_party = fascism
+		#	elections_allowed = yes
+		#	last_election = "1930.12.17"
+		#	election_frequency = 48
+		#	long_name = SOV_kerensky_integralist_party_long
+		#	name = SOV_kerensky_integralist_party
+		#}
+		#add_country_leader_role = {
+		#	character = SOV_aleksandr_kerensky_integral
+		#	promote_leader = yes
+		#	country_leader = {
+		#		ideology = rexism
+		#		expire = "1965.1.1.1"
+		#		traits = { }
+		#	}
+		#}
+	}
+	
+	option = { # Kerensky Elected
+		name = SOV_events.13.b
+	}
+	
+	option = { # Communists/Democrats elected
+		if = {
+			limit = { OR = { has_country_flag = trade_unions_allowed has_country_flag = trade_unions_limited } }
+			name = SOV_events.13.ca
 		}
-		add_country_leader_role = {
-			character = SOV_aleksandr_kerensky_integral
-			promote_leader = yes
-			country_leader = {
-				ideology = rexism
-				expire = "1965.1.1.1"
-				traits = { }
-			}
+		else = {
+			name = SOV_events.13.cb
 		}
+		
+	}
+}
+
+### High Opinion Elections
+country_event = {
+	id = SOV_events.14
+	title = SOV_events.14.t
+	desc = SOV_events.14.d
+	
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = { # 
+		name = SOV_events.14.a
+		
+		
 	}
 }
 
