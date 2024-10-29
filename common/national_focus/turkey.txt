@@ -4705,6 +4705,7 @@ focus = {
 			add_ideas = TUR_turkish_empire
 			set_cosmetic_tag = TUR_empire
 			add_state_core = 354
+			add_state_core = 355
 			add_state_core = 353
 			add_state_core = 350
 			add_state_core = 352
