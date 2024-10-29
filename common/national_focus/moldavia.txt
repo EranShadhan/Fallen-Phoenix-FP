@@ -317,7 +317,7 @@ focus = {
 
     id = MOL_legacy_stefan_foris
     icon = GFX_MOL_legacy_stefan_foris
-    x = 20
+    x = 17
     y = 1
 	relative_position_id = 
 	prerequisite = { focus = }
@@ -453,7 +453,7 @@ focus = {
     y = 3
 	relative_position_id = MOL_legacy_stefan_foris
 	prerequisite = { focus = MOL_ideas_of_minority_representation }
-	prerequisite = { focus = MOL_minority_rights
+	prerequisite = { focus = MOL_minority_rights }
     ai_will_do = {
 			factor = 1
 		}
@@ -516,10 +516,277 @@ focus = {
 
     id = MOL_write_foris_constitution
     icon = GFX_MOL_write_foris_constitution
-    x = 3
+    x = 2
     y = 1
 	relative_position_id = MOL_legacy_stefan_foris
 	prerequisite = { focus = MOL_legacy_stefan_foris }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_write_foris_constitution
+    icon = GFX_MOL_write_foris_constitution
+    x = 2
+    y = 1
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_legacy_stefan_foris }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_lay_foundation_dynastic_dictatorial
+    icon = GFX_MOL_lay_foundation_dynastic_dictatorial
+    x = 1
+    y = 2
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_write_foris_constitution }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_loyal_inner_circle
+    icon = GFX_MOL_loyal_inner_circle
+    x = 3
+    y = 2
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_write_foris_constitution }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_get_rid_of_opposition
+    icon = GFX_MOL_get_rid_of_opposition
+    x = 2
+    y = 3
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_lay_foundation_dynastic_dictatorial }
+	prerequisite = { focus = MOL_loyal_inner_circle }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_prepare_the_army
+    icon = GFX_MOL_prepare_the_army
+    x = 0
+    y = 4
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_equality_between_us }
+	prerequisite = { focus = MOL_get_rid_of_opposition }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_reunite_the_countries
+    icon = GFX_MOL_reunite_the_countries
+    x = -1
+    y = 5
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_prepare_the_army }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_to_the_alps
+    icon = GFX_MOL_to_the_alps
+    x = 1
+    y = 5
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_prepare_the_army }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_declare_the_unholy_union
+    icon = GFX_MOL_declare_the_unholy_union
+    x = 0
+    y = 7
+	relative_position_id = MOL_legacy_stefan_foris
+	prerequisite = { focus = MOL_reunite_the_countries }
+	prerequisite = { focus = MOL_to_the_alps }
     ai_will_do = {
 			factor = 1
 		}
