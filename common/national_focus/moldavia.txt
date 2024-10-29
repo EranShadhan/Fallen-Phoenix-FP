@@ -812,6 +812,943 @@ focus = {
 		}
 }
 
+focus = {
+
+    id = MOL_groza_cabinet
+    icon = GFX_MOL_groza_cabinet
+    x = 25
+    y = 1
+	relative_position_id = 
+	prerequisite = { focus = }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_search_for_vp
+    icon = GFX_MOL_search_for_vp
+    x = -2
+    y = 1
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_groza_cabinet }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_be_good_guy
+    icon = GFX_MOL_be_good_guy
+    x = 0
+    y = 1
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_groza_cabinet }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_befriend_enemys
+    icon = GFX_MOL_befriend_enemys
+    x = 0
+    y = 2
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_be_good_guy }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_trust_totalists
+    icon = GFX_MOL_trust_totalists
+    x = 2
+    y = 2
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_be_good_guy }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_fix_issues_king_couldnt
+    icon = GFX_MOL_search_for_vp
+    x = -1
+    y = 3
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_search_for_vp }
+	prerequisite = { focus = MOL_befriend_enemys }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_convert_liberals_royalists
+    icon = GFX_MOL_convert_liberals_royalists
+    x = 1
+    y = 3
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_befriend_enemys }
+	prerequisite = { focus = MOL_trust_totalists }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_the_greater_union_of_socialist_romania_concept
+    icon = GFX_MOL_the_greater_union_of_socialist_romania_concept
+    x = 0
+    y = 4
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_fix_issues_king_couldnt }
+	prerequisite = { focus = MOL_convert_liberals_royalists }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_take_action
+    icon = GFX_MOL_take_action
+    x = 0
+    y = 5
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_the_greater_union_of_socialist_romania_concept }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_the_transnistrian_question
+    icon = GFX_MOL_the_transnistrian_question
+    x = -2
+    y = 6
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_take_action }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_transylvania_or_war
+    icon = GFX_MOL_transylvania_or_war
+    x = 0
+    y = 6
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_take_action }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_dobrogea_for_alliance
+    icon = GFX_MOL_dobrogea_for_alliance
+    x = 2
+    y = 6
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_take_action }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_proclaim_the_socialist_union
+    icon = GFX_MOL_proclaim_the_socialist_union
+    x = 0
+    y = 7
+	relative_position_id = MOL_groza_cabinet
+	prerequisite = { focus = MOL_the_transnistrian_question }
+	prerequisite = { focus = MOL_transylvania_or_war }
+	prerequisite = { focus = MOL_dobrogea_for_alliance }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_the_dark_red_moldova
+    icon = GFX_MOL_the_dark_red_moldova
+    x = 32
+    y = 1
+	relative_position_id = 
+	prerequisite = { focus =  }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_gheorghius_purge_list
+    icon = GFX_MOL_gheorghius_purge_list
+    x = -1
+    y = 1
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_the_dark_red_moldova }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_loyal_inner_circles_loyality
+    icon = GFX_MOL_loyal_inner_circles_loyality
+    x = 1
+    y = 1
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_the_dark_red_moldova }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_open_conversion_camps
+    icon = GFX_MOL_open_conversion_camps
+    x = 0
+    y = 2
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_gheorghius_purge_list }
+	prerequisite = { focus = MOL_loyal_inner_circles_loyality }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_eliminate_political_enemys
+    icon = GFX_MOL_eliminate_political_enemys
+    x = -2
+    y = 3
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_open_conversion_camps }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_moldovian_concetration_camps
+    icon = GFX_MOL_moldovian_concetration_camps
+    x = 0
+    y = 3
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_open_conversion_camps }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_totalist_communist_education
+    icon = GFX_MOL_totalist_communist_education
+    x = 2
+    y = 3
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_open_conversion_camps }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_the_nationalist_communism
+    icon = GFX_MOL_the_nationalist_communism
+    x = 0
+    y = 4
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_eliminate_political_enemys }
+	prerequisite = { focus = MOL_moldovian_concetration_camps }
+	prerequisite = { focus = MOL_totalist_communist_education }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_propaganda_films
+    icon = GFX_MOL_propaganda_films
+    x = -1
+    y = 5
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_the_nationalist_communism }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_mass_romanization
+    icon = GFX_MOL_mass_romanization
+    x = 1
+    y = 5
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_the_nationalist_communism }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_revive_burebistas_spirit
+    icon = GFX_MOL_revive_burebistats_spirit
+    x = 0
+    y = 6
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_propaganda_films }
+	prerequisite = { focus = MOL_mass_romanization }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_attack_the_wallachians
+    icon = GFX_MOL_attack_the_wallachians
+    x = -2
+    y = 7
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_revive_burebistas_spirit }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_reclaim_pannonian_lands
+    icon = GFX_MOL_reclaim_pannonian_lands
+    x = 0
+    y = 7
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_revive_burebistas_spirit }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_attack_the_thracians
+    icon = GFX_MOL_attack_the_thracians
+    x = 2
+    y = 7
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_revive_burebistas_spirit }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = MOL_proclaim_the_dacian_commune
+    icon = GFX_MOL_proclaim_the_dacian_commune
+    x = 0
+    y = 8
+	relative_position_id = MOL_the_dark_red_moldova
+	prerequisite = { focus = MOL_attack_the_wallachians }
+	prerequisite = { focus = MOL_reclaim_pannonian_lands }
+	prerequisite = { focus = MOL_attack_the_thracians }
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+
+
 
 	
 }
