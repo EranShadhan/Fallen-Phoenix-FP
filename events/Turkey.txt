@@ -478,22 +478,15 @@ country_event = { # suez_boogaloo
 	desc = FP_turkey_events.17.d
 	picture = GFX_report_event_royal_parade
 	
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			}
-		}
-	
+	is_triggered_only = yes	
 	
 	option = {
 		name = FP_turkey_events.17.a
-		transfer_state_to = TUR
-		TUR = {
-		country_event = {
-			id = FP_turkey_events.18
-			hours = 12
-		}
+		ROOT = {
+			country_event = {
+				id = FP_turkey_events.18
+				hours = 12
+			}
 		}
 		ai_chance = {
 			base = 3
@@ -503,11 +496,11 @@ country_event = { # suez_boogaloo
 	}
 	option = {
 		name = FP_turkey_events.17.b
-		TUR = {
-		country_event = {
-			id = FP_turkey_events.19
-			hours = 12
-		}
+		ROOT = {
+			country_event = {
+				id = FP_turkey_events.19
+				hours = 12
+			}
 		}
 		ai_chance = {
 			base = 7
@@ -521,17 +514,10 @@ country_event = { # suez_boogaloo
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			}
-		}
-	
 	
 	option = {
 		name = FP_turkey_events.18.a
-
-	
+		transfer_state = 446
 	}
 }
 country_event = { # suez_boogaloo
@@ -542,15 +528,9 @@ country_event = { # suez_boogaloo
 	
 	is_triggered_only = yes
 
-	immediate = {
-		hidden_effect = {
-			}
-		}
-	
-	
 	option = {
 		name = FP_turkey_events.19.a
-		TUR = {
+		ROOT = {
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -581,7 +561,7 @@ country_event = { # suez_boogaloo
 	option = {
 		name = FP_turkey_events.19.b
 		create_wargoal = {
-			target = ENG
+			target = FROM
 			type = annex_everything
 		}
 		ai_chance = {
@@ -602,17 +582,15 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-					TUR = {
-						transfer_state = 446
-					}
+			TUR = {
+				transfer_state = 446
 			}
 		}
+	}
 	
 	
 	option = {
 		name = KT_TUR_border_conflicts.1.a
-
-	
 	}
 }
 country_event = {
@@ -622,19 +600,12 @@ country_event = {
 	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			}
-		}
-	
 	
 	option = {
 		name = KT_TUR_border_conflicts.2.a
-
-	
 	}
 }
+
 country_event = {
 	id = KT_TUR_border_conflicts.3
 	title = KT_TUR_border_conflicts.3.t
@@ -643,20 +614,12 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	immediate = {
-		hidden_effect = {
-			}
-		}
-	
-	
 	option = {
 		name = KT_TUR_border_conflicts.3.a
-
-	
 	}
 }
 
-country_event = { # albania boogaloo
+country_event = { # sinai boogaloo
 	id = FP_turkey_events.20
 	title = FP_turkey_events.20.t
 	desc = FP_turkey_events.20.d
@@ -673,11 +636,11 @@ country_event = { # albania boogaloo
 	option = {
 		name = FP_turkey_events.20.a
 		TUR = {
-		create_wargoal = {
-    		type = puppet_wargoal_focus
-    		target = EGY
-		}
-		complete_national_focus = TUR_a_fourth_balkan_war
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = EGY
+			}
+			complete_national_focus = TUR_a_fourth_balkan_war
 		}
 		ai_chance = {
 			base = 2

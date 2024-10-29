@@ -4373,8 +4373,6 @@ focus = {
 		completion_reward = {
 			create_faction = ROSTOV_PACT
 			add_to_faction = SOV
-
-
 		}
 	}
 	focus = {
@@ -5096,7 +5094,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_under_the_mask
 
 		prerequisite  = {
 			focus = TUR_all_hail_overlord_saadeh
@@ -5176,7 +5174,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_turkic_syriac_union
 
 		prerequisite  = {
 			focus = TUR_hidden_under_the_mask
@@ -5377,7 +5375,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 3
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_no_europeans
 
 		prerequisite  = {
 			focus = TUR_eradicate_russian_influence
@@ -5429,7 +5427,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_perfect_army
 
 		prerequisite  = {
 			focus = TUR_the_perfect_society
@@ -5756,7 +5754,8 @@ focus = {
 		}
 		relative_position_id = TUR_unification_of_turkey_and_syria
 		completion_reward = {
-			add_political_power = 20
+			create_faction = TUR_enguru_damascus_axis
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -5813,12 +5812,12 @@ focus = {
 			}
 		}
 	}
-focus = {
+	focus = {
 		id = TUR_sinai_or_war
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_sinai_or_war
 
 		prerequisite  = {
 			focus = TUR_the_southern_imperialists
@@ -5840,7 +5839,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_TUR_war_with_iran
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria
@@ -5860,7 +5859,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_grave
 
 		mutually_exclusive = { focus = TUR_the_end_of_the_graveyard }
 
@@ -5871,7 +5870,9 @@ focus = {
 		}
 		relative_position_id = TUR_the_eastern_militarists
 		completion_reward = {
-			
+			AFG = {
+				country_event = generic.5
+			}
 		}
 	}
 	focus = {	
@@ -5931,10 +5932,11 @@ focus = {
 		}
 		relative_position_id = TUR_sinai_or_war
 		completion_reward = {
-			446 = {
-				add_core_of = TUR
-			}
-			ENG = {
+			add_state_core = 446
+			every_country = {
+				limit = {
+					controls_state = 446
+				}
 				country_event = {
 					id = FP_turkey_events.17
 					hours = 12
@@ -5950,7 +5952,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_demand_stolen_lands
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_turkey
