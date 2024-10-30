@@ -73,7 +73,7 @@ characters={
 			name=TUR_ali_fuat_cebesoy
 			portraits={
 				civilian = {
-					large = GFX_portrait_TUR_Ali_Fuat_Cebesoy
+					large = GFX_portrait_Ali_Fuat_Cebesoy
 				}
 				army={
 					small="GFX_idea_tur_ali_fuat_cebesoy"
