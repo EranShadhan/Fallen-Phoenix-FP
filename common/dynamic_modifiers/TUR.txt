@@ -1,0 +1,10 @@
+TUR_perfect_state_dm = {
+	enable = { always = yes }
+	icon = GFX_idea_FRA_south_communists
+
+	war_support_factor = TUR_ps_war_support_factor #Perfect Society, Army
+	stability_factor = TUR_ps_stability_factor #Perfect Society
+	army_strength_factor = TUR_ps_army_strength_factor #Perfect Army
+	army_speed_factor = TUR_ps_army_speed_factor #Perfect Army
+	consumer_goods_factor = TUR_ps_consumer_goods_factor #Perfect Industry
+}

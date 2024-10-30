@@ -1,3 +1,24 @@
+propaganda_efforts = {
+	TUR_spread_commie_propaganda_GRE = {
+		cost = 30
+		visible = {
+			original_tag = TUR
+			has_government = communism
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            has_war_with = GRE
+        }
+		modifier = {
+			GRE = {
+				communism_drift = 0.03
+			}
+		}
+		fixed_random_seed = no
+	}
+}
 TUR_sponsor_syrian_revolution_socialist_category = {
 TUR_secure_support_in_FROM = {
 		allowed = { original_tag = TUR }
