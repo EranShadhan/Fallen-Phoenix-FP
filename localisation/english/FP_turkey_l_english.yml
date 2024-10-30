@@ -645,6 +645,8 @@
  TUR_special_forces_improvements:0 "Special Forces Training"
  TUR_tank_program_idea:0 "Domestic Tank Program"
 
+ TUR_spread_commie_propaganda_GRE:0 "Spread KKE Posters in Greece"
+
  NSGUIturkey_tt:0 "[TUR.GetFlag]§R[TUR.GetNameDefCap]§! does not control the region of §YTurkey and Syria§!.\nTo §Ycontrol§! the region, the following states need to be controlled:\n§Y[1040.GetName]\n[342.GetName]\n[343.GetName]\n[973.GetName]\n[340.GetName]\n[347.GetName]\n[356.GetName]\n[49.GetName]\n[798.GetName]\n[346.GetName]\n[345.GetName]\n[348.GetName]\n[344.GetName]\n[978.GetName]\n[799.GetName]\n[349.GetName]\n[355.GetName]\n[350.GetName]\n[353.GetName]\n[349.GetName]\n[354.GetName]\n[975.GetName]\n[677.GetName]\n[680.GetName]\n[554.GetName]\n[553.GetName]\n[455.GetName]\n[854.GetName]§!"
  NSGUIturkeyowned_tt:0 "[TUR.GetFlag]§R[TUR.GetNameDefCap]§! controls the region of §YTurkey and Syria§!."
  NSGUIellada_tt:0 "[TUR.GetFlag]§R[TUR.GetNameDefCap]§! does not control the region of §YEllada§!.\nTo §Ycontrol§! the region, the following states need to be controlled:\n§Y[186.GetName]\n[47.GetName]\n[1039.GetName]\n[983.GetName]\n[185.GetName]\n[731.GetName]\n[805.GetName]\n[984.GetName]\n[182.GetName]\n[184.GetName]\n[341.GetName]\n[797.GetName]\n[985.GetName]\n[187.GetName]\n[164.GetName]\n[986.GetName]\n[183.GetName]\n[339.GetName]\n[987.GetName]§!"

@@ -522,6 +522,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/TUR/TUR_modern_turkey.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_TUR_modern_turkey_2"
+		texturefile = "gfx/interface/goals/TUR/TUR_modern_turkey_2.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_TUR_state_fighters"
 		texturefile = "gfx/interface/goals/TUR/TUR_state_fighters.png"
 	}
@@ -556,6 +560,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_TUR_no_europeans"
 		texturefile = "gfx/interface/goals/TUR/TUR_no_europeans.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_no_europeans_2"
+		texturefile = "gfx/interface/goals/TUR/TUR_no_europeans_2.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_TUR_perfect_army"
