@@ -2520,6 +2520,449 @@ focus = {
 
 
 	focus = {
+		id = GER_the_army_of_german_nation
+		icon = GFX_focus_generic_combined_arms
+		x = 145
+		y = 0
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        available = { has_completed_focus = GER_join_the_war }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_sniper_battalion
+		icon = GFX_focus_FIN_the_cold_front
+		x = 3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_shoktroopers
+		prerequisite = { focus = GER_shoktroopers focus = GER_tank_program }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_prisoner_battalions
+		icon = GFX_focus_FIN_parmis_devils
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_shoktroopers
+		prerequisite = { focus = GER_shoktroopers focus = GER_tank_program }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_prepare_for_a_tough_winter
+		icon = GFX_focus_generic_winter_warfare
+		x = 2
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_shoktroopers
+		prerequisite = { focus = GER_shoktroopers focus = GER_tank_program }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_munich_army_school
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_prepare_for_a_tough_winter
+		prerequisite = { focus = GER_prepare_for_a_tough_winter }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_women_in_the_army
+		icon = GFX_focus_generic_women_in_military
+		x = 2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_munich_army_school
+		prerequisite = { focus = GER_munich_army_school }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_increase_production_of_artillery
+		icon = GFX_TUR_buy_german_artillery
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_munich_army_school
+		prerequisite = { focus = GER_munich_army_school }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_rapid_response_team
+		icon = GFX_TUR_cappadocia_exercises
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_munich_army_school
+		prerequisite = { focus = GER_munich_army_school }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}			
+
+	focus = {
+		id = GER_defence_of_the_nation
+		icon = GFX_focus_SWE_hedgehog_defense
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_rapid_response_team
+		prerequisite = { focus = GER_rapid_response_team }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_self_proppeled_gun
+		icon = GFX_focus_generic_self_propelled_gun
+		x = -3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_rapid_response_team
+		prerequisite = { focus = GER_rapid_response_team }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}				
+	focus = {
+		id = GER_camel_corps
+		icon = GFX_focus_generic_camel_corps
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_rapid_response_team
+		prerequisite = { focus = GER_rapid_response_team }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_open_to_the_arms_market
+		icon = GFX_focus_generic_license_production
+		x = 3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_rapid_response_team
+		prerequisite = { focus = GER_rapid_response_team }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_from_gunner_to_gunner
+		icon = GFX_focus_FIN_weapon_caches
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_defence_of_the_nation
+		prerequisite = { focus = GER_defence_of_the_nation }
+		prerequisite = { focus = GER_camel_corps }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_shoktroopers
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_the_army_of_german_nation
+		prerequisite = { focus = GER_the_army_of_german_nation }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_motorization_of_the_army
+		icon = GFX_goal_generic_army_motorized
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_shoktroopers
+		prerequisite = { focus = GER_shoktroopers }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_lessons_of_the_great_war
+		icon = GFX_focus_NORDIC_dem_army
+		x = -3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_shoktroopers
+		prerequisite = { focus = GER_shoktroopers }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_artillery_rain
+		icon = GFX_focus_SWE_let_fly_all_guns
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_lessons_of_the_great_war
+		prerequisite = { focus = GER_lessons_of_the_great_war }
+		prerequisite = { focus = GER_motorization_of_the_army }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_armored_infantry_production
+		icon = GFX_focus_SWE_lynx_armored_car
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_artillery_rain
+		prerequisite = { focus = GER_artillery_rain }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}		
+	focus = {
+		id = GER_tank_program
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		x = 2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_the_army_of_german_nation
+		prerequisite = { focus = GER_the_army_of_german_nation }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_truck_of_the_empire
+		icon = GFX_focus_generic_truck
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_tank_program
+		prerequisite = { focus = GER_tank_program }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = GER_panzer_troopers
+		icon = GFX_focus_generic_army_tanks2
+		x = 3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_tank_program
+		prerequisite = { focus = GER_tank_program }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_increase_tank_production
+		icon = GFX_focus_generic_tank_production
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_truck_of_the_empire
+		prerequisite = { focus = GER_truck_of_the_empire }
+		prerequisite = { focus = GER_panzer_troopers }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_railway_guns
+		icon = GFX_focus_generic_railway_gun
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        relative_position_id = GER_truck_of_the_empire
+		prerequisite = { focus = GER_truck_of_the_empire }
+		prerequisite = { focus = GER_panzer_troopers }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
 		id = GER_naval_armament
 		icon = GFX_goal_generic_build_navy
 		x = 120
