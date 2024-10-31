@@ -317,9 +317,53 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-
-
-
+		ELS_french_advisors = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 3
+			}
+			removal_cost = -1
+		}
+		ELS_french_volunteers = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.25
+				army_attack_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		FRA_dialects_surpressed = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_bombing_war_support = 0.001
+				weekly_casualties_war_support = 0.002
+				political_power_factor = -0.15
+			}
+			removal_cost = -1
+		}
 
 		FRA_spirit_of_the_war_1 = {
 

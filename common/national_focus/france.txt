@@ -291,7 +291,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = FRA_dialects_surpressed
 		}
 	}
 	focus = {
@@ -319,6 +319,12 @@
 
 		completion_reward = {
 			custom_effect_tooltip = ep_creating_darnaud
+			set_power_balance = {
+				id = FRA_ep_darnaud
+				set_value = -1
+				left_side = FRA_ep_small_ep_power
+   				right_side = FRA_ep_high_ep_power
+			}
 		}
 	}
 	focus = {
@@ -344,7 +350,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = ep_darnaud_chill_the_ep_decisions
 		}
 	}
 	
@@ -851,7 +857,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = TODO
+			ELS = {
+				add_ideas = ELS_french_volunteers
+			}
 		}
 	}
 	focus = {
@@ -877,7 +885,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = TODO
+			ELS = {
+				add_ideas = ELS_french_advisors
+			}
 		}
 	}
 	focus = {
@@ -1378,10 +1388,11 @@
 	focus = {
 		id = FRA_spanish_cw
 		icon = GFX_
-		x = 0
+		x = 4
 		y = 1
 		
 		prerequisite = { focus = FRA_french_advisors_spain focus = FRA_prewar_claims focus = FRA_french_volonteers_spain }
+		prerequisite = { focus = FRA_marseille_invasion }
 		relative_position_id = FRA_french_generals_spain
 		allow_branch = { 
 			
@@ -1544,7 +1555,7 @@
 	focus = {
 		id = FRA_invasion_of_switzerland
 		icon = GFX_
-		x = 0
+		x = 2
 		y = 1
 		
 		prerequisite = { focus = FRA_marseille_invasion }
@@ -3494,7 +3505,7 @@
 	focus = {
 		id = FRA_recruit_the_ep
 		icon = GFX_focus_FRA_recruitep
-		x = 1
+		x = 1 
 		y = 1
 		
 		prerequisite = { focus = FRA_crate_the_ep}

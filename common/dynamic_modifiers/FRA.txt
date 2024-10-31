@@ -8,5 +8,15 @@ FRA_communists = {
 	disable_strategic_redeployment = 1
 	recruitable_population = -0.33
 	state_production_speed_buildings_factor = -0.1
-	communism_drift = 0.01
+}
+FRA_ep_police = { 
+	icon = GFX_idea_FRA_south_communists
+	remove_trigger = { 
+		controller = {
+			NOT = { tag = FRA }
+		}
+	}
+	compliance_growth = 0.15
+	local_factory_sabotage = -0.3
+	local_non_core_manpower = 0.30
 }

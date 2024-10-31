@@ -846,4 +846,15 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+
+	# BOP
+	SpriteType = { 
+		name = "GFX_bop_FRANCE"
+		texturefile = "gfx/interface/bop/FRA/bop_FRANCE.png"
+	}
+	SpriteType = { 
+		name = "GFX_bop_EP"
+		texturefile = "gfx/interface/bop/FRA/bop_EP.png"
+	}
 }

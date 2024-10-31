@@ -9,6 +9,9 @@ FRA_EDG_category = {
 		OR = {
 			original_tag = FRA
 		}
+		FRA = {
+			has_war_with = GER
+		}
 	}
 }
 FRA_integrate_territories = {
@@ -19,5 +22,21 @@ FRA_integrate_territories = {
 		OR = {
 			original_tag = FRA
 		}
+	}
+}
+FRA_ep_decisions = {
+	priority = 152
+	icon = GFX_category_icon
+
+	allowed = {
+		TAG = FRA
+	}
+}
+FRA_ep_darnaud_trust = {
+	priority = 153
+	icon = GFX_category_icon
+
+	allowed = {
+		TAG = FRA
 	}
 }
