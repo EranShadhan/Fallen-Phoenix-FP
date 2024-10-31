@@ -14,12 +14,13 @@ bookmarks = {
 				FRA_embargoed_by_germany
 				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
+				FRA_republican_collapse
 			}
 			focuses = {
-				FRA_eliminate_communist_opposition
-				FRA_communist_coup
-				FRA_strike_germany
-				FRA_double_down_on_tanks
+				FRA_promove_militarism
+				FRA_fake_burgundy
+				FRA_for_god
+				FRA_unkillable_spirit
 			}
 		}
 		"JAP"={
@@ -27,8 +28,7 @@ bookmarks = {
 			ideology = communism
 			ideas = {
 				JAP_hirohito
-				JAP_militarism
-				JAP_interservice_rivalry_balanced
+				JAP_shattered_military
 			}	
 			focuses = {
 			}
@@ -40,7 +40,7 @@ bookmarks = {
 				RUS_transistion
 				RUS_stagnant_russification
 				RUS_rampant_corruption
-				RUS_revanchism
+				RUS_okhrana
 			}
 			focuses = {
 				SOV_sunrise_over_moscow
@@ -53,6 +53,8 @@ bookmarks = {
 			ideas = {
                 german_customs_union_member
 				vittorio_emanuele
+				ITA_italys_future_idea
+				ITA_political_reforms_IF_coalition
 			}	
 			focuses = {
 				ITA_ip_final_civilization
@@ -63,7 +65,6 @@ bookmarks = {
 			history = "ENG_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
-				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
@@ -76,14 +77,11 @@ bookmarks = {
 			ideas = {
 				GER_wilhelm_ii
 				GER_victory_tgw
-				german_customs_union_member
+				german_customs_union_leader
 				GER_powerful_unions
 			}
 			focuses = {
-				GER_restore_kaiser_power
-				GER_bismarck_legacy
-				GER_sparkatist_revolution
-				GER_hre
+				GER_the_hre
 			}
 		}
 		
@@ -93,6 +91,8 @@ bookmarks = {
 			ideas = {
 				great_depression
 				home_of_the_free
+				USA_prohibition
+				USA_outdatedarmy
 			}
 			focuses = {
 			}
