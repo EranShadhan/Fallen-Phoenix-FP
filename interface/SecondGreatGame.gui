@@ -1,0 +1,148 @@
+guiTypes = {
+	containerWindowType = {
+		name = "sgg_container"
+		
+		position = { x = -5 y = 0 }
+		size = { width = 500 height = 570 }
+		
+		instantTextboxType = {
+			name = "sgg_title"
+			position = { x = -5 y = 20 }
+			font = hoi_36header
+			format = centre
+			text = l_SGG_title
+			maxWidth = 500
+		}
+		
+		instantTextboxType = {
+			name = "sgg_players"
+			position = { x = 30 y = 90 }
+			font = hoi_24
+			format = left
+			text = l_SGG_players
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "sgg_actors"
+			position = { x = 30 y = 140 }
+			font = hoi_24
+			format = left
+			text = l_SGG_actors
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "sgg_winning"
+			position = { x = 0 y = 180 }
+			font = hoi_33
+			format = centre
+			text = l_SGG_currently_winning
+			maxWidth = 500
+		}
+		iconType = {
+			name = "iconTurkestan"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_turkestan_neutral
+		}
+		iconType = {
+			name = "iconTurkestanBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_turkestan_brit
+		}
+		iconType = {
+			name = "iconTurkestanRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_turkestan_rus
+		}
+		iconType = {
+			name = "iconZheltogorsk"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_zheltogorsk_neutral
+		}
+		iconType = {
+			name = "iconZheltogorskBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_zheltogorsk_brit
+		}
+		iconType = {
+			name = "iconZheltogorskRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_zheltogorsk_rus
+		}
+		iconType = {
+			name = "iconMa"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_ma_neutral
+		}
+		iconType = {
+			name = "iconMaBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_ma_brit
+		}
+		iconType = {
+			name = "iconMaRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_ma_rus
+		}
+		iconType = {
+			name = "iconTibet"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_tibet_neutral
+		}
+		iconType = {
+			name = "iconTibetBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_tibet_brit
+		}
+		iconType = {
+			name = "iconTibetRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_tibet_rus
+		}
+		iconType = {
+			name = "iconSindh"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sindh_neutral
+		}
+		iconType = {
+			name = "iconSindhBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sindh_brit
+		}
+		iconType = {
+			name = "iconSindhRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sindh_rus
+		}
+		iconType = {
+			name = "iconAfghanistan"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_afghanistan_neutral
+		}
+		iconType = {
+			name = "iconAfghanistanBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_afghanistan_brit
+		}
+		iconType = {
+			name = "iconAfghanistanRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_afghanistan_rus
+		}
+		iconType = {
+			name = "iconSinkiang"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sinkiang_neutral
+		}
+		iconType = {
+			name = "iconSinkiangBrit"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sinkiang_brit
+		}
+		iconType = {
+			name = "iconSinkiangRus"
+			position = { x = 0 y = 260 }
+			spriteType = GFX_SGG_sinkiang_rus
+		}
+		
+	}
+}

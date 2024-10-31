@@ -1,0 +1,86 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SGG_turkestan_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_1_turkestan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_turkestan_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_1_turkestan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_turkestan_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_1_turkestan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_zheltogorsk_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_2_zheltogorsk.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_zheltogorsk_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_2_zheltogorsk.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_zheltogorsk_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_2_zheltogorsk.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_ma_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_3_MA.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_ma_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_3_MA.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_ma_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_3_MA.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_tibet_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_4_Tibet.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_tibet_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_4_Tibet.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_tibet_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_4_Tibet.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sindh_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_5_PAKISTAN.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sindh_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_5_PAKISTAN.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sindh_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_5_PAKISTAN.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_afghanistan_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_6_afghanistan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_afghanistan_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_6_afghanistan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_afghanistan_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_6_afghanistan.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sinkiang_neutral"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_7_sinkiang.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sinkiang_brit"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_BRIT_7_sinkiang.png"
+	}
+	spriteType = {
+		name = "GFX_SGG_sinkiang_rus"
+		texturefile = "gfx/interface/decisions/SGG/SGG_GUI_RUS_7_sinkiang.png"
+	}
+}

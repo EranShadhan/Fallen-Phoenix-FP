@@ -1,0 +1,34 @@
+defined_text = {
+	name = GetWinningSGG
+	text = {
+		trigger = { 
+			check_variable = {
+    			var = SOV.SGGownedRegionsVar
+    			value = ENG.SGGownedRegionsVar
+    			compare = greater_than
+			} 
+		}
+		localization_key = RusWinningSGG_tt
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+    			var = SOV.SGGownedRegionsVar
+    			value = ENG.SGGownedRegionsVar
+    			compare = less_than_than
+			} 
+		}
+		localization_key = EngWinningSGG_tt
+	}
+	text = {
+		trigger = { 
+				check_variable = {
+					var = SOV.SGGownedRegionsVar
+					value = ENG.SGGownedRegionsVar
+					compare = equals
+				} 
+			}
+		localization_key = SGGBalance_tt
+	}
+
+}

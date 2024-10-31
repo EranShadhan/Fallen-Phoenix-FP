@@ -1,0 +1,8 @@
+﻿l_english:
+ l_SGG_title:0 "The §YSecond Great Game§!"
+ l_SGG_players:0 "The §YPlayers§! are [ENG.GetFlag]§R[ENG.GetNameDef]§! and [SOV.GetFlag]§Y[SOV.GetNameDef]§!"
+ l_SGG_actors:0 "The §gActors§! are §g[SIK.GetFlag][SIK.GetNameDef], [AFG.GetFlag][AFG.GetNameDef], [TIB.GetFlag][TIB.GetNameDef], [RAJ.GetFlag][RAJ.GetNameDef], [ZHE.GetFlag][ZHE.GetNameDef]§!"
+ l_SGG_currently_winning:0 "[GetWinningSGG]"
+ RusWinningSGG_tt:0 "[SOV.GetFlag][SOV.GetNameDef] is winning the §YSecond Great Game§!"
+ EngWinningSGG_tt:0 "[ENG.GetFlag][ENG.GetNameDef] is winning the §YSecond Great Game§!"
+ SGGBalance_tt:0 "§gNobody§! is currently winning the §YSecond Great Game§!"

@@ -182,6 +182,152 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_SOV = {
+		effect = {
+				SOV = {
+					set_variable = {
+						var = SGGownedRegionsVar
+						value = 7
+					}
+					if = {
+						limit = {
+							SGG_owns_turkestan = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_sinkiang = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_zheltogorsk = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_afghanistan = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_sindh = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_ma = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_tibet= no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+				}
+		}
+	}
+	on_weekly_ENG = {
+		effect = {
+				ENG = {
+					set_variable = {
+						var = SGGownedRegionsVar
+						value = 7
+					}
+					if = {
+						limit = {
+							SGG_owns_turkestan = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_sinkiang = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_zheltogorsk = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_afghanistan = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_sindh = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_ma = no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+					if = {
+						limit = {
+							SGG_owns_tibet= no
+						}
+						add_to_variable = {
+							var = SGGownedRegionsVar
+							value = -1
+						}
+					}
+				}
+		}
+	}
 	on_monthly_GER = {
 		effect = {
 			if = {

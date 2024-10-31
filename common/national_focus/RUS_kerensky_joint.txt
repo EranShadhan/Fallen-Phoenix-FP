@@ -12,7 +12,7 @@
 	focus = {
 		id = RUS_KER_JOINT_WIP
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 9
+		x = 20
 		y = 0
 		offset = {
 			x = -6
@@ -44,5 +44,118 @@
 	}
 	shared_focus = RUS_KER_LEFT_WIP
 	shared_focus = RUS_KER_RIGHT_WIP
+
+	focus = {
+		id = RUS_KER_JOINT_problems_of_the_interior
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_WIP
+		prerequisite = { focus = RUS_KER_JOINT_WIP }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_rehabilitating_the_industry
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_problems_of_the_interior
+		prerequisite = { focus = RUS_KER_JOINT_problems_of_the_interior }
+		x = -4
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_modernizing_the_military
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_problems_of_the_interior
+		prerequisite = { focus = RUS_KER_JOINT_problems_of_the_interior }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_second_great_game
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_problems_of_the_interior
+		prerequisite = { focus = RUS_KER_JOINT_problems_of_the_interior }
+		x = 5
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
 
 }

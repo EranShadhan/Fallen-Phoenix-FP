@@ -1,0 +1,82 @@
+scripted_gui = {
+
+	sgg_gui = {
+		context_type = decision_category
+		window_name = "sgg_container"
+		triggers = {
+			iconTurkestanBrit_visible = {
+				ENG = {
+					SGG_owns_turkestan = yes
+				}
+			}
+			iconTurkestanRus_visible = {
+				SOV = {
+					SGG_owns_turkestan = yes
+				}
+			}
+			iconZheltogorskBrit_visible = {
+				ENG = {
+					SGG_owns_zheltogorsk = yes
+				}
+			}
+			iconZheltogorskRus_visible = {
+				SOV = {
+					SGG_owns_zheltogorsk = yes
+				}
+			}
+			iconMaBrit_visible = {
+				ENG = {
+					SGG_owns_ma = yes
+				}
+			}
+			iconMaRus_visible = {
+				SOV = {
+					SGG_owns_ma = yes
+				}
+			}
+			iconTibetBrit_visible = {
+				ENG = {
+					SGG_owns_tibet = yes
+				}
+			}
+			iconTibetRus_visible = {
+				SOV = {
+					SGG_owns_tibet = yes
+				}
+			}
+			iconSindhBrit_visible = {
+				ENG = {
+					SGG_owns_sindh = yes
+				}
+			}
+			iconSindhRus_visible = {
+				SOV = {
+					SGG_owns_sindh = yes
+				}
+			}
+			iconAfghanistanBrit_visible = {
+				ENG = {
+					SGG_owns_afghanistan = yes
+				}
+			}
+			iconAfghanistanRus_visible = {
+				SOV = {
+					SGG_owns_afghanistan = yes
+				}
+			}
+			iconSinkiangBrit_visible = {
+				ENG = {
+					SGG_owns_sinkiang = yes
+				}
+			}
+			iconSinkiangRus_visible = {
+				SOV = {
+					SGG_owns_sinkiang = yes
+				}
+			}
+			
+		}
+	}
+
+}
+

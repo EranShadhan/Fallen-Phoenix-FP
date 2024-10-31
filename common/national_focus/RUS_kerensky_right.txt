@@ -11,16 +11,9 @@
 shared_focus = {
 	id = RUS_KER_RIGHT_WIP
 	icon = GFX_goal_generic_construct_infrastructure
-	x = 10
+	x = 23
 	y = 1
 	prerequisite = { focus = RUS_KER_JOINT_WIP }
-	offset = {
-		x = -6
-		y = 0
-		trigger = {
-			
-		}
-	}
 
 	cost = 5
 

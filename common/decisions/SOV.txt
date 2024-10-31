@@ -95,3 +95,7 @@ SOV_balance_of_power_category = {
 	}
     
 }
+
+SOV_SGG_category = {
+    
+}
