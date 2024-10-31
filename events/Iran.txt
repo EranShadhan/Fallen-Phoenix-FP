@@ -29,7 +29,7 @@ country_event = {
 				transfer_state = 656
 			}
 			declare_war_on = {
-				target = PER
+				target = CPE
 				type = civil_war
 			}
 		}

@@ -1,33 +1,10 @@
-<<<<<<< Updated upstream
-﻿focus_tree = {
-	id = portuguese_focus
-	
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = POR
-		}
-	}
-
-	#Generic tree
-	shared_focus = army_effort
-	shared_focus = aviation_effort
-	shared_focus = naval_effort
-	shared_focus = industrial_effort
-	shared_focus = political_effort
-	
-	default = no
-
-}
-=======
 focus_tree = {
     id = portuguese_focus
     
     country = {
         factor = 0
         modifier = {
-            add = 20
+            add = 10
             tag = POR
         }
 
@@ -219,4 +196,3 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = { instant_wargoal = SPR SPA }
 			
->>>>>>> Stashed changes
