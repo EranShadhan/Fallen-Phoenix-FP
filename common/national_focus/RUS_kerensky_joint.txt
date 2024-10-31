@@ -157,5 +157,463 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 	}
+	focus = {
+		id = RUS_KER_JOINT_a_peaceful_approach
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_second_great_game
+		prerequisite = { focus = RUS_KER_JOINT_second_great_game }
+		mutually_exclusive = { focus = RUS_KER_JOINT_rid_central_asia_of_the_brits }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_dividing_spheres_of_influence
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_a_peaceful_approach
+		prerequisite = { focus = RUS_KER_JOINT_a_peaceful_approach }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_negotiate_with_wuhan
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_a_peaceful_approach
+		prerequisite = { focus = RUS_KER_JOINT_a_peaceful_approach }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_install_marionettes
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_negotiate_with_wuhan
+		prerequisite = { focus = RUS_KER_JOINT_negotiate_with_wuhan }
+		prerequisite = { focus = RUS_KER_JOINT_dividing_spheres_of_influence }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_rid_central_asia_of_the_brits
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_second_great_game
+		prerequisite = { focus = RUS_KER_JOINT_second_great_game }
+		mutually_exclusive = { focus = RUS_KER_JOINT_a_peaceful_approach }
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_ambitions_of_our_own
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_rid_central_asia_of_the_brits
+		prerequisite = { focus = RUS_KER_JOINT_rid_central_asia_of_the_brits }
+		mutually_exclusive = { focus = RUS_KER_JOINT_clamdown_on_imperialism }
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_deposing_the_mad_baron
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_ambitions_of_our_own
+		prerequisite = { focus = RUS_KER_JOINT_ambitions_of_our_own }
+		mutually_exclusive = { focus = RUS_KER_JOINT_appeasing_the_mad_baron }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_integrating_the_remaining_hui
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_deposing_the_mad_baron
+		prerequisite = { focus = RUS_KER_JOINT_deposing_the_mad_baron }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_mountains_are_no_challenge
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_ambitions_of_our_own
+		prerequisite = { focus = RUS_KER_JOINT_ambitions_of_our_own }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_mother_russias_himalayas
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_mountains_are_no_challenge
+		prerequisite = { focus = RUS_KER_JOINT_mountains_are_no_challenge }
+		prerequisite = { focus = RUS_KER_JOINT_deposing_the_mad_baron }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_setting_the_sun_on_the_raj
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_mother_russias_himalayas
+		prerequisite = { focus = RUS_KER_JOINT_integrating_the_remaining_hui }
+		prerequisite = { focus = RUS_KER_JOINT_mother_russias_himalayas }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_clampdown_on_imperialism
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_rid_central_asia_of_the_brits
+		prerequisite = { focus = RUS_KER_JOINT_rid_central_asia_of_the_brits }
+		mutually_exclusive = { focus = RUS_KER_JOINT_ambitions_of_our_own }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_enemy_of_our_enemy
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_clampdown_on_imperialism
+		prerequisite = { focus = RUS_KER_JOINT_clampdown_on_imperialism }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_appeasing_the_mad_baron
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_clampdown_on_imperialism
+		prerequisite = { focus = RUS_KER_JOINT_clampdown_on_imperialism }
+		mutually_exclusive = { focus = RUS_KER_JOINT_deposing_the_mad_baron }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_free_the_cliques
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_appeasing_the_mad_baron
+		prerequisite = { focus = RUS_KER_JOINT_appeasing_the_mad_baron }
+		prerequisite = { focus = RUS_KER_JOINT_enemy_of_our_enemy }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_a_revolution_of_the_muslim_indians
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_free_the_cliques
+		prerequisite = { focus = RUS_KER_JOINT_free_the_cliques }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
 
 }

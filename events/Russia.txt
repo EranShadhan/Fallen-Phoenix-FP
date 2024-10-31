@@ -556,8 +556,8 @@ country_event = {
 
 	option = { # 
 		name = SOV_events.12.a
-		
 		custom_effect_tooltip = SOV_effect_are_same_btw
+		load_focus_tree = SOV_Kerensky_Tree
 		add_political_power = -100
 		add_stability = -0.2
 		add_popularity = {
@@ -567,8 +567,8 @@ country_event = {
 	}
 	option = { # 
 		name = SOV_events.12.b
-		
 		custom_effect_tooltip = SOV_effect_are_same_btw
+		load_focus_tree = SOV_Kerensky_Tree
 		add_political_power = -100
 		add_stability = -0.2
 		add_popularity = {
@@ -580,6 +580,7 @@ country_event = {
 		name = SOV_events.12.c
 		
 		custom_effect_tooltip = SOV_effect_are_same_btw
+		load_focus_tree = SOV_Kerensky_Tree
 		add_political_power = -100
 		add_stability = -0.2
 		add_popularity = {
@@ -623,6 +624,7 @@ country_event = {
 	
 	option = { # Kerensky Elected
 		name = SOV_events.13.b
+		load_focus_tree = SOV_Kerensky_Tree
 	}
 	
 	option = { # Communists/Democrats elected
