@@ -88,7 +88,7 @@
 	}
 	focus = {
 		id = FRA_secure_fascist_state
-		icon = GFX_focus_FRA_execution
+		icon = GFX_focus_FRA_securefasciststate
 		x = 0
 		y = 1
 		
@@ -212,7 +212,7 @@
 	}
 	focus = {
 		id = FRA_promote_nationalism
-		icon = GFX_focus_FRA_promote_militarism
+		icon = GFX_
 		x = -3
 		y = 1
 		
@@ -377,7 +377,7 @@
 	}
 	focus = {
 		id = FRA_promove_militarism
-		icon = GFX_
+		icon = GFX_focus_FRA_promote_militarism
 		x = -1
 		y = 1
 		
@@ -3131,7 +3131,7 @@
 	}
 	focus = {
 		id = FRA_national_salvation
-		icon = GFX_
+		icon = GFX_focus_FRA_nationalsavation
 		x = 0
 		y = 1
 		
@@ -3249,7 +3249,7 @@
 	}
 	focus = {
 		id = FRA_the_masters_of_europe
-		icon = GFX_
+		icon = GFX_focus_FRA_masterofeurope
 		x = -1
 		y = 1
 		
@@ -3330,7 +3330,7 @@
 	}
 	focus = {
 		id = FRA_enforce_strict_rules
-		icon = GFX_
+		icon = GFX_focus_FRA_enforcestrickrule
 		x = 0
 		y = 1
 		
@@ -3385,7 +3385,7 @@
 	}
 	focus = {
 		id = FRA_household_women
-		icon = GFX_
+		icon = GFX_focus_FRA_housewife
 		x = -2
 		y = 2
 		
@@ -3412,7 +3412,7 @@
 	}
 	focus = {
 		id = FRA_sons_of_war
-		icon = GFX_
+		icon = GFX_focus_FRA_sonsofwar
 		x = 0
 		y = 1
 		
@@ -3520,7 +3520,7 @@
 	}
 	focus = {
 		id = FRA_fake_burgundy
-		icon = GFX_
+		icon = GFX_focus_FRA_fakeburgundy
 		x = 1
 		y = 1
 		
@@ -3546,7 +3546,7 @@
 	}
 	focus = {
 		id = FRA_execute_traitors
-		icon = GFX_
+		icon = GFX_focus_FRA_execution
 		x = 3
 		y = 1
 		
@@ -3599,7 +3599,7 @@
 	}
 	focus = {
 		id = FRA_enforce_french_superiority
-		icon = GFX_
+		icon = GFX_focus_FRA_frenchsuperiority
 		x = 0
 		y = 1
 		
