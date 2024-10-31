@@ -2522,7 +2522,7 @@ focus = {
 	focus = {
 		id = GER_naval_armament
 		icon = GFX_goal_generic_build_navy
-		x = 70
+		x = 120
 		y = 1
 
 		cost = 5
@@ -2706,6 +2706,73 @@ focus = {
 			
 		}
 	}
+
+	focus = {
+		id = GER_ampibious_assault
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = GER_naval_armament }
+		x = -5
+		y = 1
+		relative_position_id = GER_naval_armament
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}	
+	focus = {
+		id = GER_blitzkrieg_at_sea
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = GER_ampibious_assault }
+		x = -1
+		y = 1
+		relative_position_id = GER_ampibious_assault
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_guardians_of_the_pacific
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = GER_ampibious_assault }
+		x = 0
+		y = 2
+		relative_position_id = GER_ampibious_assault
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}		
 	focus = {
 		id = GER_mainteen_supplies_in_colonies
 		icon = GFX_focus_generic_merchant_fleet
