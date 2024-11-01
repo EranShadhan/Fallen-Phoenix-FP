@@ -7,7 +7,7 @@ set_technology = {
 	tech_trucks = 1
 	basic_train = 1
 }
-
+set_oob = "ETH_1936"
 recruit_character = ETH_Zewditu
 recruit_character = ETH_haile_selassie
 
