@@ -110,38 +110,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-			add_timed_idea = {
-				idea = FRA_commie_repression
-				days = 270
-			}
-			
-		}
-	}
-	focus = {
-		id = FRA_clear_southern_communist_resistance
-		icon = GFX_focus_FRA_clear_communist
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = FRA_secure_fascist_state}
-		relative_position_id = FRA_secure_fascist_state
-		
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
+			add_ideas = FRA_commie_repression
 			31 =  {
 				remove_dynamic_modifier = { 
 					modifier = FRA_communists
@@ -207,7 +176,33 @@
 					modifier = FRA_communists
 				}
 			}
-			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = FRA_clear_southern_communist_resistance
+		icon = GFX_focus_FRA_clear_communist
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_secure_fascist_state}
+		relative_position_id = FRA_secure_fascist_state
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = these_mfs_will_be_sent_to_algeria_or_executed
 		}
 	}
 	focus = {
@@ -376,7 +371,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_commie_repression
+				add_idea = FRA_glorious
+			}
 		}
 	}
 	focus = {
@@ -403,7 +401,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = FRA_militarism
 		}
 	}
 	focus = {
@@ -490,7 +488,7 @@
 		}
 	}
 	focus = {
-		id = FRA_purge_communists
+		id = FRA_german_sympaties
 		icon = GFX_
 		x = 4
 		y = 1
@@ -523,8 +521,8 @@
 		x = 1
 		y = 1
 		
-		prerequisite = { focus = FRA_purge_communists}
-		relative_position_id = FRA_purge_communists
+		prerequisite = { focus = FRA_german_sympaties}
+		relative_position_id = FRA_german_sympaties
 		
 		
 		allow_branch = { 
@@ -550,8 +548,8 @@
 		x = -1
 		y = 1
 		
-		prerequisite = { focus = FRA_purge_communists}
-		relative_position_id = FRA_purge_communists
+		prerequisite = { focus = FRA_german_sympaties}
+		relative_position_id = FRA_german_sympaties
 		
 		
 		allow_branch = { 
@@ -596,7 +594,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_militarism
+				add_idea = FRA_young_militarism
+			}
 		}
 	}
 	focus = {

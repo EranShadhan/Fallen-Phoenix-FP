@@ -392,7 +392,7 @@ FRA_ep_decisions = {
 		complete_effect = {
 			add_to_variable = {
 				var = global.var_ep_darnaud
-				value = -5
+				value = -10
 				tooltip = FRA_Ep_increasing_influence_tt
 			}  
 		}
@@ -513,7 +513,7 @@ FRA_ep_decisions = {
 		timeout_effect = {
 			add_to_variable = {
 				var = global.var_ep_darnaud
-				value = 1
+				value = 2
 				tooltip = FRA_Ep_increasing_influence_tt
 			}  
 		}

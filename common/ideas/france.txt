@@ -364,6 +364,72 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+		FRA_militarism = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.05
+				army_org_factor = 0.05
+				pocket_penalty = -0.1
+			}
+			removal_cost = -1
+		}
+		FRA_young_militarism = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.05
+				army_org_factor = 0.05
+				pocket_penalty = -0.2
+				conscription = 0.01
+				army_speed_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		FRA_young_militarism = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.05
+				army_org_factor = 0.05
+				pocket_penalty = -0.2
+				conscription = 0.01
+				army_speed_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		FRA_glorious = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+			}
+			removal_cost = -1
+		}
 
 		FRA_spirit_of_the_war_1 = {
 
