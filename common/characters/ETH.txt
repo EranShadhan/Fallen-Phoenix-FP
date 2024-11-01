@@ -1,9 +1,23 @@
 characters = {
+	ETH_Zewditu = {
+		name = ETH_Zewditu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ETH/ETH_zewditu.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1930.4.2.1"
+			traits = {  }
+			id = -1
+		}
+	}
 	ETH_haile_selassie = {
 		name = ETH_haile_selassie
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ETH_haile_selassie
+				large = "gfx/leaders/ETH/ETH_haile_selassie.png"
 			}
 		}
 		country_leader = {
@@ -13,6 +27,4 @@ characters = {
 			id = -1
 		}
 	}
-
-
 }

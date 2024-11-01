@@ -1,0 +1,15 @@
+characters={
+	MOR_king={
+		name=MOR_king
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/MOR_king.png"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

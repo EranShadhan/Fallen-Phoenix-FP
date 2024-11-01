@@ -1,0 +1,33 @@
+﻿add_namespace = chatacter_death
+
+
+country_event = { #ethiopia
+	id = chatacter_death.1
+	title = chatacter_death.1.t
+	desc = chatacter_death.1.desc
+	picture = GFX_report_event_japan_europe_pact
+	fire_only_once = yes
+	trigger = {
+		date > 1930.4.2
+		tag = ETH
+	}
+	
+	option = {
+		kill_country_leader = yes
+	}
+}
+country_event = { #liberia
+	id = chatacter_death.2
+	title = chatacter_death.2.t
+	desc = chatacter_death.2.desc
+	picture = GFX_report_event_japan_europe_pact
+	fire_only_once = yes
+	trigger = {
+		date > 1930.12.3
+		tag = LIB
+	}
+	
+	option = {
+		kill_country_leader = yes
+	}
+}

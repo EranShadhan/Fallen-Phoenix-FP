@@ -1,0 +1,28 @@
+characters = {
+	LIB_charles_d_b_king = {
+		name = LIB_charles_d_b_king
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIB/LIB_charles_d_b_king.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1930.12.3.1"
+			traits={  }
+		}
+	}
+	LIB_edwin_barclay = {
+		name = LIB_edwin_barclay
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIB/LIB_edwin_barclay.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits={  }
+		}
+	}
+}

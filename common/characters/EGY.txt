@@ -1,0 +1,16 @@
+characters = {
+	EGY_king = {
+		name = EGY_king
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/EGY_king.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}
