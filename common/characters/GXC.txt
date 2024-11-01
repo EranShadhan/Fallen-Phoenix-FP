@@ -1,29 +1,14 @@
 characters={
-	GXC_li_zongren={
-		name=GXC_li_zongren
+	GXC_Zhang_Guotao={
+		name=GXC_Zhang_Guotao
 		portraits={
 			civilian={
-				large=GFX_portrait_GXC_li_zongren
-			}
-			army={
-				small=GFX_portrait_GXC_li_zongren_small
-				large="GFX_portrait_li_zongren"
+				large=GFX_GXC_Zhang_Guotao
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = GXC_li_zongren
-			allowed  = {
-				original_tag  = GXC
-			}
-			traits  = {
-				prince_of_terror 
-			}
-		}
-
 		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
+			ideology=japsoccom
+			expire="1976.1.1.1"
 			id=-1
 		}
 	}

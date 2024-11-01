@@ -91,4 +91,17 @@ characters = {
 			id = -1
 		}
 	}
+	CHI_Wang_Jing = {
+		name = CHI_Wang_Jing
+		portraits = {
+			civilian = {
+				large = GFX_CHI_Wang_Jing
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1944.3.1.1"
+			id = -1
+		}
+	}
 }

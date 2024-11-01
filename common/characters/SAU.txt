@@ -3,11 +3,11 @@ characters={
 		name="Rashid Ali al-Gaylanii"
 		portraits={
 			civilian={
-				large="GFX_portrait_iraq_rashid_al_gaylani"
+				large="GFX_portrait_SAU_rashid_gaylani"
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=falangism
 			expire="1965.1.1.1"
 			id=-1
 		}

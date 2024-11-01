@@ -28,4 +28,12 @@ spriteTypes = {
 		name = "GFX_KOR_Kim_Tu-bong"
 		texturefile = "gfx/leaders/china_shared/KOR_Kim_Tu-bong.png"
 	}
+	spriteType = {
+		name = "GFX_CHI_Wang_Jing"
+		texturefile = "gfx/leaders/china_shared/Portrait_China_Wang_Jing.dds"
+	}
+	spriteType = {
+		name = "GFX_GXC_Zhang_Guotao"
+		texturefile = "gfx/leaders/china_shared/Portrait_GXC_Zhang_Guotao.dds"
+	}
 }

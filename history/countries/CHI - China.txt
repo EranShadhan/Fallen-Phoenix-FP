@@ -1,44 +1,8 @@
-﻿capital = 620 # Nanjing
+﻿capital = 620
 
 oob = "CHI_1936"
 
-recruit_character = CHI_chiang_kaishek
-recruit_character = CHI_zhang_guotao
-recruit_character = CHI_wang_jingwei
-recruit_character = CHI_weng_wenhao
-recruit_character = CHI_tu_yuming
-recruit_character = CHI_hsueh_yueh
-recruit_character = CHI_tai_anlan
-recruit_character = CHI_wang_yaowu
-recruit_character = CHI_sun_li_jen
-recruit_character = CHI_hu_zongnan
-recruit_character = CHI_gu_zhutong
-recruit_character = CHI_wei_lihuang
-recruit_character = CHI_fu_zuoyi
-recruit_character = CHI_zhang_xueliang
-recruit_character = CHI_fang_zeyi
-recruit_character = CHI_zhu_de
-recruit_character = CHI_chen_cheng
-recruit_character = CHI_li_zongren
-recruit_character = CHI_bo_yibo
-recruit_character = CHI_huang_shen
-recruit_character = CHI_chen_jitang
-recruit_character = CHI_wang_shuming
-recruit_character = CHI_bai_chongxi
-recruit_character = CHI_zhou_zhirou
-recruit_character = CHI_xiao_yisu
-recruit_character = CHI_chen_shaokuan
-recruit_character = CHI_xiao_jinguang
-recruit_character = CHI_yu_hanmou
-recruit_character = CHI_he_yingqin
-recruit_character = CHI_gao_zhihang
-recruit_character = CHI_h_h_kung
-recruit_character = CHI_chen_guofu
-recruit_character = CHI_chiang_ching_kuo
-recruit_character = CHI_chen_yi
-recruit_character = CHI_soong_mei_ling
-recruit_character = CHI_random_prince_of_terror
-recruit_character = CHI_lin_sen
+recruit_character = CHI_Wang_Jing
 
 set_stability = 0.2
 set_war_support = 0.5
@@ -87,7 +51,7 @@ set_convoys = 40
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1930.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -100,8 +64,6 @@ set_popularities = {
 }
 
 
-### VARIANTS ###
-# 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 }

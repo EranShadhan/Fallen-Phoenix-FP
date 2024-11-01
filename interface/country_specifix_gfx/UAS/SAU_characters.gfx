@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_SAU_rashid_gaylani"
+		texturefile = "gfx/leaders/SAU/portrait_sau_rashid_al_gaylani.dds"
+	}
+
+}
