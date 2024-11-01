@@ -1,0 +1,15 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ep_darnaud_container"
+		
+		position = { x = -5 y = 0 }
+		size = { width = 500 height = 125 }
+
+		iconType = {
+			name = "progressbar_ep_darnaud"
+			spriteType = GFX_decisions_FRA_ep_darnaud
+			position = { x = 33 y = 33 }
+		}
+		
+	}
+} 

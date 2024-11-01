@@ -8,14 +8,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 

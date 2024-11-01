@@ -297,7 +297,7 @@
 	focus = {
 		id = FRA_create_ep
 		icon = GFX_focus_FRA_create_the_ep
-		x = -1
+		x = -1 
 		y = 1
 		
 		prerequisite = { focus = FRA_luce_but_worse}
@@ -319,11 +319,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = ep_creating_darnaud
-			set_power_balance = {
-				id = FRA_ep_darnaud
-				set_value = -1
-				left_side = FRA_ep_small_ep_power
-   				right_side = FRA_ep_high_ep_power
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = 25
 			}
 		}
 	}

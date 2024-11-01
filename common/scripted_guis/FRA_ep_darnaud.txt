@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	decisions_ep_darnaud_scriptedgui = {
+		context_type = decision_category
+		window_name = "ep_darnaud_container"
+		properties = {
+			progressbar_ep_darnaud = {
+				frame = global.var_ep_darnaud
+			}
+		}
+	}
+
+}
+

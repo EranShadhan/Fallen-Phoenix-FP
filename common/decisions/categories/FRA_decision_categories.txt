@@ -27,15 +27,8 @@ FRA_integrate_territories = {
 FRA_ep_decisions = {
 	priority = 152
 	icon = GFX_category_icon
-
-	allowed = {
-		TAG = FRA
-	}
-}
-FRA_ep_darnaud_trust = {
-	priority = 153
-	icon = GFX_category_icon
-
+	scripted_gui = decisions_ep_darnaud_scriptedgui
+	visible_when_empty = yes
 	allowed = {
 		TAG = FRA
 	}

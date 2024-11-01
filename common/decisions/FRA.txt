@@ -303,60 +303,6 @@ FRA_integrate_territories = {
 		}
 	}
 }
-FRA_ep_darnaud_trust = {
-    FRA_depower_the_Ep = {
-
-		icon = GFX_decision_category_intervention_overseas
-
-		allowed = {
-			tag = fra
-			has_completed_focus = FRA_ensure_ep_loyalty
-		}
-
-		selectable_mission = yes
-		days_remove = 60
-		visible = {
-		}
-		modifier = { 
-			power_balance_daily = -0.02
-		}
-		
-		complete_effect = {
-			
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	FRA_Ep_increasing_influence = {
-
-		icon = GFX_decision_category_intervention_overseas
-
-		allowed = {
-			tag = FRA
-			has_completed_focus = FRA_create_ep
-		}
-		days_re_enable = 1
-		days_mission_timeout = 14
-		visible = {
-		}
-		is_good = no 
-		available = {
-			always = no
-		}
-		
-		timeout_effect = {
-			add_power_balance_value = {
-				id = FRA_ep_darnaud
-				value = 0.02
-				tooltip_side = FRA_ep_high_ep_power
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-}
 FRA_ep_decisions = {
     FRA_send_ep_state = {
 
@@ -402,16 +348,174 @@ FRA_ep_decisions = {
 					modifier = FRA_ep_police
 				} 
 			}
+			add_power_balance_value = {
+				id = FRA_ep_darnaud
+				value = 0.05
+				tooltip_side = FRA_ep_high_ep_power
+			}
 		}
 		remove_effect = { 
 			FROM = {
 				remove_dynamic_modifier = {
 					modifier = FRA_ep_police
-				} 
+				}
+			}
+			add_power_balance_value = {
+				id = FRA_ep_darnaud
+				value = 0.05
+				tooltip_side = FRA_ep_high_ep_power
 			}
 		}
 		complete_effect = {
 			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_depower_the_Ep = {
+
+		icon = GFX_decision_category_intervention_overseas
+
+		allowed = {
+			tag = fra
+			has_completed_focus = FRA_ensure_ep_loyalty
+		}
+
+		selectable_mission = yes
+		days_remove = 14
+		visible = {
+		}
+		modifier = { 
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = -5
+				tooltip = FRA_Ep_increasing_influence_tt
+			}  
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_ep_ask_for_men = {
+
+		icon = GFX_decision_category_intervention_overseas
+
+		allowed = {
+			tag = fra
+			
+		}
+
+		selectable_mission = yes
+		days_remove = 30
+		visible = {
+		}
+		modifier = { 
+
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = 5
+				tooltip = FRA_ep_ask_for_men_tt
+			}
+			add_manpower = 2500
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_ep_recuruit_ep_militias = {
+
+		icon = GFX_decision_category_intervention_overseas
+
+		allowed = {
+			tag = fra
+			has_completed_focus = FRA_ensure_ep_loyalty
+		}
+
+		selectable_mission = yes
+		days_remove = 60
+		visible = {
+		}
+		modifier = { 
+
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = 10
+				tooltip = FRA_ep_recuruit_ep_militias_tt
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_ep_propaganda_for_the_french = {
+
+		icon = GFX_decision_category_intervention_overseas
+
+		allowed = {
+			tag = fra
+			has_completed_focus = FRA_ensure_ep_loyalty
+		}
+
+		selectable_mission = yes
+		days_remove = 60
+		visible = {
+		}
+		modifier = { 
+			conscription = 0.025
+			mobilization_speed = 0.25
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = 5
+				tooltip = FRA_ep_propaganda_for_the_french_tt
+			}  
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_Ep_increasing_influence = {
+
+		icon = GFX_decision_category_intervention_overseas
+
+		allowed = {
+			tag = FRA
+			has_completed_focus = FRA_create_ep
+		}
+		days_mission_timeout = 7
+
+		visible = {
+		}
+
+		is_good = no 
+		
+		available = {
+			always = no
+		}
+		
+		timeout_effect = {
+			add_to_variable = {
+				var = global.var_ep_darnaud
+				value = 1
+				tooltip = FRA_Ep_increasing_influence_tt
+			}  
 		}
 		ai_will_do = {
 			factor = 0

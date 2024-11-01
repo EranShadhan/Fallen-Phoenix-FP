@@ -14,14 +14,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 
@@ -259,14 +253,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 		picture = archetype_medium_tank_equipment
@@ -501,14 +489,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 		picture = archetype_heavy_tank_equipment
@@ -742,14 +724,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 		picture = archetype_modern_tank_equipment
@@ -927,14 +903,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 		picture = archetype_super_heavy_tank_equipment
@@ -1109,14 +1079,8 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					log = KYS_aat
-				}
 			}
 			else = {
-				NOT = {
-					log = KYS
-				}
 			}
 		}
 		picture = archetype_amphibious_tank_equipment
