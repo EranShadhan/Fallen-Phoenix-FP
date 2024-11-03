@@ -2351,7 +2351,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 19
+			}
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 16
+			}
 		}
 	}
 	focus = {
@@ -2377,7 +2386,51 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2 
+					instant_build = yes
+				} 
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	focus = {
@@ -2403,7 +2456,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = FRA_modernized_machines
 		}
 	}
 	focus = {
@@ -2429,7 +2482,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_Carefully_Managed_Production
+				add_idea = FRA_centralization_of_production
+			}
 		}
 	}
 	focus = {
@@ -2459,7 +2515,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 	focus = {
@@ -2650,7 +2715,57 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				prioritize = { 16 14 15 30 24 785 29 18 27 23 33 17 20 26 25 19 31 22 20 32 21 851 } 
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
 		}
 	}
 	focus = {

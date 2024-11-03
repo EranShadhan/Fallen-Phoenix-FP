@@ -430,7 +430,40 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-
+		FRA_centralization_of_production = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+			removal_cost = -1
+		}
+		FRA_modernized_machines = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.05
+			}
+			removal_cost = -1
+		}
 		FRA_spirit_of_the_war_1 = {
 
 			
