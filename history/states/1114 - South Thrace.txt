@@ -1,0 +1,28 @@
+
+state={
+	id=1114
+	name="STATE_1114"
+
+	history={
+		owner = GRE
+		victory_points = {
+			11905 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		14024 11905 13632
+	}
+	manpower=54700
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
