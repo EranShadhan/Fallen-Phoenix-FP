@@ -1,0 +1,33 @@
+add_namespace = RUS_ker_joint
+add_namespace = RUS_ker_left
+add_namespace = RUS_ker_right
+
+### Choosing path
+country_event = {
+	id = RUS_ker_joint.1
+	title = RUS_ker_joint.1.t
+	desc = RUS_ker_joint.1.d
+	
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = { # Integralism
+		name = RUS_ker_joint.1.a
+		trigger = {
+			has_country_flag = russification_continued
+			has_country_flag = no_freedom_of_speech
+			#OR = { has_country_flag = trade_unions_banned has_country_flag = trade_unions_limited }
+		}
+		
+	}
+	option = { # Socialism
+		name = RUS_ker_joint.1.b
+		trigger = {
+			OR = { has_country_flag = russification_changed has_country_flag = russification_banned }
+			#OR = { has_country_flag = no_freedom_of_speech }
+			OR = { has_country_flag = trade_unions_allowed has_country_flag = trade_unions_limited }
+		}
+		
+	}
+}

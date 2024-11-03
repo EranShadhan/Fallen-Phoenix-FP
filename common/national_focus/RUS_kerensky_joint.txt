@@ -3,6 +3,11 @@
 	
 	country = {
 		factor = 0
+
+		modifier = { ### Delete later
+			add = 20
+			tag = SOV
+		}
 	}
 	
 	default = no
@@ -11,7 +16,7 @@
 
 	focus = {
 		id = RUS_KER_JOINT_WIP
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_zzz_WIP
 		x = 20
 		y = 0
 		offset = {
@@ -36,6 +41,7 @@
 			
 		}
 		completion_reward = {
+			
 		}
 
 		cancel_if_invalid = yes
@@ -305,7 +311,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = RUS_KER_JOINT_rid_central_asia_of_the_brits
 		prerequisite = { focus = RUS_KER_JOINT_rid_central_asia_of_the_brits }
-		mutually_exclusive = { focus = RUS_KER_JOINT_clamdown_on_imperialism }
+		mutually_exclusive = { focus = RUS_KER_JOINT_clampdown_on_imperialism }
 		x = 3
 		y = 1
 

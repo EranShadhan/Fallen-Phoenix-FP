@@ -405,14 +405,27 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					AND = {
-						check_variable = {
-							SOV.opinion_of_kerensky > -41
-						}
-						check_variable = {
-							SOV.opinion_of_kerensky < 41
-						}
+					check_variable = {
+						SOV.opinion_of_kerensky > -41
 					}
+					check_variable = {
+						SOV.opinion_of_kerensky < 41
+					}
+				}
+				
+				add_political_power = 10
+				country_event = {
+					id = SOV_events.11
+					days = 10
+					random_hours = 12
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						SOV.opinion_of_kerensky > 40
+					}
+					has_country_flag = elections_allowed
 				}
 				
 				add_political_power = 10
@@ -424,29 +437,10 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					AND = {
-						check_variable = {
-							SOV.opinion_of_kerensky > 40
-						}
-						has_country_flag = elections_allowed
+					check_variable = {
+						SOV.opinion_of_kerensky > 40
 					}
-				}
-				
-				add_political_power = 10
-				#country_event = {
-				#	id = SOV_events.9
-				#	days = 10
-				#	random_hours = 12
-				#}
-			}
-			else_if = {
-				limit = {
-					AND = {
-						check_variable = {
-							SOV.opinion_of_kerensky > 40
-						}
-						has_country_flag = elections_limited
-					}
+					has_country_flag = elections_limited
 				}
 				
 				add_political_power = 10
@@ -562,7 +556,11 @@ country_event = {
 		add_stability = -0.2
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.2
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
 		}
 	}
 	option = { # 
@@ -573,7 +571,11 @@ country_event = {
 		add_stability = -0.2
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.2
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
 		}
 	}
 	option = { # 
@@ -585,7 +587,11 @@ country_event = {
 		add_stability = -0.2
 		add_popularity = {
 			ideology = fascism
-			popularity = 0.2
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
 		}
 	}
 }
@@ -627,15 +633,22 @@ country_event = {
 		load_focus_tree = SOV_Kerensky_Tree
 	}
 	
-	option = { # Communists/Democrats elected
-		if = {
-			limit = { OR = { has_country_flag = trade_unions_allowed has_country_flag = trade_unions_limited } }
-			name = SOV_events.13.ca
+	option = { # Communists/ elected
+		name = SOV_events.13.ca
+		trigger = {
+			OR = {
+				has_country_flag = trade_unions_allowed
+				has_country_flag = trade_unions_limited
+			}
 		}
-		else = {
-			name = SOV_events.13.cb
+			
+	}
+
+	option = { # Democrats
+		name = SOV_events.13.cb
+		trigger = {
+			has_country_flag = trade_unions_banned
 		}
-		
 	}
 }
 
@@ -1583,186 +1596,5 @@ country_event = {
 		country_event = {
 			id = RUS_collapse.17
 		}
-	}
-}
-
-###########################
-# Shared Russian Events
-###########################
-
-add_namespace = RUS_events
-
-# The Years Go By
-country_event = {
-	id = RUS_events.1
-	title = RUS_events.1.t
-	desc = RUS_events.1.d
-	
-	picture = GFX_report_event_sanation_left_victory
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_events.1.a
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			ideology = neutrality
-    		popularity = 0.1
-		}
-	}
-	option = {
-		name = RUS_events.1.b
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			ideology = democratic
-    		popularity = 0.1
-		}
-	}
-}
-
-# A Sluggish Giant
-country_event = {
-	id = RUS_events.2
-	title = RUS_events.2.t
-	desc = RUS_events.2.d
-	
-	picture = GFX_report_event_sanation_left_victory
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_events.2.a
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			ideology = neutrality
-    		popularity = 0.1
-		}
-		
-		#add_timed_idea = { idea = Systemic_Corruption_Military days = 700}
-	}
-	option = {
-		name = RUS_events.2.b
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			ideology = democratic
-    		popularity = 0.1
-		}
-		
-		#add_timed_idea = { idea = Systemic_Corruption_Industry days = 700}
-	}
-}
-
-# Minority Status
-country_event = {
-	id = RUS_events.3
-	title = RUS_events.3.t
-	desc = RUS_events.3.d
-	
-	picture = GFX_report_event_sanation_left_victory
-	
-	is_triggered_only = yes
-	option = {
-		name = RUS_events.3.c
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			add_political_power = -25
-   			add_stability = 0.05
-		}
-		
-		#add_ideas = Slight_Derussification
-	}
-	option = {
-		name = RUS_events.3.e
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_popularity = {
-   			add_political_power = 75
-   			add_stability = -0.05
-		}
-		
-		#add_ideas = Defacto_Derussification
-	}
-}
-
-# Stance on France
-country_event = {
-	id = RUS_events.4
-	title = RUS_events.4.t
-	desc = RUS_events.4.d
-	
-	picture = GFX_report_event_sanation_left_victory
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_events.4.a
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_opinion_modifier = { target = FRA modifier = medium_increase }
-	}
-	option = {
-		name = RUS_events.4.b
-		
-		ai_chance = {
-			base = 10
-		}
-		
-		add_opinion_modifier = { target = FRA modifier = small_decrease }
-		add_ideas = Revanchism_For_WW1_Solo
-	}
-}
-
-# State Council Dilemma
-country_event = {
-	id = RUS_events.5
-	title = RUS_events.5.t
-	desc = RUS_events.5.d
-	
-	picture = GFX_report_event_sanation_left_victory
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_events.5.a
-
-		ai_chance = {
-			base = 10
-		}
-		
-		#add_ideas = 
-	}
-	option = {
-		name = RUS_events.5.b
-
-		ai_chance = {
-			base = 10
-		}
-		
-		#add_ideas = 
 	}
 }

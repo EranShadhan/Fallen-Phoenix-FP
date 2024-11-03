@@ -8,12 +8,22 @@
 
 #pls use shared_focus = {} instead of focus = {} when defining focuses
 
+#As the hisorical path is kerensky right, 
+#Revanchism
+#Russification
+#Kerensky slowly becoming absolute dictator
+#Censoring the press
+#Integrating puppets
+
 shared_focus = {
 	id = RUS_KER_RIGHT_WIP
-	icon = GFX_goal_generic_construct_infrastructure
-	x = 23
+	icon = GFX_goal_zzz_WIP
+	x = 34
 	y = 1
 	prerequisite = { focus = RUS_KER_JOINT_WIP }
+	mutually_exclusive = {
+		focus = RUS_KER_LEFT_WIP
+	}
 
 	cost = 5
 
