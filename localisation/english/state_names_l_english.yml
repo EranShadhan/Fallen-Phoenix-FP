@@ -986,7 +986,7 @@
  STATE_968:0 "Amazon"
  STATE_969:0 "Rio Branco"
  STATE_970:0 "Lile"
- STATE_971:0 "Eupen Malmedy"
+ STATE_971:0 "German Benelux"
  STATE_972:0 "Savoia"
  STATE_973:0 "Atalia"
  STATE_974:0 "Eswatini"
@@ -1129,3 +1129,4 @@
  STATE_1111:0 "Monagas"
  STATE_1112:0 "Apure"
  STATE_1113:0 "Roussillon"
+ STATE_1114:0 "Western Friesland"
