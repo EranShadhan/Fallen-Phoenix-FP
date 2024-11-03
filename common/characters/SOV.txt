@@ -1,16 +1,5 @@
-# Aleksandra Kollontay has an unsed portrait
-# Viktor Baydalakov has an unused portrait
-
 characters = {
 
-
-  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
- #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
- #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
- #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
- #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
-  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
-                                                                                                                  
 
 	SOV_aleksandr_kerensky = {
 		name = SOV_alexander_kelensky
@@ -20,7 +9,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = oligarchism
+			ideology = oligarchic_democracy
 			expire = "1953.3.1.1"
 			desc = SOV_alex_kerensky_desc
 			traits = { RUS_advocate_of_national_unity RUS_freemason }

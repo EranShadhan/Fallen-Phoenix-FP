@@ -253,6 +253,11 @@ ideologies = {
 			junta = {
 			}
 			
+			oligarchic_democracy  = {
+				color = { 0 136 255 }
+				can_be_randomly_selected = no
+			}
+			
 			oligarchism  = {
 			}
 
