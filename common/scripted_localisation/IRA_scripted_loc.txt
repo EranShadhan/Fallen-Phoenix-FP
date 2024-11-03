@@ -19,4 +19,7 @@ defined_text = {
 		}
 		localization_key = IRA_industry_ULO_only
 	}
+	text = {
+		localization_key = IRA_industry_both
+	}
 }

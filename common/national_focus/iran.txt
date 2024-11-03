@@ -130,8 +130,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = IRA_shining_capital_of_tehran_tt
 			266 = {
-				custom_effect_tooltip = IRA_shining_capital_of_tehran_tt
 				add_to_variable = { IRA_local_manpower = 0.15 }
 				add_to_variable = { IRA_state_resources_factor = 0.15 }
 				add_to_variable = { IRA_industrial_complex_factor = 0.2 }
@@ -219,6 +219,74 @@ focus_tree = {
 	}
 
 	focus = {
+		id = IRA_replace_the_qiran_with_the_rial
+		icon = GFX_empty
+		x = -1
+		y = 2
+		relative_position_id = IRA_reorganise_the_central_bank
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_reorganise_the_central_bank }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.025
+			add_political_power = 90
+			set_country_flag = IRA_rial
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_devalue_the_rial
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_replace_the_qiran_with_the_rial
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_replace_the_qiran_with_the_rial }
+		prerequisite = { focus = IRA_integrate_housing_foundation_ULO }
+		mutually_exclusive = {}
+		available = {
+			has_country_flag = {
+				flag = IRA_rial
+				days > 180
+			}
+		}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_devalue_the_rial_tt
+			add_to_variable = { IRA_stability_factor = 0.075 }
+			add_to_variable = { IRA_consumer_goods_factor = -0.1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
 		id = IRA_government_banking_subsidies
 		icon = GFX_empty
 		x = 0
@@ -286,6 +354,257 @@ focus_tree = {
 				custom_effect_tooltip = IRA_integrate_housing_foundation_ULO_tt
 				add_to_variable = { IRA_infrastructure_factor = 0.2 }
 				add_to_variable = { IRA_rail_way_factor = 0.05 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_the_eastern_railway_initiative
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_shining_capital_of_tehran
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_shining_capital_of_tehran }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 418
+						state = 416
+						state = 414
+						state = 410
+						state = 412
+						state = 411
+						state = 266
+					}
+				}
+				custom_effect_tooltip = IRA_the_eastern_railway_initiative_tt
+				add_to_variable = { IRA_rail_way_factor = 0.15 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_the_western_railway_initiative
+		icon = GFX_empty
+		x = 0
+		y = 1
+		relative_position_id = IRA_the_eastern_railway_initiative
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_the_eastern_railway_initiative }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 419
+						state = 421
+						state = 413
+						state = 417
+						state = 420
+						state = 229
+						state = 291
+					}
+				}
+				custom_effect_tooltip = IRA_the_western_railway_initiative_tt
+				add_to_variable = { IRA_rail_way_factor = 0.2 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_strategic_german_investments
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_shining_capital_of_tehran
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_shining_capital_of_tehran }
+		prerequisite = { focus = IRA_establish_the_ULO }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_strategic_german_investments_indus_tt
+			add_to_variable = { IRA_political_power_cost = 0.l }
+			custom_effect_tooltip = IRA_strategic_german_investments_266_tt
+			hidden_effect = {
+				266 = {
+					add_to_variable = { IRA_rail_way_factor = 0.15 }
+				}
+			}
+			every_core_state = {
+				limit = { NOT = { state = 266 } }
+				custom_effect_tooltip = IRA_strategic_german_investments_tt
+				add_to_variable = { IRA_rail_way_factor = 0.25 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_promote_german_immigration
+		icon = GFX_empty
+		x = 0
+		y = 1
+		relative_position_id = IRA_strategic_german_investments
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_strategic_german_investments }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_promote_german_immigration_indus_tt
+			add_to_variable = { IRA_stability_factor = -0.05 }
+			every_core_state = {
+				custom_effect_tooltip = IRA_promote_german_immigration_tt
+				add_to_variable = { IRA_rail_way_factor = 0.15 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_development_of_kurdistan
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_the_western_railway_initiative
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_the_western_railway_initiative focus = IRA_strategic_german_investments }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 676
+						state = 352
+						state = 800
+					}
+				}
+				custom_effect_tooltip = IRA_development_of_kurdistan_tt
+				add_to_variable = { IRA_local_manpower = 0.1 }
+				add_to_variable = { IRA_state_resources_factor = 0.1 }
+				add_to_variable = { IRA_industrial_complex_factor = 0.15 }
+				add_to_variable = { IRA_synthetic_refinery_factor = 0.15 }
+				add_to_variable = { IRA_infrastructure_factor = 0.15 }
+				add_to_variable = { IRA_rail_way_factor = 0.15 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IRA_development_of_iraq
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_the_western_railway_initiative
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_the_western_railway_initiative }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 291
+						state = 1095
+						state = 675
+						state = 656
+					}
+				}
+				custom_effect_tooltip = IRA_development_of_kurdistan_tt
+				add_to_variable = { IRA_local_manpower = 0.1 }
+				add_to_variable = { IRA_state_resources_factor = 0.1 }
+				add_to_variable = { IRA_industrial_complex_factor = 0.15 }
+				add_to_variable = { IRA_synthetic_refinery_factor = 0.15 }
+				add_to_variable = { IRA_infrastructure_factor = 0.15 }
+				add_to_variable = { IRA_rail_way_factor = 0.15 }
 			}
 		}
 		

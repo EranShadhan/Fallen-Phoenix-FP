@@ -43,12 +43,17 @@ IRA_state_modernisation = {
 	icon = GFX_modifiers_generic_construction
 	
 	remove_trigger = {
-		check_variable = { IRA_local_manpower > -0.01 }
-		check_variable = { IRA_state_resources_factor > -0.01 }
-		check_variable = { IRA_industrial_complex_factor > -0.01 }
-		check_variable = { IRA_synthetic_refinery_factor > -0.01 }
-		check_variable = { IRA_infrastructure_factor > -0.01 }
-		check_variable = { IRA_rail_way_factor > -0.01 }
+		OR = {
+			NOT = { is_owned_by = PER }
+			AND = {
+				check_variable = { IRA_local_manpower > -0.01 }
+				check_variable = { IRA_state_resources_factor > -0.01 }
+				check_variable = { IRA_industrial_complex_factor > -0.01 }
+				check_variable = { IRA_synthetic_refinery_factor > -0.01 }
+				check_variable = { IRA_infrastructure_factor > -0.01 }
+				check_variable = { IRA_rail_way_factor > -0.01 }
+			}
+		}
 	}
 	
 	recruitable_population_factor = IRA_local_manpower
