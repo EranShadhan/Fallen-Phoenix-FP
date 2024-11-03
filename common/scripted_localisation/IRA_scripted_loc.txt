@@ -1,0 +1,22 @@
+defined_text = {
+	name = IRA_industry_loc
+	text = {
+		trigger = {
+			has_completed_focus = IRA_government_banking_subsidies
+			has_completed_focus = IRA_establish_the_ULO
+		}
+		localization_key = IRA_industry_both
+	}
+	text = {
+		trigger = {
+			has_completed_focus = IRA_government_banking_subsidies
+		}
+		localization_key = IRA_industry_bank_only
+	}
+	text = {
+		trigger = {
+			has_completed_focus = IRA_establish_the_ULO
+		}
+		localization_key = IRA_industry_ULO_only
+	}
+}

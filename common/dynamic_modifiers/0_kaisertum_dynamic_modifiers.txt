@@ -34,8 +34,39 @@ UBD_local_resistance_modifier = {
 	}
 	
 	icon = GFX_modifiers_sabotaged_resource
-
 	army_speed_factor_for_controller = -0.1
 	conscription_factor = UBD.baltic_manpower
 	production_speed_buildings_factor = -0.1
+}
+
+IRA_state_modernisation = { 
+	icon = GFX_modifiers_generic_construction
+	
+	remove_trigger = {
+		check_variable = { IRA_local_manpower > -0.01 }
+		check_variable = { IRA_state_resources_factor > -0.01 }
+		check_variable = { IRA_industrial_complex_factor > -0.01 }
+		check_variable = { IRA_synthetic_refinery_factor > -0.01 }
+		check_variable = { IRA_infrastructure_factor > -0.01 }
+		check_variable = { IRA_rail_way_factor > -0.01 }
+	}
+	
+	recruitable_population_factor = IRA_local_manpower
+	state_resources_factor = IRA_state_resources_factor
+	disable_strategic_redeployment = 1
+	
+	state_production_speed_industrial_complex_factor = IRA_industrial_complex_factor
+	state_production_speed_synthetic_refinery_factor = IRA_synthetic_refinery_factor
+	state_production_speed_infrastructure_factor = IRA_infrastructure_factor
+	state_production_speed_rail_way_factor = IRA_rail_way_factor
+}
+
+IRA_industry = { 
+	icon = GFX_idea_empty
+	
+	political_power_cost = IRA_political_power_cost
+	stability_factor = IRA_stability_factor
+	communism_drift = IRA_communism_drift
+	consumer_goods_factor = IRA_consumer_goods_factor
+	production_speed_buildings_factor = IRA_production_speed_buildings_factor
 }

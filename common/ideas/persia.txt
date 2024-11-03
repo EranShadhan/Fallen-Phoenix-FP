@@ -250,6 +250,14 @@ ideas = {
 				always = yes
 			}
 			
+			cancel = {
+				has_stability < 0.3
+			}
+			
+			on_remove = {
+				ROOT = { country_event = KT_persia.1 }
+			}
+			
 			removal_cost = -1
 
 			modifier = {
@@ -394,28 +402,6 @@ ideas = {
 				war_support_factor = 0.1
 				conscription = 0.015
 				justify_war_goal_time = -0.25
-			}
-		}
-
-		PER_agrarian_society = {
-
-			picture = generic_agrarian_society
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = -0.05
-				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = -0.3
-				research_speed_factor = -0.2
 			}
 		}
 

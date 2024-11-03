@@ -47,18 +47,18 @@ on_actions = {
 			}
 		}
 	}
-	on_daily_CRI = {
-		effect = {
-			CRI = {
-				if = {
-					limit = {
-						overlord = GER
-					}
-					set_cosmetic_tag = german_crimea
-				}
-			}
-		}
-	}
+	# on_daily_CRI = {
+		# effect = {
+			# CRI = {
+				# if = {
+					# limit = {
+						# overlord = GER
+					# }
+					# set_cosmetic_tag = german_crimea
+				# }
+			# }
+		# }
+	# }
 	on_daily_FRA = {
 		effect = {
 			if = {
@@ -140,19 +140,6 @@ on_actions = {
 				if = {
 					limit = { has_idea = FRA_spirit_of_the_war_3 }
 					remove_ideas = FRA_spirit_of_the_war_3
-				}
-			}
-		}
-	}
-	on_daily_PER = {
-		effect = {
-			if = {
-				limit = {
-					has_idea = PER_disloyal_military
-					stability>0.3
-				}
-				PER = {
-					country_event = { country_event = KT_persia.1 }
 				}
 			}
 		}

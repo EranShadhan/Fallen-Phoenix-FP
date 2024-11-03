@@ -14,7 +14,7 @@ if = {
 	}
 }
 
-set_stability = 0.3
+set_stability = 0.2
 set_war_support = 0.7
 
 # Starting tech
@@ -33,8 +33,18 @@ add_ideas = {
 	PER_disloyal_military
 	PER_traditional_islam_gov
 	islam_religion
-	PER_agrarian_society
-	PER_dream
+}
+
+every_owned_state = {
+	set_variable = { IRA_local_manpower = -0.3 }
+	set_variable = { IRA_state_resources_factor = -0.3 }
+	set_variable = { IRA_industrial_complex_factor = -0.4 }
+	set_variable = { IRA_synthetic_refinery_factor = -0.4 }
+	set_variable = { IRA_infrastructure_factor = -0.4 }
+	set_variable = { IRA_rail_way_factor = -0.4 }
+	add_dynamic_modifier = {
+		modifier = IRA_state_modernisation
+	}
 }
 
 recruit_character = PER_ahmad_amir_ahmadi
