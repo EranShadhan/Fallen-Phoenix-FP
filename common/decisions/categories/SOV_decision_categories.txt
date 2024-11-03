@@ -25,3 +25,15 @@ SOV_SGG_category = {
 	priority = 90
 	visible_when_empty = yes
 }
+SOV_debug_decisions = {
+	
+	priority = 9
+	icon = GFX_category_icon
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		is_ai = no
+	}
+}

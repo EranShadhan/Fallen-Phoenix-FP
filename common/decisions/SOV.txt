@@ -99,3 +99,67 @@ SOV_balance_of_power_category = {
 SOV_SGG_category = {
     
 }
+SOV_debug_decisions = {
+    SOV_load_kerensky_tree = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = SOV_Kerensky_Tree
+		}
+	}
+    SOV_load_intro_tree = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = russian_focus
+		}
+	}
+    SOV_collapse_russia = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			country_event = {
+                id = RUS_collapse.1
+            }
+		}
+	}
+}
