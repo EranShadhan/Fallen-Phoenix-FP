@@ -14,20 +14,24 @@ country_event = {
 
 	option = { # Integralism
 		name = RUS_ker_joint.1.a
-		trigger = {
-			has_country_flag = russification_continued
-			has_country_flag = no_freedom_of_speech
-			#OR = { has_country_flag = trade_unions_banned has_country_flag = trade_unions_limited }
+
+		complete_national_focus = RUS_KER_RIGHT_WIP
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
 		}
-		
 	}
 	option = { # Socialism
 		name = RUS_ker_joint.1.b
 		trigger = {
-			OR = { has_country_flag = russification_changed has_country_flag = russification_banned }
+			#OR = { has_country_flag = russification_changed has_country_flag = russification_banned }
 			#OR = { has_country_flag = no_freedom_of_speech }
 			OR = { has_country_flag = trade_unions_allowed has_country_flag = trade_unions_limited }
 		}
-		
+		complete_national_focus = RUS_KER_LEFT_WIP
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
 	}
 }

@@ -3,9 +3,9 @@
 	
 	country = {
 		factor = 0
-
-		modifier = { ### Delete later
-			add = 20
+		
+		modifier = {
+			add = 20 ## DELETE THIS LATER
 			tag = SOV
 		}
 	}
@@ -41,7 +41,10 @@
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = RUS_ker_joint.1
+				hours = 2
+			}
 		}
 
 		cancel_if_invalid = yes
