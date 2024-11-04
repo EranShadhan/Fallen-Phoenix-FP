@@ -69,6 +69,7 @@ recruit_character = PER_hossein_afkhami
 recruit_character = PER_ali_zohayli
 recruit_character = PER_mahmud_jam
 recruit_character = PER_ali_khan_mansour
+recruit_character = PER_mohammad_reza_shah
 
 set_convoys = 10
 set_politics = {

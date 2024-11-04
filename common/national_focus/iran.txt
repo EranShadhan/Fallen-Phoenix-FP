@@ -54,7 +54,7 @@ focus_tree = {
 	focus = {
 		id = IRA_a_modern_iran
 		icon = GFX_empty
-		x = 6
+		x = 10
 		y = 0
 		#relative_position_id = 
 
@@ -76,7 +76,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -105,7 +105,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -142,7 +142,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -184,14 +184,14 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
 	focus = {
 		id = IRA_reorganise_the_central_bank
 		icon = GFX_empty
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = IRA_a_modern_iran
 		
@@ -214,14 +214,14 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
 	focus = {
 		id = IRA_replace_the_qiran_with_the_rial
 		icon = GFX_empty
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = IRA_reorganise_the_central_bank
 		
@@ -245,7 +245,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -282,14 +282,92 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_kickstart_rural_construction_industry
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_devalue_the_rial
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_devalue_the_rial }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_kickstart_rural_construction_industry_266_tt
+			hidden_effect = {
+				266 = {
+					add_to_variable = { IRA_state_resources_factor = 0.2 }
+				}
+			}
+			every_core_state = {
+				limit = { NOT = { state = 266 } }
+				custom_effect_tooltip = IRA_kickstart_rural_construction_industry_tt
+				add_to_variable = { IRA_state_resources_factor = 0.3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_modern_oil_industry
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_devalue_the_rial
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_devalue_the_rial }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_modern_oil_industry_266_tt
+			hidden_effect = {
+				266 = {
+					add_to_variable = { IRA_synthetic_refinery_factor = 0.15 }
+				}
+			}
+			every_core_state = {
+				limit = { NOT = { state = 266 } }
+				custom_effect_tooltip = IRA_modern_oil_industry_tt
+				add_to_variable = { IRA_synthetic_refinery_factor = 0.25 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
 		}
 	}
 
 	focus = {
 		id = IRA_government_banking_subsidies
 		icon = GFX_empty
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = IRA_reorganise_the_central_bank
 		
@@ -324,7 +402,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -358,7 +436,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -401,7 +479,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -444,7 +522,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -459,7 +537,7 @@ focus_tree = {
 		prerequisite = { focus = IRA_shining_capital_of_tehran }
 		prerequisite = { focus = IRA_establish_the_ULO }
 		mutually_exclusive = {}
-		available = {}
+		available = { NOT = { has_completed_focus = IRA_iranian_autonomy } }
 		bypass = {}
 		allow_branch = {}
 		
@@ -475,18 +553,22 @@ focus_tree = {
 			custom_effect_tooltip = IRA_strategic_german_investments_266_tt
 			hidden_effect = {
 				266 = {
-					add_to_variable = { IRA_rail_way_factor = 0.15 }
+					add_to_variable = { IRA_state_resources_factor = 0.15 }
 				}
 			}
 			every_core_state = {
 				limit = { NOT = { state = 266 } }
 				custom_effect_tooltip = IRA_strategic_german_investments_tt
-				add_to_variable = { IRA_rail_way_factor = 0.25 }
+				add_to_variable = { IRA_state_resources_factor = 0.25 }
 			}
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
 		}
 	}
 
@@ -515,12 +597,12 @@ focus_tree = {
 			add_to_variable = { IRA_stability_factor = -0.05 }
 			every_core_state = {
 				custom_effect_tooltip = IRA_promote_german_immigration_tt
-				add_to_variable = { IRA_rail_way_factor = 0.15 }
+				add_to_variable = { IRA_local_manpower = 0.15 }
 			}
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -564,7 +646,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -609,14 +691,312 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
 	focus = {
+		id = IRA_german_influences
+		icon = GFX_empty
+		x = -7
+		y = 1
+		relative_position_id = IRA_a_modern_iran
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_a_modern_iran }
+		mutually_exclusive = { focus = IRA_iranian_autonomy }
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_german_influences_tt
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = IRA_political
+				}
+			}
+			add_to_variable = { IRA_democratic_drift = 0.02 }
+			add_to_variable = { IRA_political_power_factor = -0.05 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_decentralise_the_iranian_government
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_german_influences
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_german_influences }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		select_effect = {
+			add_timed_idea = {
+				idea = IRA_everything_support
+				days = 70
+			}
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = on_select_tooltip
+			add_ideas = IRA_everything_support
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_announce_local_elections
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_decentralise_the_iranian_government
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_decentralise_the_iranian_government }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 60
+			custom_effect_tooltip = IRA_announce_local_elections_tt
+			add_to_variable = { IRA_democratic_drift = 0.02 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_reduce_the_juntas_influence
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_decentralise_the_iranian_government
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_decentralise_the_iranian_government }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_the_rise_of_the_shah
+		icon = GFX_empty
+		x = 0
+		y = 1
+		relative_position_id = IRA_reduce_the_juntas_influence
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_reduce_the_juntas_influence }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = PER_mohammad_reza_shah_party_long
+				name = PER_mohammad_reza_shah_party
+			}
+			add_country_leader_role = {
+				character = PER_mohammad_reza_shah
+				promote_leader = yes
+				country_leader = {
+					ideology = populism
+					expire = "1965.1.1.1"
+					traits = {}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_renegotiate_the_german_oil_deal
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_german_influences
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_german_influences }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = PER_german_persian_oil_company_2
+				remove_idea = PER_german_persian_oil_company
+			}
+			GER = { 
+				add_offsite_building = { type = arms_factory level = 1 }
+				remove_resource_rights = 412
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_iranian_autonomy
+		icon = GFX_empty
+		x = -3
+		y = 1
+		relative_position_id = IRA_a_modern_iran
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_a_modern_iran }
+		mutually_exclusive = { focus = IRA_german_influences }
+		available = { NOT = { has_completed_focus = IRA_strategic_german_investments } }
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_iranian_autonomy_tt
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = IRA_political
+				}
+			}
+			add_to_variable = { IRA_neutrality_drift = 0.01 }
+			add_to_variable = { IRA_fascism_drift = 0.01 }
+			add_to_variable = { IRA_political_power_factor = 0.05 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_investments_in_the_university_of_tehran
+		icon = GFX_empty
+		x = 2
+		y = 2
+		relative_position_id = IRA_german_influences
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_german_influences focus = IRA_iranian_autonomy }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_investments_in_the_university_of_tehran_tt
+			add_to_variable = { IRA_research_speed_factor = 0.05 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	focus = {
 		id = PER_army_1
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 18
+		x = 20
 		y = 0
 
 		cost = 10
@@ -1032,7 +1412,7 @@ focus_tree = {
 		id = PER_aviation_effort
 		text = aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 25
+		x = 27
 		y = 0
 		cost = 10
 		
@@ -1311,7 +1691,7 @@ focus_tree = {
 		id = PER_naval_effort
 		text = naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 29
+		x = 31
 		y = 0
 		cost = 10
 

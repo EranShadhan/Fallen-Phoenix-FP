@@ -30,6 +30,14 @@ characters={
 			legacy_id=-1
 		}
 	}
+	PER_mohammad_reza_shah={
+		name=PER_mohammad_reza_shah
+		portraits={
+			civilian={
+				large=GFX_portrait_PER_mohammad_reza_shah
+			}
+		}
+	}
 	PER_soleyman_mirza_eskandari={
 		name="Soleyman Mirza Eskandari"
 		portraits={

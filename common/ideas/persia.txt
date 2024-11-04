@@ -402,6 +402,30 @@ ideas = {
 				war_support_factor = 0.1
 				conscription = 0.015
 				justify_war_goal_time = -0.25
+				neutrality_drift = 0.01
+				fascism_drift = 0.01
+				democratic_drift = 0.01
+			}
+		}
+		
+		IRA_everything_support = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+				fascism_drift = 0.1
+				neutrality_drift = 0.1
+				communism_drift = 0.1
 			}
 		}
 

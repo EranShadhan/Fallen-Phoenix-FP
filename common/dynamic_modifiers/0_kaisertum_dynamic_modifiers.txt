@@ -75,3 +75,17 @@ IRA_industry = {
 	consumer_goods_factor = IRA_consumer_goods_factor
 	production_speed_buildings_factor = IRA_production_speed_buildings_factor
 }
+IRA_political = { 
+	icon = GFX_idea_empty
+	
+	neutrality_drift = IRA_neutrality_drift
+	fascism_drift = IRA_fascism_drift
+	democratic_drift = IRA_democratic_drift
+	political_power_factor = IRA_political_power_factor
+	conscription_factor = IRA_conscription_factor
+	research_speed_factor = IRA_research_speed_factor
+	army_core_defence_factor = IRA_army_core_defence_factor
+	army_core_attack_factor = IRA_army_core_attack_factor
+	army_org_factor = IRA_army_org_factor
+	army_speed_factor = IRA_army_speed_factor
+}
