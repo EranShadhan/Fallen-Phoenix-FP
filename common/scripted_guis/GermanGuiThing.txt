@@ -1,0 +1,147 @@
+scripted_gui = {
+
+	german_elections_gui = {
+		context_type = decision_category
+		window_name = "GermanElectionThing"
+		dirty = var_GermanElectionThing
+		triggers = {
+			iconSchlesswigCommunist_visible = {
+				GER = {
+					has_country_flag = GER_communist_Schlesswig
+					NOT = {
+						OR = {
+							has_country_flag = GER_fascist_Schlesswig
+							has_country_flag = GER_liberal_Schlesswig
+							has_country_flag = GER_conservative_Schlesswig
+							has_country_flag = GER_NonAligned_Schlesswig
+						}
+					}
+				}
+			}
+			iconSchlesswigFascist_visible = {
+				GER = {
+					has_country_flag = GER_fascist_Schlesswig
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_Schlesswig
+							has_country_flag = GER_liberal_Schlesswig
+							has_country_flag = GER_conservative_Schlesswig
+							has_country_flag = GER_NonAligned_Schlesswig
+						}
+					}
+				}
+			}
+			iconSchlesswigLiberal_visible = {
+				GER = {
+					has_country_flag = GER_liberal_Schlesswig
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_Schlesswig
+							has_country_flag = GER_fascist_Schlesswig
+							has_country_flag = GER_conservative_Schlesswig
+							has_country_flag = GER_NonAligned_Schlesswig
+						}
+					}
+				}
+			}
+			iconSchlesswigConservative_visible = {
+				GER = {
+					has_country_flag = GER_conservative_Schlesswig
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_Schlesswig
+							has_country_flag = GER_liberal_Schlesswig
+							has_country_flag = GER_fascist_Schlesswig
+							has_country_flag = GER_NonAligned_Schlesswig
+						}
+					}
+				}
+			}
+			iconSchlesswigNonAligned_visible = {
+				GER = {
+					has_country_flag = GER_NonAligned_Schlesswig
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_Schlesswig
+							has_country_flag = GER_liberal_Schlesswig
+							has_country_flag = GER_fascist_Schlesswig
+							has_country_flag = GER_conservative_Schlesswig
+						}
+					}
+				}
+			}
+			
+			
+			
+			
+			
+			iconEastPrussiaCommunist_visible = {
+				GER = {
+					has_country_flag = GER_communist_EastPrussia
+					NOT = {
+						OR = {
+							has_country_flag = GER_fascist_EastPrussia
+							has_country_flag = GER_liberal_EastPrussia
+							has_country_flag = GER_conservative_EastPrussia
+							has_country_flag = GER_NonAligned_EastPrussia
+						}
+					}
+				}
+			}
+			iconEastPrussiaFascist_visible = {
+				GER = {
+					has_country_flag = GER_fascist_EastPrussia
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_EastPrussia
+							has_country_flag = GER_liberal_EastPrussia
+							has_country_flag = GER_conservative_EastPrussia
+							has_country_flag = GER_NonAligned_EastPrussia
+						}
+					}
+				}
+			}
+			iconEastPrussiaLiberal_visible = {
+				GER = {
+					has_country_flag = GER_liberal_EastPrussia
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_EastPrussia
+							has_country_flag = GER_fascist_EastPrussia
+							has_country_flag = GER_conservative_EastPrussia
+							has_country_flag = GER_NonAligned_EastPrussia
+						}
+					}
+				}
+			}
+			iconEastPrussiaConservative_visible = {
+				GER = {
+					has_country_flag = GER_conservative_EastPrussia
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_EastPrussia
+							has_country_flag = GER_liberal_EastPrussia
+							has_country_flag = GER_fascist_EastPrussia
+							has_country_flag = GER_NonAligned_EastPrussia
+						}
+					}
+				}
+			}
+			iconEastPrussiaNonAligned_visible = {
+				GER = {
+					has_country_flag = GER_NonAligned_EastPrussia
+					NOT = {
+						OR = {
+							has_country_flag = GER_communist_EastPrussia
+							has_country_flag = GER_liberal_EastPrussia
+							has_country_flag = GER_fascist_EastPrussia
+							has_country_flag = GER_conservative_EastPrussia
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+

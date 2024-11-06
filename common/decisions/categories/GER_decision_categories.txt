@@ -9,3 +9,15 @@ GER_military_buildup = {
 
 	}
 }
+
+GER_elections = {
+	icon = generic_political_actions
+	scripted_gui = german_elections_gui
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		original_tag = GER
+	}
+	priority = 150
+}

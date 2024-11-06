@@ -1,0 +1,50 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_German_Elections_background"
+		texturefile = "gfx/interface/GERMANUI/germanall.png"
+	}
+	
+	spriteType = {
+		name = "GFX_German_Elections_Schlesswig_Fascist"
+		texturefile = "gfx/interface/GERMANUI/STATE1FAS.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_Schlesswig_Conservative"
+		texturefile = "gfx/interface/GERMANUI/STATE1DEM.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_Schlesswig_Liberal"
+		texturefile = "gfx/interface/GERMANUI/STATE1LIB.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_Schlesswig_Communist"
+		texturefile = "gfx/interface/GERMANUI/STATE1COM.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_Schlesswig_NonAligned"
+		texturefile = "gfx/interface/GERMANUI/STATE1MON.png"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_German_Elections_EastPrussia_Fascist"
+		texturefile = "gfx/interface/GERMANUI/STATE2FAS.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_EastPrussia_Conservative"
+		texturefile = "gfx/interface/GERMANUI/STATE2DEM.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_EastPrussia_Liberal"
+		texturefile = "gfx/interface/GERMANUI/STATE2LIB.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_EastPrussia_Communist"
+		texturefile = "gfx/interface/GERMANUI/STATE2COM.png"
+	}
+	spriteType = {
+		name = "GFX_German_Elections_EastPrussia_NonAligned"
+		texturefile = "gfx/interface/GERMANUI/STATE2MON.png"
+	}
+}

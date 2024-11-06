@@ -68,5 +68,238 @@ GER_military_buildup = {
 
 
 	}
+	  
+}
+
+GER_elections = {
+
+	GER_communist_Schlesswig = {
+
+		icon = generic_naval
+
+		available = {
+		
+		}
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}        
+			clr_country_flag = GER_communist_Schlesswig
+			clr_country_flag = GER_fascist_Schlesswig
+			clr_country_flag = GER_liberal_Schlesswig
+			clr_country_flag = GER_conservative_Schlesswig
+			clr_country_flag = GER_NonAligned_Schlesswig			
+			set_country_flag = GER_communist_Schlesswig
+		}
+
+
+	}
+	GER_fascist_Schlesswig = {
+
+		icon = generic_naval
+
+		available = {
+		
+		}
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_Schlesswig
+			clr_country_flag = GER_fascist_Schlesswig
+			clr_country_flag = GER_liberal_Schlesswig
+			clr_country_flag = GER_conservative_Schlesswig
+			clr_country_flag = GER_NonAligned_Schlesswig
+			set_country_flag = GER_fascist_Schlesswig
+		}
+
+
+	}
+	GER_liberal_Schlesswig = {
+
+		icon = generic_naval
+
+		available = {
+		
+		}
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_Schlesswig
+			clr_country_flag = GER_fascist_Schlesswig
+			clr_country_flag = GER_liberal_Schlesswig
+			clr_country_flag = GER_conservative_Schlesswig
+			clr_country_flag = GER_NonAligned_Schlesswig
+			set_country_flag = GER_liberal_Schlesswig
+		}
+
+
+	}
+	GER_conservative_Schlesswig = {
+
+		icon = generic_naval
+
+		available = {
+		
+		}
+
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_Schlesswig
+			clr_country_flag = GER_fascist_Schlesswig
+			clr_country_flag = GER_liberal_Schlesswig
+			clr_country_flag = GER_conservative_Schlesswig
+			clr_country_flag = GER_NonAligned_Schlesswig
+			set_country_flag = GER_conservative_Schlesswig
+		}
+	}
+	GER_non-aligned_Schlesswig = {
+
+		icon = generic_naval
+
+		available = {
+		
+		}
+
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_Schlesswig
+			clr_country_flag = GER_fascist_Schlesswig
+			clr_country_flag = GER_liberal_Schlesswig
+			clr_country_flag = GER_conservative_Schlesswig
+			clr_country_flag = GER_NonAligned_Schlesswig
+			set_country_flag = GER_NonAligned_Schlesswig
+		}
+	}
 	
+	GER_communist_EastPrussia = {
+		icon = generic_naval
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}       
+			clr_country_flag = GER_communist_EastPrussia
+			clr_country_flag = GER_nonaligned_EastPrussia
+			clr_country_flag = GER_fascist_EastPrussia
+			clr_country_flag = GER_liberal_EastPrussia
+			clr_country_flag = GER_conservative_EastPrussia
+			set_country_flag = GER_communist_EastPrussia
+		}
+	}
+	GER_nonaligned_EastPrussia = {
+		icon = generic_naval
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}       
+			clr_country_flag = GER_communist_EastPrussia
+			clr_country_flag = GER_nonaligned_EastPrussia
+			clr_country_flag = GER_fascist_EastPrussia
+			clr_country_flag = GER_liberal_EastPrussia
+			clr_country_flag = GER_conservative_EastPrussia
+			set_country_flag = GER_NonAligned_EastPrussia
+		}
+	}
+	GER_fascist_EastPrussia = {
+		icon = generic_naval
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_EastPrussia
+			clr_country_flag = GER_nonaligned_EastPrussia
+			clr_country_flag = GER_fascist_EastPrussia
+			clr_country_flag = GER_liberal_EastPrussia
+			clr_country_flag = GER_conservative_EastPrussia
+			set_country_flag = GER_fascist_EastPrussia
+		}
+	}
+	GER_liberal_EastPrussia = {
+		icon = generic_naval
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+		add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_EastPrussia
+			clr_country_flag = GER_nonaligned_EastPrussia
+			clr_country_flag = GER_fascist_EastPrussia
+			clr_country_flag = GER_liberal_EastPrussia
+			clr_country_flag = GER_conservative_EastPrussia
+			set_country_flag = GER_liberal_EastPrussia
+		}
+	}
+	GER_conservative_EastPrussia = {
+		icon = generic_naval
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = var_GermanElectionThing
+				value = 1
+			}
+			clr_country_flag = GER_communist_EastPrussia
+			clr_country_flag = GER_nonaligned_EastPrussia
+			clr_country_flag = GER_fascist_EastPrussia
+			clr_country_flag = GER_liberal_EastPrussia
+			clr_country_flag = GER_conservative_EastPrussia
+			set_country_flag = GER_conservative_EastPrussia
+		}
+	}
 }

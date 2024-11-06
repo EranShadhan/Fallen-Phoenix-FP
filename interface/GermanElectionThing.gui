@@ -1,0 +1,78 @@
+guiTypes = {
+	containerWindowType = {
+		name = "GermanElectionThing"
+		
+		position = { x = -5 y = 0 }
+		size = { width = 500 height = 570 }
+		
+		instantTextboxType = {
+			name = "sgg_title"
+			position = { x = -5 y = 20 }
+			font = hoi_36header
+			format = centre
+			text = german_election_title
+			maxWidth = 500
+		}
+		
+		iconType = { 
+			name = "iconBackgroundGermany"
+			position = { x = 100 y = 65 }
+			spriteType = GFX_German_Elections_background
+		}
+		iconType = {
+			name = "iconSchlesswigNonAligned"
+			position = { x = 142 y = 65 }
+			spriteType = GFX_German_Elections_Schlesswig_NonAligned
+		}
+		iconType = {
+			name = "iconSchlesswigFascist"
+			position = { x = 142 y = 65 }
+			spriteType = GFX_German_Elections_Schlesswig_Fascist
+		}
+		iconType = {
+			name = "iconSchlesswigCommunist"
+			position = { x = 142 y = 65 }
+			spriteType = GFX_German_Elections_Schlesswig_Communist
+		}
+		iconType = {
+			name = "iconSchlesswigLiberal"
+			position = { x = 142 y = 65 }
+			spriteType = GFX_German_Elections_Schlesswig_Liberal
+		}
+		iconType = {
+			name = "iconSchlesswigConservative"
+			position = { x = 142 y = 65 }
+			spriteType = GFX_German_Elections_Schlesswig_Conservative
+		}
+		
+		
+		
+		
+		
+		iconType = {
+			name = "iconEastPrussiaNonAligned"
+			position = { x = 333 y = 65 }
+			spriteType = GFX_German_Elections_EastPrussia_NonAligned
+		}
+		iconType = {
+			name = "iconEastPrussiaFascist"
+			position = { x = 333 y = 65 }
+			spriteType = GFX_German_Elections_EastPrussia_Fascist
+		}
+		iconType = {
+			name = "iconEastPrussiaCommunist"
+			position = { x = 333 y = 65 }
+			spriteType = GFX_German_Elections_EastPrussia_Communist
+		}
+		iconType = {
+			name = "iconEastPrussiaLiberal"
+			position = { x = 333 y = 65 }
+			spriteType = GFX_German_Elections_EastPrussia_Liberal
+		}
+		iconType = {
+			name = "iconEastPrussiaConservative"
+			position = { x = 333 y = 65 }
+			spriteType = GFX_German_Elections_EastPrussia_Conservative
+		}
+	}
+}
