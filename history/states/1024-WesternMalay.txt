@@ -7,14 +7,15 @@ state={
 	state_category = town
 	
 	resources = {
-		rubber = 78
-		steel = 8
-		tungsten = 28
+		rubber = 2
+		steel = 1
+		tungsten = 4
 	}
 	
 	history={
-		owner = MAL
-		add_core_of = MAL
+		add_core_of = GPI
+		owner = GPI
+		add_core_of = INS
 		buildings = {
 			infrastructure = 1
 			7329 = {

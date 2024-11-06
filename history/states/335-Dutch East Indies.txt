@@ -7,12 +7,13 @@ state={
 	state_category = city
 	
 	resources={
-		rubber=140 # was: 242
-		oil=10 # was: 16
+		rubber=14 # was: 242
+		oil=2 # was: 16
 	}
 
 	history={
-		owner = INS
+		add_core_of = GPI
+		owner = GPI
 		add_core_of = INS
 		victory_points = {
 			7381 5

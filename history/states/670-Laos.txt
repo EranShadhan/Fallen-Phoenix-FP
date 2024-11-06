@@ -6,8 +6,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = FRA
-		add_core_of = LAO
+		add_core_of = VIN
+		add_core_of = GPI
+		owner = GPI
 		victory_points = {
 			1464 1
 		}

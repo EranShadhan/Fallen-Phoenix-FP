@@ -1,13 +1,12 @@
+
 state={
 	id=669
 	name="STATE_669"
-	manpower = 314300
 
-	state_category = pastoral
-
-	history= {
-		owner = INS
-		add_core_of = INS
+	history={
+		add_core_of = PNG
+		add_core_of = GPI
+		owner = GPI
 		victory_points = {
 			12371 1 
 		}
@@ -15,12 +14,18 @@ state={
 			infrastructure = 1
 			12371 = {
 				naval_base = 2
+
 			}
+
 		}
-	}
-	provinces={
-		1546 1602 1617 1629 4468 4509 4524 4552 4593 7269 7487 7512 7529 7542 7570 7585 7627 8235 8250 10369 10396 10436 10505 10990 12315 12371 12386 12457 
+
 	}
 
-	local_supplies=1.0 
+	provinces={
+		1222 1242 1283 1310 1602 1617 1629 2129 4289 4329 4346 4468 4524 4593 4635 7269 7349 7362 7487 7512 7585 7627 10147 10260 10505 10954 12107 12123 12135 12315 12386 12457 12484 12995 
+	}
+	manpower=314300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
 }

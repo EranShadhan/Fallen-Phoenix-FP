@@ -7,13 +7,14 @@ state={
 	state_category = town
 	
 	resources = {
-		rubber = 76
-		tungsten = 12
+		rubber = 3
+		tungsten = 5
 	}
 
 	history={
-		owner = MAL
-		add_core_of = MAL
+		add_core_of = GPI
+		owner = GPI
+		add_core_of = INS
 		victory_points = {
 			7329 1 
 		}
