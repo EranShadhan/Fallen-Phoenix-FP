@@ -13,6 +13,8 @@
 	default = no
 	reset_on_civilwar = no
 
+	continuous_focus_position = { x = 4200 y = 2300 }
+
 
 	focus = {
 		id = RUS_KER_JOINT_WIP
@@ -110,6 +112,429 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 	}
+
+	focus = {
+		id = RUS_KER_JOINT_modernizing_the_transsiberian
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_rehabilitating_the_industry
+		prerequisite = { focus = RUS_KER_JOINT_rehabilitating_the_industry }
+		x = -4
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_updating_the_moscow_petrograd_line
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_modernizing_the_transsiberian
+		prerequisite = { focus = RUS_KER_JOINT_modernizing_the_transsiberian }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_arkhangelsk_ashgabad_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_modernizing_the_transsiberian
+		prerequisite = { focus = RUS_KER_JOINT_modernizing_the_transsiberian }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_five_year_plan
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_rehabilitating_the_industry
+		prerequisite = { focus = RUS_KER_JOINT_rehabilitating_the_industry }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_expanding_the_tula_arms_complex
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_five_year_plan
+		prerequisite = { focus = RUS_KER_JOINT_the_five_year_plan }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_increase_arms_manufactoring
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_expanding_the_tula_arms_complex
+		prerequisite = { focus = RUS_KER_JOINT_expanding_the_tula_arms_complex }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_manufacturing
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_five_year_plan
+		prerequisite = { focus = RUS_KER_JOINT_the_five_year_plan }
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_upgrading_the_ports
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_manufacturing
+		prerequisite = { focus = RUS_KER_JOINT_manufacturing }
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_focus_on_the_civilian_sector
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_manufacturing
+		prerequisite = { focus = RUS_KER_JOINT_manufacturing }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_attract_foreign_investors
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_focus_on_the_civilian_sector
+		prerequisite = { focus = RUS_KER_JOINT_focus_on_the_civilian_sector }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_revitalizing_russian_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_focus_on_the_civilian_sector
+		prerequisite = { focus = RUS_KER_JOINT_focus_on_the_civilian_sector }
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_start_electrification
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_attract_foreign_investors
+		prerequisite = { focus = RUS_KER_JOINT_attract_foreign_investors }
+		prerequisite = { focus = RUS_KER_JOINT_revitalizing_russian_roads }
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_magnitogorsk_mines
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_five_year_plan
+		prerequisite = { focus = RUS_KER_JOINT_the_five_year_plan }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_capital_of_the_urals
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_magnitogorsk_mines
+		prerequisite = { focus = RUS_KER_JOINT_the_magnitogorsk_mines }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_russian_oil_rush
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_capital_of_the_urals
+		prerequisite = { focus = RUS_KER_JOINT_the_capital_of_the_urals }
+		prerequisite = { focus = RUS_KER_JOINT_increase_arms_manufactoring }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
 	focus = {
 		id = RUS_KER_JOINT_modernizing_the_military
 		icon = GFX_goal_generic_construct_infrastructure
@@ -143,7 +568,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = RUS_KER_JOINT_problems_of_the_interior
 		prerequisite = { focus = RUS_KER_JOINT_problems_of_the_interior }
-		x = 5
+		x = 10
 		y = 1
 
 		cost = 5
