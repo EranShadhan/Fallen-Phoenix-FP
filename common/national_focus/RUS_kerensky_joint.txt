@@ -13,7 +13,7 @@
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 4200 y = 2300 }
+	continuous_focus_position = { x = 0 y = 2300 }
 
 
 	focus = {
@@ -455,7 +455,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = RUS_KER_JOINT_the_five_year_plan
 		prerequisite = { focus = RUS_KER_JOINT_the_five_year_plan }
-		x = 0
+		x =-1
 		y = 1
 
 		cost = 5
@@ -483,8 +483,36 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = RUS_KER_JOINT_the_magnitogorsk_mines
 		prerequisite = { focus = RUS_KER_JOINT_the_magnitogorsk_mines }
-		x = 0
+		x = 1
 		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_republics_bureau_for_resource_extraction
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_capital_of_the_urals
+		prerequisite = { focus = RUS_KER_JOINT_the_capital_of_the_urals }
+		x = 0
+		y = 2
 
 		cost = 5
 
@@ -513,6 +541,63 @@
 		prerequisite = { focus = RUS_KER_JOINT_the_capital_of_the_urals }
 		prerequisite = { focus = RUS_KER_JOINT_increase_arms_manufactoring }
 		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_siberian_chromium_mines
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_russian_oil_rush
+		prerequisite = { focus = RUS_KER_JOINT_russian_oil_rush }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = RUS_KER_JOINT_the_moscow_state_university
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = RUS_KER_JOINT_the_republics_bureau_for_resource_extraction
+		prerequisite = { focus = RUS_KER_JOINT_the_republics_bureau_for_resource_extraction }
+		prerequisite = { focus = RUS_KER_JOINT_start_electrification }
+		x = -1
 		y = 1
 
 		cost = 5
