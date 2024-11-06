@@ -50,7 +50,7 @@ shared_focus = {
 	id = RUS_KER_RIGHT_russification_question
 	icon = GFX_goal_zzz_WIP
 	relative_position_id = RUS_KER_RIGHT_WIP
-	x = 1
+	x = 3
 	y = 1
 	prerequisite = { focus = RUS_KER_RIGHT_WIP }
 
@@ -228,7 +228,7 @@ shared_focus = {
 	id = RUS_KER_RIGHT_freedom_of_speech
 	icon = GFX_goal_zzz_WIP
 	relative_position_id = RUS_KER_RIGHT_WIP
-	x = 7
+	x = 9
 	y = 1
 	prerequisite = { focus = RUS_KER_RIGHT_WIP }
 
@@ -329,6 +329,7 @@ shared_focus = {
 	}
 
 	available = {
+		OR = { has_country_flag = no_freedom_of_speech has_country_flag = limited_freedom_of_speech }
 	}
 
 	bypass = {
@@ -374,7 +375,7 @@ shared_focus = {
 	id = RUS_KER_RIGHT_spy_on_communists
 	icon = GFX_goal_zzz_WIP
 	relative_position_id = RUS_KER_RIGHT_fish_bait
-	x = -1
+	x = -2
 	y = 2
 	prerequisite = { focus = RUS_KER_RIGHT_keep_track_of_new_publications }
 
@@ -399,14 +400,14 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = RUS_KER_RIGHT_series_of_careful_accidents # A Series of Carefully Placed Accidents
+	id = RUS_KER_RIGHT_eliminate_them
 	icon = GFX_goal_zzz_WIP
 	relative_position_id = RUS_KER_RIGHT_spy_on_communists
 	x = -1
 	y = 1
 	prerequisite = { focus = RUS_KER_RIGHT_spy_on_communists }
 	mutually_exclusive = {
-		focus = RUS_KER_RIGHT_catch_them_and_send_prison
+		focus = RUS_KER_RIGHT_catch_them
 	}
 
 	cost = 5
@@ -430,15 +431,327 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = RUS_KER_RIGHT_catch_them_and_send_prison
+	id = RUS_KER_RIGHT_list_the_names
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_communists
+	x = -2
+	y = 2
+	prerequisite = { focus = RUS_KER_RIGHT_eliminate_them }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_hire_okhrana
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_communists
+	x = 0
+	y = 2
+	prerequisite = { focus = RUS_KER_RIGHT_eliminate_them focus = RUS_KER_RIGHT_catch_them }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_a_series_of_carefully_placed_accidents # A Series of Carefully Placed Accidents
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_communists
+	x = -1
+	y = 3
+	prerequisite = { focus = RUS_KER_RIGHT_list_the_names }
+	prerequisite = { focus = RUS_KER_RIGHT_hire_okhrana }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_catch_them
 	icon = GFX_goal_zzz_WIP
 	relative_position_id = RUS_KER_RIGHT_spy_on_communists
 	x = 1
 	y = 1
 	prerequisite = { focus = RUS_KER_RIGHT_spy_on_communists }
 	mutually_exclusive = {
-		focus = RUS_KER_RIGHT_series_of_careful_accidents
+		focus = RUS_KER_RIGHT_eliminate_them
 	}
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_list_the_locations
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_communists
+	x = 2
+	y = 2
+	prerequisite = { focus = RUS_KER_RIGHT_catch_them }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_raid_communist_hideouts # Raid/Burst into/Crackdown on/Take Down Communist Hideouts/Shelters
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_communists
+	x = 1
+	y = 3
+	prerequisite = { focus = RUS_KER_RIGHT_hire_okhrana }
+	prerequisite = { focus = RUS_KER_RIGHT_list_the_locations }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_spy_on_inner_party
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_fish_bait
+	x = 2
+	y = 2
+	prerequisite = { focus = RUS_KER_RIGHT_keep_track_of_new_publications }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_invite_vfp_in_government
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_inner_party
+	x = -1
+	y = 1
+	prerequisite = { focus = RUS_KER_RIGHT_spy_on_inner_party }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_kerensky_cult
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_inner_party
+	x = 1
+	y = 1
+	prerequisite = { focus = RUS_KER_RIGHT_spy_on_inner_party }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_purge_the_unloyal
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_inner_party
+	x = 0
+	y = 2
+	prerequisite = { focus = RUS_KER_RIGHT_kerensky_cult }
+	prerequisite = { focus = RUS_KER_RIGHT_invite_vfp_in_government }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_recruit_replacement
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_spy_on_inner_party
+	x = 0
+	y = 3
+	prerequisite = { focus = RUS_KER_RIGHT_purge_the_unloyal }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+		
+	}
+	completion_reward = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+}
+
+shared_focus = {
+	id = RUS_KER_RIGHT_new_era_of_integralism
+	icon = GFX_goal_zzz_WIP
+	relative_position_id = RUS_KER_RIGHT_keep_track_of_new_publications
+	x = 0
+	y = 5
+	prerequisite = { focus = RUS_KER_RIGHT_recruit_replacement }
+	prerequisite = { focus = RUS_KER_RIGHT_a_series_of_carefully_placed_accidents focus = RUS_KER_RIGHT_raid_communist_hideouts }
 
 	cost = 5
 

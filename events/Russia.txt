@@ -339,8 +339,7 @@ country_event = {
 		}
 		custom_effect_tooltip = RUS_decrease_opinion_of_kerensky
 		hidden_effect = {
-			set_country_flag = no_freedom_of_speech
-			set_country_flag = first_amendment
+			set_country_flag = limited_freedom_of_speech
 			add_to_variable = { SOV.opinion_of_kerensky = -10 }
 		}
 	}
