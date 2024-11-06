@@ -7,8 +7,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = INS
-		add_core_of = INS
+		add_core_of = GPI
+		owner = GPI
+		add_core_of = PNG
 		buildings = {
 			infrastructure = 2
 			1574 = {

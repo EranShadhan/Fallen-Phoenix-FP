@@ -1,12 +1,13 @@
+
 state={
 	id=523
 	name="STATE_523"
-
-resources={
-		steel=27.000
-		tungsten=11.000
-		rubber=33.000
+	resources={
+		steel=2.000
+		tungsten=1.000
+		rubber=3.000
 	}
+
 	history={
 		add_core_of = PNG
 		add_core_of = GPI
@@ -14,7 +15,6 @@ resources={
 		buildings = {
 			infrastructure = 1
 			air_base = 3
-
 			4329 = {
 				naval_base = 3
 
@@ -43,11 +43,10 @@ resources={
 	}
 
 	provinces={
-		1222 1242 1283 1310 1389 2129 4289 4317 4329 4346 4393 4418 4635 5135 7305 7333 7349 7362 7365 7378 7409 7614 10147 10231 10248 10251 10260 10423 10954 10974 11004 11018 12107 12123 12135 12154 12193 12237 12240 12400 12428 12484 12931 12995 
+		1389 1546 4317 4393 4418 4509 4552 5135 7305 7333 7365 7378 7409 7529 7542 7570 7614 8235 8250 10231 10248 10251 10369 10396 10423 10436 10974 10990 11004 11018 12154 12193 12237 12240 12371 12400 12428 12931 
 	}
 	manpower=1077000
-	buildings_max_level_factor=1
-	state_category="rural"
-
-	local_supplies=0.0 
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

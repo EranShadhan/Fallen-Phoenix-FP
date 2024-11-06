@@ -7,16 +7,17 @@ state = {
 	state_category = large_town
 	
 	resources = {
-		rubber = 188 # 342 og
-		steel = 12 # 20 og
-		tungsten = 149 # 189 og
-		aluminium = 15
+		rubber = 3 # 342 og
+		steel = 5 # 20 og
+		tungsten = 2 # 189 og
+		aluminium = 1
 	}
 
 	history = {
 
-		owner = MAL
-		add_core_of = MAL
+		add_core_of = GPI
+		owner = GPI
+		add_core_of = INS
 
 		victory_points = {
 			12299 10
