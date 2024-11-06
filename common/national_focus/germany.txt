@@ -2517,8 +2517,121 @@ focus = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = GER_the_luftwaffelhouse_or_something
+		icon = GFX_focus_generic_combined_arms
+		x = 170
+		y = 0
 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
 
+		available_if_capitulated = yes
+        available = { has_completed_focus = GER_join_the_war }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_bombing_doctrine
+		icon = GFX_focus_generic_combined_arms
+		x = 5
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        prerequisite = { focus = GER_the_luftwaffelhouse_or_something } 
+		relative_position_id = GER_the_luftwaffelhouse_or_something
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_german_paratroopers
+		icon = GFX_focus_generic_combined_arms
+		x = 2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        prerequisite = { focus = GER_bombing_doctrine } 
+		relative_position_id = GER_bombing_doctrine
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_german_paratroopers
+		icon = GFX_focus_generic_combined_arms
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        prerequisite = { focus = GER_the_luftwaffelhouse_or_something } 
+		relative_position_id = GER_the_luftwaffelhouse_or_something
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_operation_venus
+		icon = GFX_focus_generic_combined_arms
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        prerequisite = { focus = GER_german_paratroopers } 
+		mutually_exclusive = { focus = GER_paratroop_light_tanks }
+		relative_position_id = GER_german_paratroopers
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = GER_paratroop_light_tanks
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+        prerequisite = { focus = GER_german_paratroopers } 
+		mutually_exclusive = { focus = GER_operation_venus }
+		relative_position_id = GER_german_paratroopers
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+		}
+	}		
 	focus = {
 		id = GER_the_army_of_german_nation
 		icon = GFX_focus_generic_combined_arms
