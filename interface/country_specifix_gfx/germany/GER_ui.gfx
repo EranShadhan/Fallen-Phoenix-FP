@@ -1,0 +1,327 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GER_STATE1COM"
+		texturefile = "gfx/interface/GERMANUI/STATE1COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE2COM"
+		texturefile = "gfx/interface/GERMANUI/STATE2COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE3COM"
+		texturefile = "gfx/interface/GERMANUI/STATE3COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE4COM"
+		texturefile = "gfx/interface/GERMANUI/STATE4COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE5COM"
+		texturefile = "gfx/interface/GERMANUI/STATE5COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE6COM"
+		texturefile = "gfx/interface/GERMANUI/STATE6COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE7COM"
+		texturefile = "gfx/interface/GERMANUI/STATE7COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE8COM"
+		texturefile = "gfx/interface/GERMANUI/STATE8COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE9COM"
+		texturefile = "gfx/interface/GERMANUI/STATE9COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE10COM"
+		texturefile = "gfx/interface/GERMANUI/STATE10COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE11COM"
+		texturefile = "gfx/interface/GERMANUI/STATE11COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE12COM"
+		texturefile = "gfx/interface/GERMANUI/STATE12COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE13COM"
+		texturefile = "gfx/interface/GERMANUI/STATE13COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE14COM"
+		texturefile = "gfx/interface/GERMANUI/STATE14COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE15COM"
+		texturefile = "gfx/interface/GERMANUI/STATE15COM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE16COM"
+		texturefile = "gfx/interface/GERMANUI/STATE16COM.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_STATE1LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE1LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE2LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE2LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE3LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE3LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE4LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE4LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE5LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE5LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE6LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE6LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE7LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE7LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE8LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE8LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE9LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE9LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE10LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE10LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE11LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE11LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE12LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE12LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE13LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE13LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE14LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE14LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE15LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE15LIB.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE16LIB"
+		texturefile = "gfx/interface/GERMANUI/STATE16LIB.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_GER_STATE1DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE1DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE2DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE2DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE3DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE3DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE4DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE4DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE5DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE5DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE6DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE6DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE7DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE7DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE8DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE8DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE9DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE9DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE10DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE10DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE11DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE11DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE12DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE12DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE13DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE13DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE14DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE14DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE15DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE15DEM.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE16DEM"
+		texturefile = "gfx/interface/GERMANUI/STATE16DEM.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_GER_STATE1FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE1FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE2FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE2FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE3FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE3FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE4FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE4FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE5FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE5FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE6FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE6FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE7FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE7FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE8FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE8FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE9FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE9FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE10FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE10FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE11FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE11FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE12FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE12FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE13FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE13FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE14FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE14FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE15FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE15FAS.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE16FAS"
+		texturefile = "gfx/interface/GERMANUI/STATE16FAS.png"
+	}	
+	
+	
+	spriteType = {
+		name = "GFX_GER_STATE1MON"
+		texturefile = "gfx/interface/GERMANUI/STATE1MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE2MON"
+		texturefile = "gfx/interface/GERMANUI/STATE2MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE3MON"
+		texturefile = "gfx/interface/GERMANUI/STATE3MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE4MON"
+		texturefile = "gfx/interface/GERMANUI/STATE4MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE5MON"
+		texturefile = "gfx/interface/GERMANUI/STATE5MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE6MON"
+		texturefile = "gfx/interface/GERMANUI/STATE6MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE7MON"
+		texturefile = "gfx/interface/GERMANUI/STATE7MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE8MON"
+		texturefile = "gfx/interface/GERMANUI/STATE8MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE9MON"
+		texturefile = "gfx/interface/GERMANUI/STATE9MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE10MON"
+		texturefile = "gfx/interface/GERMANUI/STATE10MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE11MON"
+		texturefile = "gfx/interface/GERMANUI/STATE11MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE12MON"
+		texturefile = "gfx/interface/GERMANUI/STATE12MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE13MON"
+		texturefile = "gfx/interface/GERMANUI/STATE13MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE14MON"
+		texturefile = "gfx/interface/GERMANUI/STATE14MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE15MON"
+		texturefile = "gfx/interface/GERMANUI/STATE15MON.png"
+	}
+	spriteType = {
+		name = "GFX_GER_STATE16MON"
+		texturefile = "gfx/interface/GERMANUI/STATE16MON.png"
+	}	
+}
