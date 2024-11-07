@@ -38,4 +38,20 @@ scripted_gui = {
     ai_weights = {
     }
   }
+
+  open_aus_racism_gui = {
+		context_type = player_context
+		window_name = "open_aus_racism_gui"
+		parent_window_token = topbar
+
+		visible = {
+          original_tag = AUS
+		}
+
+		effects = {
+			open_aus_racism_click = {
+				set_country_flag = AUS_manage_minorites
+			}
+		}
+	}
 }

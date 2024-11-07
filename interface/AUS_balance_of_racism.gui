@@ -24,15 +24,15 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}	
 
-		#instantTextboxType = {
-		#	name = "political_title"
-		#	position = { x = 45 y = 8 }
-		#	font = "hoi_36header"
-		#	borderSize = {x = 0 y = 0}
-		#	text = "POLITICAL_POLITICAL"
-		#	maxWidth = 400
-		#	maxHeight = 20
-		#	fixedsize = yes
-		#}
+		instantTextboxType = {
+			name = "ethnicity_manager_text"
+			position = { x = 45 y = 8 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "Ethnicity Manager"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
 	}
 }
