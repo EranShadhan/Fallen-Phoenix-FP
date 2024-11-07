@@ -345,5 +345,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/PER/Portrait_PER_Reza_Shah_Pahlavi_1.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_portrait_PER_soleiman_eskandari"
+		texturefile = "gfx/leaders/PER/Portrait_PER_soleiman_eskandari.dds"
+	}
+
 }
 

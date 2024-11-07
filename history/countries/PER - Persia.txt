@@ -49,7 +49,7 @@ every_owned_state = {
 
 recruit_character = PER_ahmad_amir_ahmadi
 recruit_character = PER_reza_shah_pahlavi
-recruit_character = PER_soleyman_mirza_eskandari
+recruit_character = PER_soleiman_mirza_eskandari
 recruit_character = PER_hasan_arfa
 recruit_character = PER_dalir_pesyan
 recruit_character = PER_sohrab_tahmasebi

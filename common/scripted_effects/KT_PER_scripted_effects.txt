@@ -39,3 +39,28 @@ PER_improve_army = {
 		}
 	}
 }
+IRA_push_germany = {
+	custom_effect_tooltip = IRA_germany_not_happy
+	if = {
+		limit = { 
+			OR = {
+				check_variable = { IRA_push_germany = 0 }
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+			}
+		}
+		add_to_variable = { IRA_push_germany = 1 }
+	}
+	clr_country_flag = IRA_push_germany
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { IRA_push_germany > 3 } }
+			#germany does something
+		}
+		else = {
+			set_country_flag = IRA_push_germany
+		}
+	}
+}

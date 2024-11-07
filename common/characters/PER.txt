@@ -38,11 +38,11 @@ characters={
 			}
 		}
 	}
-	PER_soleyman_mirza_eskandari={
-		name="Soleyman Mirza Eskandari"
+	PER_soleiman_mirza_eskandari={
+		name=PER_soleiman_mirza_eskandari
 		portraits={
 			civilian={
-				large=GFX_portrait_Soleyman_Mirza_Eskandari
+				large=GFX_portrait_PER_soleiman_eskandari
 			}
 		}
 		country_leader={

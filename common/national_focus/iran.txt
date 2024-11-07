@@ -326,45 +326,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = IRA_modern_oil_industry
-		icon = GFX_empty
-		x = -1
-		y = 1
-		relative_position_id = IRA_devalue_the_rial
-		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		prerequisite = { focus = IRA_devalue_the_rial }
-		mutually_exclusive = {}
-		available = {}
-		bypass = {}
-		allow_branch = {}
-		
-		cost = 8
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = IRA_modern_oil_industry_266_tt
-			hidden_effect = {
-				266 = {
-					add_to_variable = { IRA_synthetic_refinery_factor = 0.15 }
-				}
-			}
-			every_core_state = {
-				limit = { NOT = { state = 266 } }
-				custom_effect_tooltip = IRA_modern_oil_industry_tt
-				add_to_variable = { IRA_synthetic_refinery_factor = 0.25 }
-			}
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-	focus = {
 		id = IRA_government_banking_subsidies
 		icon = GFX_empty
 		x = 1
@@ -698,7 +659,7 @@ focus_tree = {
 	focus = {
 		id = IRA_german_influences
 		icon = GFX_empty
-		x = -7
+		x = -8
 		y = 1
 		relative_position_id = IRA_a_modern_iran
 		
@@ -896,7 +857,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = IRA_german_influences
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		prerequisite = { focus = IRA_german_influences }
 		mutually_exclusive = {}
 		available = {}
@@ -928,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = IRA_iranian_autonomy
 		icon = GFX_empty
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = IRA_a_modern_iran
 		
@@ -955,6 +916,252 @@ focus_tree = {
 			add_to_variable = { IRA_neutrality_drift = 0.01 }
 			add_to_variable = { IRA_fascism_drift = 0.01 }
 			add_to_variable = { IRA_political_power_factor = 0.05 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	focus = {
+		id = IRA_restrict_german_oil_businesses
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_iranian_autonomy
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_iranian_autonomy }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 35
+			GER = { remove_resource_rights = 412 }
+			IRA_push_germany = yes
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_ban_germans_from_the_army
+		icon = GFX_empty
+		x = 0
+		y = 2
+		relative_position_id = IRA_restrict_german_oil_businesses
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_restrict_german_oil_businesses }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 70
+			custom_effect_tooltip = IRA_ban_germans_from_the_army_tt
+			add_to_variable = { IRA_conscription_factor = -0.08 }
+			add_to_variable = { IRA_army_core_defence_factor = 0.05 }
+			IRA_push_germany = yes
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_favour_local_business
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_iranian_autonomy
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_iranian_autonomy }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			266 = { add_extra_state_shared_building_slots = 1 }
+			420 = { add_extra_state_shared_building_slots = 1 }
+			custom_effect_tooltip = IRA_favour_local_business_tt
+			add_to_variable = { IRA_political_power_factor = 0.075 }
+			IRA_push_germany = yes
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_higher_tariffs_on_foreign_goods
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_favour_local_business
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_favour_local_business }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_higher_tariffs_on_foreign_goods_tt
+			add_to_variable = { IRA_political_power_factor = 0.05 }
+			add_to_variable = { IRA_research_speed_factor = -0.01 }
+			add_to_variable = { IRA_fascism_drift = 0.01 }
+			IRA_push_germany = yes
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_promote_growth_in_isfahan
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_favour_local_business
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_favour_local_business }
+		mutually_exclusive = {}
+		available = { has_tech = synth_oil_experiments }
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			411 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
+			IRA_push_germany = yes
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				has_country_flag = {
+					flag = IRA_push_germany
+					days < 100
+				}
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = IRA_further_synthetic_experiments
+		icon = GFX_empty
+		x = 1
+		y = 1
+		relative_position_id = IRA_promote_growth_in_isfahan
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = IRA_promote_growth_in_isfahan }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_synth_oil
+			}
+			custom_effect_tooltip = IRA_further_synthetic_experiments_tt
+			add_to_variable = { IRA_research_speed_factor = 0.03 }
 		}
 		
 		ai_will_do = {
@@ -992,6 +1199,44 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = IRA_modern_oil_industry
+		icon = GFX_empty
+		x = -1
+		y = 1
+		relative_position_id = IRA_devalue_the_rial
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = IRA_devalue_the_rial focus = IRA_further_synthetic_experiments }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		
+		cost = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = IRA_modern_oil_industry_266_tt
+			hidden_effect = {
+				266 = {
+					add_to_variable = { IRA_synthetic_refinery_factor = 0.15 }
+				}
+			}
+			every_core_state = {
+				limit = { NOT = { state = 266 } }
+				custom_effect_tooltip = IRA_modern_oil_industry_tt
+				add_to_variable = { IRA_synthetic_refinery_factor = 0.25 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
 
 	focus = {
 		id = PER_army_1
