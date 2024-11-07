@@ -1,0 +1,14 @@
+manage_aus_minorites = {
+	
+	priority = 9
+	icon = GFX_category_icon
+	
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		
+		
+	}
+}
+

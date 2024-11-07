@@ -1,0 +1,41 @@
+scripted_gui = {
+  austrian_minority_manager = {
+    window_name = "austrian_minority_manager"
+    context_type = player_context
+
+    visible = {
+        has_country_flag = AUS_manage_minorites
+    }
+
+    effects = {
+      close_minority_manager_click = {
+        clr_country_flag = AUS_manage_minorites
+      }
+    }
+
+    triggers = {
+    }
+
+    dynamic_lists = {
+	}
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}

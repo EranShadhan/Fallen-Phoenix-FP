@@ -1,0 +1,13 @@
+manage_aus_minorites = {
+	open_minority_manager = {
+			available = {
+				original_tag = AUS
+			}
+			complete_effect = {
+				set_country_flag = AUS_manage_minorites
+			}
+			cost = 0
+	}
+}
+
+	
