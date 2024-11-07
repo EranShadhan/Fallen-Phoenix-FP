@@ -2,24 +2,42 @@ scripted_gui = {
   austrian_minority_manager = {
     window_name = "austrian_minority_manager"
     context_type = player_context
-
+	dirty = AUS_dirty_variable
     visible = {
         has_country_flag = AUS_manage_minorites
     }
-
+	
+	
     effects = {
-      close_minority_manager_click = {
-        clr_country_flag = AUS_manage_minorites
-      }
+		
+		close_minority_manager_click = {
+			clr_country_flag = AUS_manage_minorites
+		}
+		iconHungaryMap_click = { 
+			add_stability = 0.1
+		}
+		iconAustriaMap_click = { 
+			add_stability = -0.1
+		}
+		iconCzechiaMap_click = { 
+			add_stability = 0.5
+		}
+		iconSlovakiaMap_click = { 
+			add_stability = -0.5
+			
+		}
+		
     }
-
+	
     triggers = {
     }
 
     dynamic_lists = {
+		
 	}
 
     properties = {
+		
     }
 
     ai_enabled = {

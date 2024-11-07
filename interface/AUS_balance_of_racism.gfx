@@ -9,4 +9,33 @@ spriteTypes = {
 		name = "GFX_close_minority_manager"
 		textureFile = "/gfx/interface/scripted_gui_graphics/close_minority_manager.dds"
 	}
+	
+	spriteType = { 
+		name = "GFX_austrianemptymap"
+		textureFile = "gfx/interface/austriaminorities/austrianemptymap.png"
+	}
+	spriteType = {
+		name = "GFX_hungary"
+		textureFile = "gfx/interface/austriaminorities/hungary.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_czechia"
+		textureFile = "gfx/interface/austriaminorities/czechia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_slovakia"
+		textureFile = "gfx/interface/austriaminorities/slovakia.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_austria"
+		textureFile = "gfx/interface/austriaminorities/austria.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_AUSTRIAMINORITIESICONS"
+		textureFile = "gfx/interface/austriaminorities/AUSTRIAMINORITIESICONS.png"
+	}
 }

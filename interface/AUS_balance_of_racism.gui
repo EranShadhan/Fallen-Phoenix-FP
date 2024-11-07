@@ -8,6 +8,7 @@ guiTypes = {
 		origo = center
 		fade_time = 100
 		moveable = yes
+		
 		fade_type = linear
 		click_to_front = no
 		clipping = no
@@ -26,13 +27,47 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "ethnicity_manager_text"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 8 } 
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
 			text = "Ethnicity Manager"
 			maxWidth = 400
 			maxHeight = 20
 			fixedsize = yes
+		}
+		iconType = {
+			name = "iconAustrianEmptyMap"
+			position = { x = 75 y = 75 }
+			spriteType = GFX_austrianemptymap
+			scale = 0
+		}
+		buttonType ={
+			name ="iconHungaryMap"
+			spriteType = "GFX_hungary"
+			position = { x= 336 y = 197 }
+			scale = 0.4
+			pdx_tooltip = "CLOSE"
+		} 
+		buttonType ={
+			name ="iconAustriaMap"
+			spriteType = "GFX_austria"
+			position = { x= 92 y = 89 }
+			scale = 0.4
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType ={
+			name ="iconCzechiaMap"
+			spriteType = "GFX_czechia"
+			position = { x= 225 y = 106 }
+			scale = 0.4
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType ={
+			name ="iconSlovakiaMap"
+			spriteType = "GFX_slovakia"
+			position = { x= 365 y = 162 }
+			scale = 0.4
+			pdx_tooltip = "CLOSE"
 		}
 	}
 }

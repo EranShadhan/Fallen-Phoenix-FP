@@ -2,12 +2,12 @@ guiTypes = {
 
 	containerWindowType = {
 			name = "open_aus_racism_gui"
-			position = { x = 1789 y = 30 }
+			position = { x = 1825 y = 725 }
 			Orientation = UPPER_LEFT
 	
 			buttonType = {
 				name = "open_aus_racism"
-				quadTextureSprite = "GFX_book_button"
+				quadTextureSprite = "GFX_AUSTRIAMINORITIESICONS"
 				buttonText = ""
 				buttonFont = "Main_14_black"
 				clicksound = click_ok
