@@ -7,8 +7,9 @@ state={
 	}
 
 	history={
+		add_core_of = BRA
 		add_core_of = SUR
-		owner = HOL
+		owner = BRA
 		victory_points = {
 			10906 1 
 		}
