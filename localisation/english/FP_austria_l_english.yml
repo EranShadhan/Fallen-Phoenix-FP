@@ -1,8 +1,8 @@
 ﻿l_english:
- CZE_Tomas_Masaryk:0 "Tomas Masaryk"
- HUN_provisional_governament:0 "Hungarian Temporary Governament"
- AUS_karl:0 "Charles I"
- HUN_Karoly_Wolff:0 "Karoly Wolff"
+ AUS_karl:0 "Karl I"
+ HUN_Karoly_Wolff:0 "Károly Wolff"
+ CZE_Tomas_Masaryk:0 "Tomáš Garrigue Masaryk"
+ HUN_provisional_governament:0 "Provisional Government of Hungary"
  TestSLO:0 "This is a test for slovakia" 
  TestCZE:0 "This is a test for cechia"
  TestAUS:0 "This is a test for austria"

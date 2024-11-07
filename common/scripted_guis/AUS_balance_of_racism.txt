@@ -10,9 +10,7 @@ scripted_gui = {
 	
     effects = {
 		
-		close_minority_manager_click = {
-			clr_country_flag = AUS_manage_minorites
-		}
+		
 		iconHungaryMap_click = { 
 			add_stability = 0.1
 		}
@@ -68,7 +66,21 @@ scripted_gui = {
 
 		effects = {
 			open_aus_racism_click = {
-				set_country_flag = AUS_manage_minorites
+				if = {
+					limit = { 
+						has_country_flag = AUS_manage_minorites 
+						}
+					clr_country_flag = AUS_manage_minorites
+					
+				}
+				else_if = {
+						limit = {
+							NOT = {
+								has_country_flag = AUS_manage_minorites
+							}
+						}
+						set_country_flag = AUS_manage_minorites
+					}
 			}
 		}
 	}

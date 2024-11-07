@@ -18,19 +18,12 @@ guiTypes = {
 			quadTextureSprite ="GFX_scripted_gui_window_background"
 		}
 
-		buttonType ={
-			name ="close_minority_manager"
-			spriteType = "GFX_close_minority_manager"
-			position = { x= 750 y = 7 }
-			Orientation = "UPPER_LEFT"
-		}	
-
 		instantTextboxType = {
 			name = "ethnicity_manager_text"
 			position = { x = 45 y = 8 } 
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
-			text = "Ethnicity Manager"
+			text = "Austrian Integrity"
 			maxWidth = 400
 			maxHeight = 20
 			fixedsize = yes
@@ -46,28 +39,28 @@ guiTypes = {
 			spriteType = "GFX_hungary"
 			position = { x= 336 y = 197 }
 			scale = 0.4
-			pdx_tooltip = "CLOSE"
+			pdx_tooltip = TestHUN
 		} 
 		buttonType ={
 			name ="iconAustriaMap"
 			spriteType = "GFX_austria"
 			position = { x= 92 y = 89 }
 			scale = 0.4
-			pdx_tooltip = "CLOSE"
+			pdx_tooltip = "TestAUS"
 		}
 		buttonType ={
 			name ="iconCzechiaMap"
 			spriteType = "GFX_czechia"
 			position = { x= 225 y = 106 }
 			scale = 0.4
-			pdx_tooltip = "CLOSE"
+			pdx_tooltip = "TestCZE"
 		}
 		buttonType ={
 			name ="iconSlovakiaMap"
 			spriteType = "GFX_slovakia"
 			position = { x= 365 y = 162 }
 			scale = 0.4
-			pdx_tooltip = "CLOSE"
+			pdx_tooltip = "TestSLO"
 		}
 	}
 }
