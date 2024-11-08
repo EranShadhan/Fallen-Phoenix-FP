@@ -9,40 +9,54 @@ scripted_gui = {
 	
 	
     effects = {
-		iconHungaryMap_click = { 
+	iconHungaryMap_click = { 
 			HUN = {
 				add_to_array = {
 					array = global.targeted_minority_to_racism
 					value = THIS.id
 				}
+				add_to_variable = {
+					var = AUS_dirty_variable
+					value = 1
+				}
 			}
       }
-	  iconAustriaMap_click = { 
+	iconAustriaMap_click = { 
 		AUS = {
 			add_to_array = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
+			add_to_variable = {
+				var = AUS_dirty_variable
+				value = 2
+			}
 		}
-		}
-	  iconSlovakiaMap_click = { 
+	}
+	iconSlovakiaMap_click = { 
 		SLO = {
 			add_to_array = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
+			add_to_variable = {
+				var = AUS_dirty_variable
+				value = 3
+			}
 		}
-		}	
-	  iconCzechiaMap_click = { 
+	}	
+	iconCzechiaMap_click = { 
 		CZE = {
 			add_to_array = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
+			add_to_variable = {
+				var = AUS_dirty_variable
+				value = 4
+			}
 		}
 	  }
-	
-	 
 	}
 
     triggers = {
