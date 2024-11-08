@@ -122,7 +122,7 @@ scripted_gui = {
 							}
 						}
 						set_country_flag = AUS_manage_minorites
-					}
+					} 
 			}
 		}
 	}
