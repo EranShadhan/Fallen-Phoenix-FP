@@ -38,4 +38,9 @@ spriteTypes = {
 		name = "GFX_AUSTRIAMINORITIESICONS"
 		textureFile = "gfx/interface/austriaminorities/AUSTRIAMINORITIESICONS.png"
 	}
+	spriteType = {
+		name = "GFX_hungary_flag"
+		textureFile = "gfx/interface/austriaminorities/hungary_flag.png"
+		transparencecheck = no
+	}
 }

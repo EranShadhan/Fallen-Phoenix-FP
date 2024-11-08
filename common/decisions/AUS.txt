@@ -4,10 +4,24 @@ manage_aus_minorites = {
 				original_tag = AUS
 			}
 			complete_effect = {
-				set_country_flag = AUS_manage_minorites
+				HUN = {
+					add_to_array = {
+						array = global.targeted_minority_to_racism
+						value = THIS.id
+					}
+				}
 			}
 			cost = 0
 	}
+	create_button_manager = {
+		available = {
+			original_tag = AUS
+		}
+		complete_effect = {
+			set_country_flag = austrian_survival
+		}
+		cost = 0
+}
 }
 
 	

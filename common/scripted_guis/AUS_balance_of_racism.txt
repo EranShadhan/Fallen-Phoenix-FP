@@ -9,33 +9,45 @@ scripted_gui = {
 	
 	
     effects = {
-		
-		
 		iconHungaryMap_click = { 
-			add_stability = 0.1
+			HUN = {
+				add_to_array = {
+					array = global.targeted_minority_to_racism
+					value = THIS.id
+				}
+			}
+      }
+	  iconAustriaMap_click = { 
+		add_stability = -0.1
 		}
-		iconAustriaMap_click = { 
-			add_stability = -0.1
-		}
-		iconCzechiaMap_click = { 
-			add_stability = 0.5
-		}
-		iconSlovakiaMap_click = { 
-			add_stability = -0.5
-			
-		}
-		
-    }
+	  iconSlovakiaMap_click = { 
+		add_stability = -0.5
+		}	
+	  iconCzechiaMap_click = { 
+		add_stability = 0.5
+	  }
 	
+	 
+	}
+
     triggers = {
-    }
+		hungary_sigma_visible = {
+			has_country_flag = HungaryMap
+		}
+    } 
 
     dynamic_lists = {
-		
+		targeted_minority_to_racism_gridbox = {
+			array = global.targeted_minority_to_racism
+			entry_container = targeted_minority_list_entry
+			change_scope = yes
+		}
 	}
 
     properties = {
-		
+		country_flag_skibidi = {
+			image = [THIS.GetFlag]
+		}
     }
 
     ai_enabled = {
