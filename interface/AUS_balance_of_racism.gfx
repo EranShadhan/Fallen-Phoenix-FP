@@ -43,4 +43,19 @@ spriteTypes = {
 		textureFile = "gfx/interface/austriaminorities/Hungary_shield.png"
 		transparencecheck = no
 	}
+	spriteType = {
+		name = "GFX_austria_flag"
+		textureFile = "gfx/interface/austriaminorities/Austria_shield.png"
+		transparencecheck = no
+	}
+	spriteType = {
+		name = "GFX_bohemia_flag"
+		textureFile = "gfx/interface/austriaminorities/Bohemia_shield.png"
+		transparencecheck = no
+	}
+	spriteType = {
+		name = "GFX_slovakia_flag"
+		textureFile = "gfx/interface/austriaminorities/Slovakia_shield.png"
+		transparencecheck = no
+	}
 }

@@ -17,11 +17,11 @@ scripted_gui = {
 				}
 				
 			}
-			add_to_variable = {
+			set_variable  = {
 					var = AUS_dirty_variable
 					value = 1
-				}
-      }
+			}
+		}
 	iconAustriaMap_click = { 
 		AUS = {
 			add_to_array = {
@@ -30,7 +30,7 @@ scripted_gui = {
 			}
 			
 		}
-		add_to_variable = {
+		set_variable  = {
 				var = AUS_dirty_variable
 				value = 2
 			}
@@ -43,7 +43,7 @@ scripted_gui = {
 			}
 			
 		}
-		add_to_variable = {
+		set_variable  = {
 				var = AUS_dirty_variable
 				value = 3
 			}
@@ -56,31 +56,49 @@ scripted_gui = {
 			}
 			
 		}
-		add_to_variable = {
+		set_variable  = {
 				var = AUS_dirty_variable
 				value = 4
 			}
-	  }
+		}
 	}
 
     triggers = {
-		hungary_sigma_visible = {
-			has_country_flag = HungaryMap
+		iconHungaryFlag_visible = {
+			check_variable = {
+				var = AUS_dirty_variable
+				value = 1
+				compare = equals
+			}
+		}
+		iconAustriaFlag_visible = {
+			check_variable = {
+				var = AUS_dirty_variable
+				value = 2
+				compare = equals
+			}
+		}
+		iconBohemiaFlag_visible = {
+			check_variable = {
+				var = AUS_dirty_variable
+				value = 4
+				compare = equals
+			}
+		}
+		iconSlovakiaFlag_visible = {
+			check_variable = {
+				var = AUS_dirty_variable
+				value = 3
+				compare = equals
+			}
 		}
     } 
 
     dynamic_lists = {
-		targeted_minority_to_racism_gridbox = {
-			array = global.targeted_minority_to_racism
-			entry_container = targeted_minority_list_entry
-			change_scope = yes
-		}
+	
 	}
 
     properties = {
-		country_flag_skibidi = {
-			image = [THIS.GetFlag]
-		}
     }
 
     ai_enabled = {

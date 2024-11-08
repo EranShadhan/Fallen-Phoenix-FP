@@ -34,12 +34,30 @@ guiTypes = {
 			spriteType = GFX_austrianemptymap
 			scale = 0
 		}
-		#iconType = {
-		#	name = "flag_bussing"
-		#	position = { x = 70 y = 445 }
-		#	spriteType = GFX_shield_medium
-		#	scale = 1
-		#}
+		iconType = {
+			name = "iconHungaryFlag"
+			position = { x = 70 y = 445 }
+			spriteType = GFX_hungary_flag
+			scale = 1
+		}
+		iconType = {
+			name = "iconAustriaFlag"
+			position = { x = 70 y = 445 }
+			spriteType = GFX_austria_flag
+			scale = 1
+		}
+		iconType = {
+			name = "iconBohemiaFlag"
+			position = { x = 70 y = 445 }
+			spriteType = GFX_bohemia_flag
+			scale = 1
+		}
+		iconType = {
+			name = "iconSlovakiaFlag"
+			position = { x = 70 y = 445 }
+			spriteType = GFX_slovakia_flag
+			scale = 1
+		}
 		buttonType ={
 			name ="iconHungaryMap"
 			spriteType = "GFX_hungary"
