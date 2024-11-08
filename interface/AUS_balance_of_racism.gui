@@ -72,20 +72,21 @@ guiTypes = {
 			name = "targeted_minority_to_racism_gridbox"
 			position = { x = 70 y = 445 }
 			size = { witdh = 0 height = 0 }
-			slotsize = { witdh = 95 height = 2}
-			max_slots_horizontal = 1
+			slotsize = { witdh = 95 height = 4}
+			max_slots_horizontal = 0
 			add_horizontal = yes
 		}
 	}
 
 	containerWindowType = {
 		name = "targeted_minority_list_entry"
-		position = { x = 70 y = 445 }
+		position = { x = 0 y = 0 }
 		size = { witdh = 0 height = 0 }
 		iconType = {
 			name = "country_flag_skibidi"
 			quadTextureSprite = "GFX_flag_medium"
-			position = { x = 0 y = 3}
+			position = { x = 0 y = 0}
+			scale = 1
 		}
 	}
 

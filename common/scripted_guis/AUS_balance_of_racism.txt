@@ -18,13 +18,28 @@ scripted_gui = {
 			}
       }
 	  iconAustriaMap_click = { 
-		add_stability = -0.1
+		AUS = {
+			add_to_array = {
+				array = global.targeted_minority_to_racism
+				value = THIS.id
+			}
+		}
 		}
 	  iconSlovakiaMap_click = { 
-		add_stability = -0.5
+		SLO = {
+			add_to_array = {
+				array = global.targeted_minority_to_racism
+				value = THIS.id
+			}
+		}
 		}	
 	  iconCzechiaMap_click = { 
-		add_stability = 0.5
+		CZE = {
+			add_to_array = {
+				array = global.targeted_minority_to_racism
+				value = THIS.id
+			}
+		}
 	  }
 	
 	 
