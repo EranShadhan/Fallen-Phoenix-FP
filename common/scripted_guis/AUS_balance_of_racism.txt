@@ -15,11 +15,12 @@ scripted_gui = {
 					array = global.targeted_minority_to_racism
 					value = THIS.id
 				}
-				add_to_variable = {
+				
+			}
+			add_to_variable = {
 					var = AUS_dirty_variable
 					value = 1
 				}
-			}
       }
 	iconAustriaMap_click = { 
 		AUS = {
@@ -27,11 +28,12 @@ scripted_gui = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
-			add_to_variable = {
+			
+		}
+		add_to_variable = {
 				var = AUS_dirty_variable
 				value = 2
 			}
-		}
 	}
 	iconSlovakiaMap_click = { 
 		SLO = {
@@ -39,11 +41,12 @@ scripted_gui = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
-			add_to_variable = {
+			
+		}
+		add_to_variable = {
 				var = AUS_dirty_variable
 				value = 3
 			}
-		}
 	}	
 	iconCzechiaMap_click = { 
 		CZE = {
@@ -51,11 +54,12 @@ scripted_gui = {
 				array = global.targeted_minority_to_racism
 				value = THIS.id
 			}
-			add_to_variable = {
+			
+		}
+		add_to_variable = {
 				var = AUS_dirty_variable
 				value = 4
 			}
-		}
 	  }
 	}
 
