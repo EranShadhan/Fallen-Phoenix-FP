@@ -83,11 +83,11 @@ characters={
 			id=-1
 		}
 	}
-	PER_sohrab_tahmasebi={
-		name="Sohrab Tahmasebi"
+	PER_amin_al_husseini={
+		name=PER_amin_al_husseini
 		portraits={
 			civilian={
-				large=GFX_portrait_Sohrab_Tahmasebi
+				large=GFX_portrait_PER_amin_al_husseini
 			}
 		}
 		country_leader={

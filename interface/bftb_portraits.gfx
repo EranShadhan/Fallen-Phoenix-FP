@@ -350,5 +350,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/PER/Portrait_PER_soleiman_eskandari.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_portrait_PER_amin_al_husseini"
+		texturefile = "gfx/leaders/PER/Portrait_PER_amin_al_husseini.dds"
+	}
+
 }
 
