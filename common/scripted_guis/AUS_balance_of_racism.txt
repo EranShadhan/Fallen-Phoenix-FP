@@ -61,7 +61,8 @@ scripted_gui = {
 		parent_window_token = topbar
 
 		visible = {
-          original_tag = AUS
+			original_tag = AUS
+			has_country_flag = austrian_survival
 		}
 
 		effects = {

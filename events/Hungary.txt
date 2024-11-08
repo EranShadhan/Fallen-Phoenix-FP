@@ -12,71 +12,92 @@ country_event = {
 	
 	option = {
 		name = hungary.1.aa
+		trigger = {
+			NOT = {
+				country_exists = AUS
+			}
+		}
 		every_country = { 
-			limit = { has_war_with = HUN 
+		limit = { has_war_with = HUN 
 			NOT = { original_tag = AUS }
+		}
+		white_peace = HUN
+		}
+		ROM = {
+			transfer_state = 82
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 998
+			transfer_state = 997
+		}
+		SER = {
+			transfer_state = 764
+		}
+		764 = {
+			add_core_of = SER
+		}
+		45 = {
+			add_core_of = YUG
+		}
+		YUG = {
+			transfer_state = 45
+		}
+		GER = {
+			transfer_state = 982
+		}
+		HUN = {
+			set_politics = {
+				ruling_party = democratic
 			}
-			white_peace = HUN
-			}
-			ROM = {
-				transfer_state = 82
-				transfer_state = 84
-				transfer_state = 76
-				transfer_state = 83
-				transfer_state = 998
-				transfer_state = 997
-			}
-
-			SER = {
-				transfer_state = 764
-			}
-			764 = {
-				add_core_of = SER
-			}
-			
-			45 = {
-				add_core_of = YUG
-			}
-			YUG = {
-				transfer_state = 45
-			}
-			GER = {
-				transfer_state = 982
-			}
-			
-			
-			HUN = {
-				set_politics = {
-					ruling_party = democratic
-				}
-				release = SLO
-			}
-
-			CZE = {
-				set_cosmetic_tag = CZE_reichskommissariat
-			}
-
-			SLO = {
-				transfer_state = 664
-			}
-			998 = {
-				set_demilitarized_zone = yes
-			}
-			hidden_effect = { 
+			release = SLO
+		}
+		SLO = {
+			transfer_state = 664
+		}
+		998 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = { 
 			country_event = { days = 10 id = hungary.2 }
-			}
-			
-ITA = {
-		set_rule = {
-					can_join_factions = yes
+		}
+		ITA = {
+			set_rule = {
+				can_join_factions = yes
 			}
 		}
-		
-
+	}
+	option = {
+		name = hungary.1.b
+		trigger = {
+			country_exists = AUS
 		}
-			
-	
-	
+		every_country = { 
+		limit = { has_war_with = HUN 
+			NOT = { original_tag = AUS }
+		}
+		white_peace = HUN
+		}
+		ROM = {
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 82
+			82 = {
+				remove_core_of = HUN
+			}
+			83 = {
+				remove_core_of = HUN
+			}
+			84 = {
+				remove_core_of = HUN
+			}
+		}
+		ITA = {
+			set_rule = {
+				can_join_factions = yes
+			}
+		}
+	}
 }
 
 country_event = {
@@ -88,17 +109,14 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.2.aa
-
+		name = hungary.2.a
 		HUN = {
-
 			664 = {
 				set_demilitarized_zone = yes
 			}
 			transfer_state = 664
 			transfer_state = 73
 			transfer_state = 996
-
 			73 = {
 				set_demilitarized_zone = yes
 			}
@@ -109,14 +127,8 @@ country_event = {
 				}
 				set_cosmetic_tag = CZE_SLO_reich
 			}
-			
-
-
-		}
-
-			
+		}	
 	}
-	
 }
 
 country_event = {

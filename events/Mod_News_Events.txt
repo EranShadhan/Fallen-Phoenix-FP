@@ -95,20 +95,19 @@ news_event = {
     major = yes
 
     trigger = {
-       AUS = {
-            surrender_progress > 0.5
-        }
+		AUS = {
+				surrender_progress > 0.75
+		}
 		NOT = { has_global_flag = fall_of_viena }
+		NOT = { has_country_flag = austrian_survival }
     }
 
     immediate = { 
-                    set_global_flag = fall_of_viena
-                    AUS = {
-                        country_event = austria.5
-                    }
-                }
-
-
+		set_global_flag = fall_of_viena
+		AUS = {
+			country_event = austria.5
+		}
+	}
     option = {
         name = news.austria.a
     }

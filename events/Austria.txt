@@ -513,11 +513,11 @@ country_event = { #this was made later, but i put it here because it is supposed
 	fire_only_once = yes
 	option = {
 		name = austria.12.a
+		every_country = { limit = { is_in_faction_with = ROOT }add_timed_idea = { days = 365 idea = GER_noones_else_bussiness}}
 		declare_war_on = {
 				target = AUS
 				type = puppet_wargoal_focus
 			}
-		every_country = { limit = { is_in_faction_with = ROOT }add_timed_idea = { days = 120 idea = GER_noones_else_bussiness}}
 	}
 }
 country_event = {
@@ -540,7 +540,6 @@ country_event = {
 				add_to_faction = ROM
 			}
 			hidden_effect = { 
-			HUN = { add_ideas = HUN_debuff }
 			ROM = {
 				add_ai_strategy = {
 					type = alliance
@@ -579,7 +578,7 @@ country_event = {
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
-fire_only_once = yes
+	fire_only_once = yes
 	option = {
 		name = austria.5.a
 
@@ -670,13 +669,7 @@ fire_only_once = yes
 			transfer_state = 995
 		}
 
-			HUN = {
-			
-				transfer_state = 982
-				982 = {
-					add_core_of = HUN
-				}
-			}
+		
 
 			YUG = {
 				declare_war_on = {

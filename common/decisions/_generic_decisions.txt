@@ -211,7 +211,125 @@ propaganda_efforts = {
 			}
 		}
 	}
-	
+	austrian_collapse_prevention = {
+
+		icon = generic_construction
+
+        allowed = {
+			TAG = AUS
+        }
+		activation = {
+			AUS = {
+				has_war_with = HUN
+			}
+		}
+		days_mission_timeout = 365
+		is_good = yes
+        fire_only_once = yes
+
+
+		available = {
+			NOT = {
+			9 = {
+				is_controlled_by = AUS
+			}
+			75 = {
+				is_controlled_by = AUS
+			}
+			152 = {
+				is_controlled_by = AUS
+			}
+			}
+		}
+
+		visible = {
+			TAG = AUS
+		}
+
+        complete_effect = {
+			
+		}
+		timeout_effect = {
+			set_country_flag = austrian_survival
+			white_peace = POL
+			white_peace = UKR
+			white_peace = GER
+			white_peace = ITA
+			white_peace = YUG
+			white_peace = GRE
+		POL = {
+			transfer_state = 88
+			transfer_state = 994
+			transfer_state = 993
+			transfer_state = 992
+			
+			transfer_state = 91
+			transfer_state = 991
+			transfer_state = 1059
+		}
+		ROM = {
+			transfer_state = 995
+		}
+		UKR = {
+		    transfer_state = 80
+		    transfer_state = 89
+		    transfer_state = 990
+		}
+		
+		ITA = {
+			transfer_state = 850
+			transfer_state = 39
+			transfer_state = 736
+			set_variable = {
+				ITA_fiume_crisis_var = 5
+			}
+			leave_faction = yes
+		}
+		HUN = {
+			transfer_state = 982
+			982 = {
+				add_core_of = HUN
+			}
+		}
+		YUG ={
+			transfer_state = 105
+			transfer_state = 852
+			transfer_state = 853
+			set_variable = {
+				YUG_fiume_crisis_var = 5
+			}
+			set_variable = {
+				YUG_fiume_crisis_var = 5
+			}
+			complete_national_focus = YUG_death_of_an_empire
+		}
+		9 = {
+			remove_core_of = AUS
+			add_claim_by = AUS
+		}
+		75 = {
+			remove_core_of = AUS
+			add_claim_by = AUS
+		}
+		102 = {
+			add_claim_by = AUS
+		}
+		every_state = {
+			limit = { 
+				is_core_of = HUN
+			}
+			add_claim_by = AUS
+		}
+
+		FCF = {
+			transfer_state = 852
+			852 = {
+				set_demilitarized_zone = yes
+				add_core_of = FCF
+			}
+		}
+		}
+	}
 	war_propaganda_casualties = { 
 
 		icon = generic_prepare_civil_war
@@ -462,6 +580,7 @@ propaganda_efforts = {
 		}
 	}
 	
+	
 	war_propaganda_film_industry = { 
 
 		icon = generic_prepare_civil_war
@@ -586,7 +705,7 @@ war_measures = {
 			factor = 0
 		}
 	}
-
+	
 	desperate_defense = {
 
 		icon = generic_prepare_civil_war
@@ -1108,35 +1227,5 @@ economy_decisions = {
 			}
 		}
     }
-	aus_update_variable = {
-
-		icon = generic_construction
-
-        allowed = {
-            always = yes
-        }
-
-        cost = 100
-        fire_only_once = no
-
-        days_re_enable = 30
-
-	available = {
-		TAG = AUS
-	}
-
-	visible = {
-	}
-
-        complete_effect = {
-			set_variable_to_random = {
-				var = AUS_dirty_variable
-				max = 100
-				integer = yes
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	
 }
